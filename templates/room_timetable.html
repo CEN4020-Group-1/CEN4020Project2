@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ room }} Timetable - Bellini Scheduling System</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        h1 { color: #2c3e50; margin-bottom: 5px; }
+        .subtitle { color: #7f8c8d; margin-bottom: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .summary { background: #fff; padding: 15px 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .summary span { font-weight: bold; color: #2980b9; }
+        .table-wrapper { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        th { background: #2c3e50; color: #fff; padding: 12px 10px; text-align: center; font-size: 14px; border-left: 2px solid #1a252f; }
+        th.time-header { background: #1a252f; width: 1%; white-space: nowrap; }
+        td { vertical-align: top; padding: 6px 10px; border: 1px solid #ccc; border-left: 2px solid #bbb; }
+        td.time-cell { background: #2c3e50; color: #fff; font-weight: bold; font-size: 12px; text-align: center; vertical-align: middle; white-space: nowrap; width: 1%; padding: 6px 12px; }
+        .class-block { background: #eaf2f8; border-left: 3px solid #2980b9; padding: 8px; margin-bottom: 4px; border-radius: 3px; font-size: 13px; }
+        .class-block:last-child { margin-bottom: 0; }
+        .class-code { font-weight: bold; color: #2c3e50; }
+        .class-detail { color: #555; font-size: 12px; margin-top: 2px; }
+        .empty-cell { }
+        .back-link { display: inline-block; margin-top: 15px; color: #2980b9; text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+        .no-classes { text-align: center; padding: 40px; color: #7f8c8d; background: #fff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Room: {{ room }}</h1>
+        <p class="subtitle">{{ semester_label }} &mdash; Weekly Timetable</p>
+
+        <div class="summary">
+            Total classes in this room: <span>{{ total_classes }}</span>
+        </div>
+
+        {% if time_slots %}
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="time-header">Time</th>
+                        {% for day in active_days %}
+                        <th>{{ day_names[day] }}</th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for slot in time_slots %}
+                    <tr>
+                        <td class="time-cell">{{ slot }}</td>
+                        {% for day in active_days %}
+                        <td>
+                            {% if time_grid[slot][day] %}
+                                {% for cls in time_grid[slot][day] %}
+                                <div class="class-block">
+                                    <div class="class-code">{{ cls.subj }} {{ cls.crse_numb }}</div>
+                                    <div class="class-detail">{{ cls.crse_title }}</div>
+                                    <div class="class-detail">Instructor: {{ cls.instructor }}</div>
+                                    <div class="class-detail">Section: {{ cls.section }} | CRN: {{ cls.crn }}</div>
+                                </div>
+                                {% endfor %}
+                            {% else %}
+                                <div class="empty-cell"></div>
+                            {% endif %}
+                        </td>
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% else %}
+        <div class="no-classes">
+            <p>No classes scheduled in this room for {{ semester_label }}.</p>
+        </div>
+        {% endif %}
+
+        <a href="/schedule/room?semester={{ semester }}" class="back-link">&larr; Back to Room Selection</a>
+        <br>
+        <a href="/" class="back-link">&larr; Back to Home</a>
+    </div>
+</body>
+</html>

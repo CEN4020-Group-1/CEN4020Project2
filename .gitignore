@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.pyo
+CONTEXT.md
+.cursor/
+schedule_export.*

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instructor Schedule - Bellini Scheduling System</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        h1 { color: #2c3e50; }
+        .container { max-width: 600px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        label { display: block; margin-top: 15px; font-weight: bold; color: #34495e; }
+        select { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; }
+        .btn { display: inline-block; margin-top: 20px; padding: 10px 24px; background: #27ae60; color: #fff; border: none; border-radius: 4px; font-size: 14px; cursor: pointer; text-decoration: none; }
+        .btn:hover { background: #219a52; }
+        .back-link { display: inline-block; margin-top: 15px; color: #2980b9; text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+        .info { color: #7f8c8d; font-size: 13px; margin-top: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Instructor Weekly Schedule</h1>
+        <p>Select a semester and instructor to view their teaching schedule.</p>
+
+        <form method="get" action="/schedule/instructor">
+            <label for="semester">Semester</label>
+            <select name="semester" id="semester" onchange="this.form.submit()">
+                <option value="">-- Select Semester --</option>
+                {% for code, label in semesters %}
+                <option value="{{ code }}" {% if code == selected_semester %}selected{% endif %}>{{ label }}</option>
+                {% endfor %}
+            </select>
+
+            {% if instructors %}
+            <label for="instructor">Instructor</label>
+            <select name="instructor" id="instructor">
+                <option value="">-- Select Instructor --</option>
+                {% for instr in instructors %}
+                <option value="{{ instr }}">{{ instr }}</option>
+                {% endfor %}
+            </select>
+            <p class="info">{{ instructors|length }} instructors this semester</p>
+
+            <button type="button" class="btn" onclick="goToInstructor()">View Schedule</button>
+            {% endif %}
+        </form>
+
+        <a href="/" class="back-link">&larr; Back to Home</a>
+    </div>
+
+    <script>
+        function goToInstructor() {
+            var semester = document.getElementById('semester').value;
+            var instructor = document.getElementById('instructor').value;
+            if (semester && instructor) {
+                window.location.href = '/schedule/instructor/' + encodeURIComponent(instructor) + '?semester=' + semester;
+            }
+        }
+    </script>
+</body>
+</html>

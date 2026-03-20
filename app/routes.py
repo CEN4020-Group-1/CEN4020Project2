@@ -16,6 +16,6 @@ def upload():
     result = import_excel(file)
     return jsonify(result)
 
-@main_routes.route("/export/<format>")
+@main_routes.route("/export/schedule/<format>")
 def export(format):
     return export_schedule(format)

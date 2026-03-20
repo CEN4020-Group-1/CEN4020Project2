@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ instructor }} Schedule - Bellini Scheduling System</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        h1 { color: #2c3e50; margin-bottom: 5px; }
+        .subtitle { color: #7f8c8d; margin-bottom: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .summary { background: #fff; padding: 15px 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .summary span { font-weight: bold; color: #27ae60; }
+        .conflict-warning { background: #fdedec; border: 1px solid #e74c3c; padding: 15px 20px; border-radius: 8px; margin-bottom: 20px; }
+        .conflict-warning h3 { color: #e74c3c; margin: 0 0 10px 0; }
+        .conflict-item { color: #c0392b; font-size: 13px; margin: 5px 0; }
+        .table-wrapper { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        th { background: #27ae60; color: #fff; padding: 12px 10px; text-align: center; font-size: 14px; border-left: 2px solid #1e8449; }
+        th.time-header { background: #1e8449; width: 1%; white-space: nowrap; }
+        td { vertical-align: top; padding: 6px 10px; border: 1px solid #ccc; border-left: 2px solid #bbb; }
+        td.time-cell { background: #27ae60; color: #fff; font-weight: bold; font-size: 12px; text-align: center; vertical-align: middle; white-space: nowrap; width: 1%; padding: 6px 12px; }
+        .class-block { background: #eafaf1; border-left: 3px solid #27ae60; padding: 8px; margin-bottom: 4px; border-radius: 3px; font-size: 13px; }
+        .class-block.has-conflict { background: #fdedec; border-left: 3px solid #e74c3c; }
+        .class-block:last-child { margin-bottom: 0; }
+        .class-code { font-weight: bold; color: #2c3e50; }
+        .class-detail { color: #555; font-size: 12px; margin-top: 2px; }
+        .class-block.has-conflict .class-code { color: #c0392b; }
+        .empty-cell { }
+        .back-link { display: inline-block; margin-top: 15px; color: #2980b9; text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+        .no-classes { text-align: center; padding: 40px; color: #7f8c8d; background: #fff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Instructor: {{ instructor }}</h1>
+        <p class="subtitle">{{ semester_label }} &mdash; Weekly Teaching Schedule</p>
+
+        <div class="summary">
+            Total classes assigned: <span>{{ total_classes }}</span>
+        </div>
+
+        {% if conflicts %}
+        <div class="conflict-warning">
+            <h3>Schedule Conflicts Detected</h3>
+            {% for c in conflicts %}
+            <div class="conflict-item">
+                {{ day_names[c.day] }}: {{ c.class_a }} overlaps with {{ c.class_b }}
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if time_slots %}
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="time-header">Time</th>
+                        {% for day in active_days %}
+                        <th>{{ day_names[day] }}</th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for slot in time_slots %}
+                    <tr>
+                        <td class="time-cell">{{ slot }}</td>
+                        {% for day in active_days %}
+                        <td>
+                            {% if time_grid[slot][day] %}
+                                {% for cls in time_grid[slot][day] %}
+                                {% set is_conflict = [] %}
+                                {% for c in conflicts if c.day == day %}
+                                    {% if cls.time_display in c.class_a or cls.time_display in c.class_b %}
+                                        {% if is_conflict.append(1) %}{% endif %}
+                                    {% endif %}
+                                {% endfor %}
+                                <div class="class-block {% if is_conflict %}has-conflict{% endif %}">
+                                    <div class="class-code">{{ cls.subj }} {{ cls.crse_numb }}</div>
+                                    <div class="class-detail">{{ cls.crse_title }}</div>
+                                    <div class="class-detail">Room: {{ cls.room }}</div>
+                                    <div class="class-detail">Section: {{ cls.section }} | CRN: {{ cls.crn }}</div>
+                                </div>
+                                {% endfor %}
+                            {% else %}
+                                <div class="empty-cell"></div>
+                            {% endif %}
+                        </td>
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% else %}
+        <div class="no-classes">
+            <p>No classes scheduled for this instructor in {{ semester_label }}.</p>
+        </div>
+        {% endif %}
+
+        <a href="/schedule/instructor?semester={{ semester }}" class="back-link">&larr; Back to Instructor Selection</a>
+        <br>
+        <a href="/" class="back-link">&larr; Back to Home</a>
+    </div>
+</body>
+</html>
