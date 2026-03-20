@@ -78,7 +78,7 @@ CEN4020Project2/
 ### Install Dependencies
 
 ```bash
-pip install flask pandas openpyxl
+pip install -r requirements.txt
 ```
 
 ### Run the Application
