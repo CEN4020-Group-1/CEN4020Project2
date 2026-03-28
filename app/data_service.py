@@ -239,7 +239,7 @@ def percentage_occupied(time_grid, weekday = False):
     Also assuming that percentage utilization cares about days where no class uses them
     weekday as a bool will inidcate that the function should only count Monday - Thursday
     """
-    max_time =  16 * 60
+    max_time =  12 * 60
     max_time *= 4 if weekday else 6
 
     total_occupied = 0

@@ -86,6 +86,29 @@ def instructor_schedule(instructor_name):
         conflicts=conflicts,
     )
 
+@schedule_routes.route("/suggest")
+def room_suggest():
+    #While I do think this function needs to be its own separate page, I'm not sure if the reused parts are okay.
+    semesters = get_semesters()
+    semester = request.args.get("semester", "")
+    rooms = get_rooms(semester) if semester else []
+    return render_template("suggest_filter.html", semesters=semesters, rooms=rooms, selected_semester=semester)
+
+
+@schedule_routes.route("/suggest/open", methods=["GET"])
+def suggest_open_times():
+    semester = request.args.get("semester", "")
+    room = request.args.get("room", "")
+    start_time = request.args.get("start", "")
+    end_time = request.args.get("end", "")
+
+    if not semester:
+        return redirect(url_for("schedule.room_select"))
+
+    semesters = get_semesters()
+    semester_label = dict(semesters).get(semester, semester)
+
+    return render_template("suggest_open.html")
 
 def _active_days_from_time_grid(time_grid):
     """Determine which days have at least one class across all time slots."""

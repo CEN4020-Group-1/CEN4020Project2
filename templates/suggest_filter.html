@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Room Timetable - Bellini Scheduling System</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        h1 { color: #2c3e50; }
+        .container { max-width: 600px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        label { display: block; margin-top: 15px; font-weight: bold; color: #34495e; }
+        select { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; }
+        .btn { display: inline-block; margin-top: 20px; padding: 10px 24px; background: #2980b9; color: #fff; border: none; border-radius: 4px; font-size: 14px; cursor: pointer; text-decoration: none; }
+        .btn:hover { background: #2471a3; }
+        .back-link { display: inline-block; margin-top: 15px; color: #2980b9; text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+        .info { color: #7f8c8d; font-size: 13px; margin-top: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Empty Room Suggestion</h1>
+        <p>Select a semester. You can filter for available time slots by time and room.</p>
+
+        <form method="get" action="/schedule/suggest">
+            <label for="semester">Semester</label>
+            <select name="semester" id="semester" onchange="this.form.submit()">
+                <option value="">-- Select Semester --</option>
+                {% for code, label in semesters %}
+                <option value="{{ code }}" {% if code == selected_semester %}selected{% endif %}>{{ label }}</option>
+                {% endfor %}
+            </select>
+
+            {% if rooms %}
+            <h2> Filters </h2>
+
+            <label for="room">Room</label>
+            <select name="room" id="room">
+                <option value="">-- Select Room --</option>
+                {% for room in rooms %}
+                <option value="{{ room }}">{{ room }}</option>
+                {% endfor %}
+            </select>
+            <p class="info">{{ rooms|length }} rooms available this semester</p>
+
+            <h3> Time </h3>
+            <p>These filters will take out times earlier than starting time or later than ending time</p>
+            <label for="start"> Starting Time </label>
+                <input
+                    type="time"
+                    id="start"
+                    name="starting-time"
+                    min="08:00"
+                    max="20:00"
+                    step="900"
+                    />
+            <label for="end"> Ending Time </label>
+                <input
+                    type="time"
+                    id="end"
+                    name="ending-time"
+                    min="08:00"
+                    max="20:00"
+                    step="900"
+                    />
+            <p class="info">Times must be from 8 AM to 8 PM</p>
+
+            <button type="button" class="btn" onclick="checkOpenSlots()">Check Open Slots</button>
+            {% endif %}
+        </form>
+
+
+        <a href="/" class="back-link">&larr; Back to Home</a>
+    </div>
+
+    <script>
+        function checkOpenSlots() {
+            var semester = document.getElementById('semester').value;
+            var room = document.getElementById('room').value;
+            var start = document.getElementById('start').value;
+            var end = document.getElementById('end').value;
+
+            if (semester) {
+                window.location.href = '/schedule/suggest/open?' +
+                    'room=' + encodeURIComponent(room) +
+                    '&start=' + encodeURIComponent(start) +
+                    '&end=' + encodeURIComponent(end) +
+                    '&semester=' + semester;
+            }
+        }
+    </script>
+</body>
+</html>
