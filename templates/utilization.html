@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Classroom Utilization - Bellini Scheduling System</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        h1 { color: #2c3e50; margin-bottom: 5px; }
+        .subtitle { color: #7f8c8d; margin-bottom: 20px; }
+        .container { max-width: 900px; margin: 0 auto; }
+        .filter-card { background: #fff; padding: 20px 25px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 20px; display: flex; align-items: flex-end; gap: 15px; flex-wrap: wrap; }
+        .filter-card label { font-weight: bold; color: #34495e; font-size: 14px; }
+        .filter-card select { padding: 9px 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; min-width: 200px; }
+        .filter-card .btn { padding: 9px 20px; background: #2980b9; color: #fff; border: none; border-radius: 4px; font-size: 14px; cursor: pointer; }
+        .filter-card .btn:hover { background: #2471a3; }
+        table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        thead th { background: #2c3e50; color: #fff; padding: 12px 16px; text-align: left; font-size: 14px; }
+        thead th.num { text-align: right; }
+        tbody tr:nth-child(even) { background: #f8f9fa; }
+        tbody tr:hover { background: #eaf2f8; }
+        td { padding: 10px 16px; border-bottom: 1px solid #e0e0e0; font-size: 14px; }
+        td.num { text-align: right; font-variant-numeric: tabular-nums; }
+        .bar-cell { min-width: 160px; }
+        .bar-bg { background: #e0e0e0; border-radius: 4px; height: 14px; position: relative; }
+        .bar-fill { height: 14px; border-radius: 4px; }
+        .bar-label { position: absolute; right: 4px; top: -1px; font-size: 11px; color: #333; line-height: 16px; }
+        .no-data { text-align: center; padding: 40px; color: #7f8c8d; background: #fff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .back-link { display: inline-block; margin-top: 15px; color: #2980b9; text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+        .summary { background: #fff; padding: 15px 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); color: #555; font-size: 14px; }
+        .summary span { font-weight: bold; color: #2980b9; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Classroom Utilization Statistics</h1>
+    <p class="subtitle">Percentage of weekly teaching hours that each room is occupied (8 AM – 8 PM window).</p>
+
+    <form method="get" action="/schedule/utilization">
+        <div class="filter-card">
+            <div>
+                <label for="semester">Semester</label><br>
+                <select name="semester" id="semester">
+                    <option value="">All Semesters</option>
+                    {% for code, label in semesters %}
+                    <option value="{{ code }}" {% if selected_semester == code %}selected{% endif %}>{{ label }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <button type="submit" class="btn">View Stats</button>
+        </div>
+    </form>
+
+    {% if stats %}
+    <div class="summary">
+        Showing utilization for <span>{{ stats|length }}</span> rooms
+        &mdash; <span>{{ semester_label }}</span>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Room</th>
+                <th class="num">Classes</th>
+                <th>Full-Week Utilization</th>
+                <th>Weekday Utilization (M–R)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in stats %}
+            {% set full_pct = row.full_week_pct %}
+            {% set wday_pct = row.weekday_pct %}
+            {% if full_pct > 50 %}
+                {% set color = '#e74c3c' %}
+            {% elif full_pct > 25 %}
+                {% set color = '#e67e22' %}
+            {% elif full_pct > 10 %}
+                {% set color = '#27ae60' %}
+            {% else %}
+                {% set color = '#2980b9' %}
+            {% endif %}
+            <tr>
+                <td><strong>{{ row.room }}</strong></td>
+                <td class="num">{{ row.total_classes }}</td>
+                <td class="bar-cell">
+                    <div class="bar-bg">
+                        <div class="bar-fill" style="width:{{ [full_pct, 100]|min }}%; background:{{ color }};"></div>
+                        <span class="bar-label">{{ "%.1f"|format(full_pct) }}%</span>
+                    </div>
+                </td>
+                <td class="bar-cell">
+                    <div class="bar-bg">
+                        {% if wday_pct > 50 %}
+                            {% set wcolor = '#e74c3c' %}
+                        {% elif wday_pct > 25 %}
+                            {% set wcolor = '#e67e22' %}
+                        {% elif wday_pct > 10 %}
+                            {% set wcolor = '#27ae60' %}
+                        {% else %}
+                            {% set wcolor = '#2980b9' %}
+                        {% endif %}
+                        <div class="bar-fill" style="width:{{ [wday_pct, 100]|min }}%; background:{{ wcolor }};"></div>
+                        <span class="bar-label">{{ "%.1f"|format(wday_pct) }}%</span>
+                    </div>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <div class="no-data">
+        <p>No classroom data available for the selected semester.</p>
+    </div>
+    {% endif %}
+
+    <a href="/" class="back-link">&larr; Back to Home</a>
+</div>
+</body>
+</html>

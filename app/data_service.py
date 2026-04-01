@@ -419,10 +419,99 @@ def compare_schedules(semester1, semester2):
             'total_classes_sem2': len(df2) if not df2.empty else 0,
             'total_courses_sem1': len(courses1),
             'total_courses_sem2': len(courses2),
-            'enrollment_sem1': int(df1['ENROLLMENT'].sum()) if not df1.empty and 'ENROLLMENT' in df1.columns else 0,
-            'enrollment_sem2': int(df2['ENROLLMENT'].sum()) if not df2.empty and 'ENROLLMENT' in df2.columns else 0,
+            'enrollment_sem1': int(pd.to_numeric(df1['ENROLLMENT'], errors='coerce').sum()) if not df1.empty and 'ENROLLMENT' in df1.columns else 0,
+            'enrollment_sem2': int(pd.to_numeric(df2['ENROLLMENT'], errors='coerce').sum()) if not df2.empty and 'ENROLLMENT' in df2.columns else 0,
         }
     }
+
+
+# ============================================================
+# FEATURE 5: Room & Time Slot Suggestions
+# ============================================================
+
+def get_available_rooms(semester, days, start_time, end_time):
+    """
+    Find rooms that are free during the specified days and time range.
+
+    Args:
+        semester: Term code (e.g., '202501')
+        days: List of day codes (e.g., ['M', 'W'])
+        start_time: Start time string (e.g., '10:00 AM')
+        end_time: End time string (e.g., '11:15 AM')
+
+    Returns:
+        List of available room names sorted alphabetically
+    """
+    all_rooms = set(get_rooms(semester))
+    if not all_rooms:
+        return []
+
+    df = load_schedule(semester)
+    if df.empty:
+        return sorted(all_rooms)
+
+    requested_start = _time_sort_key(start_time)
+    requested_end = _time_sort_key(end_time)
+
+    occupied_rooms = set()
+    for _, row in df.iterrows():
+        room = row.get("MEETING_ROOM")
+        if not room or room in EXCLUDED_ROOMS:
+            continue
+
+        meeting_days = parse_meeting_days(row.get("MEETING_DAYS", ""))
+        row_start, row_end = parse_meeting_time(row.get("MEETING_TIMES", ""))
+
+        if not row_start or not row_end:
+            continue
+
+        # Check if any requested day overlaps with the class days
+        if not any(d in meeting_days for d in days):
+            continue
+
+        row_start_key = _time_sort_key(row_start)
+        row_end_key = _time_sort_key(row_end)
+
+        if requested_start < row_end_key and row_start_key < requested_end:
+            occupied_rooms.add(room)
+
+    return sorted(all_rooms - occupied_rooms)
+
+
+# ============================================================
+# FEATURE 7: Classroom Utilization Statistics
+# ============================================================
+
+def get_all_room_utilization(semester=None):
+    """
+    Compute utilization percentage for every room in a semester.
+
+    Args:
+        semester: Term code, or None for all semesters combined
+
+    Returns:
+        List of dicts sorted by full-week utilization descending:
+            room, total_classes, full_week_pct, weekday_pct
+    """
+    rooms = get_rooms(semester)
+    results = []
+
+    for room in rooms:
+        classes_df = get_classes_by_room(room, semester)
+        _, time_grid = build_time_row_grid(classes_df)
+
+        full_pct = float(percentage_occupied(time_grid))
+        weekday_pct = float(percentage_occupied(time_grid, weekday=True))
+
+        results.append({
+            "room": room,
+            "total_classes": len(classes_df),
+            "full_week_pct": full_pct,
+            "weekday_pct": weekday_pct,
+        })
+
+    results.sort(key=lambda x: x["full_week_pct"], reverse=True)
+    return results
 
 
 def get_comparison_details(semester1, semester2, course_code):
@@ -454,8 +543,8 @@ def get_comparison_details(semester1, semester2, course_code):
         'course_code': course_code,
         'semester1_sections': format_search_results(course1_df),
         'semester2_sections': format_search_results(course2_df),
-        'sem1_total_enrollment': int(course1_df['ENROLLMENT'].sum()) if not course1_df.empty and 'ENROLLMENT' in course1_df.columns else 0,
-        'sem2_total_enrollment': int(course2_df['ENROLLMENT'].sum()) if not course2_df.empty and 'ENROLLMENT' in course2_df.columns else 0,
+        'sem1_total_enrollment': int(pd.to_numeric(course1_df['ENROLLMENT'], errors='coerce').sum()) if not course1_df.empty and 'ENROLLMENT' in course1_df.columns else 0,
+        'sem2_total_enrollment': int(pd.to_numeric(course2_df['ENROLLMENT'], errors='coerce').sum()) if not course2_df.empty and 'ENROLLMENT' in course2_df.columns else 0,
         'sem1_section_count': len(course1_df),
         'sem2_section_count': len(course2_df),
     }

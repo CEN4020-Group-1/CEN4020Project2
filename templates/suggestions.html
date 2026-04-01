@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Room Suggestions - Bellini Scheduling System</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        h1 { color: #2c3e50; }
+        .container { max-width: 800px; margin: 0 auto; }
+        .card { background: #fff; padding: 25px 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        label { display: block; margin-top: 15px; font-weight: bold; color: #34495e; }
+        select, input { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; box-sizing: border-box; }
+        .days-grid { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+        .day-checkbox { display: flex; align-items: center; gap: 6px; background: #f0f4f8; padding: 8px 14px; border-radius: 4px; cursor: pointer; }
+        .day-checkbox input[type="checkbox"] { width: auto; margin: 0; cursor: pointer; }
+        .day-checkbox input[type="checkbox"]:checked + span { color: #2980b9; font-weight: bold; }
+        .time-row { display: flex; gap: 15px; }
+        .time-row > div { flex: 1; }
+        .btn { display: inline-block; margin-top: 20px; padding: 11px 28px; background: #2980b9; color: #fff; border: none; border-radius: 4px; font-size: 15px; cursor: pointer; }
+        .btn:hover { background: #2471a3; }
+        .results-header { display: flex; align-items: baseline; gap: 12px; }
+        .badge { background: #27ae60; color: #fff; font-size: 13px; padding: 3px 10px; border-radius: 12px; }
+        .badge-none { background: #e74c3c; }
+        .room-list { list-style: none; padding: 0; margin: 15px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; }
+        .room-item { background: #eaf6ee; border-left: 4px solid #27ae60; padding: 10px 14px; border-radius: 4px; font-weight: bold; color: #1e8449; }
+        .no-rooms { color: #e74c3c; margin-top: 12px; }
+        .back-link { display: inline-block; margin-top: 15px; color: #2980b9; text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+        .hint { color: #7f8c8d; font-size: 13px; margin-top: 4px; }
+        .time-slot-select { font-size: 13px; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Room &amp; Time Slot Suggestions</h1>
+    <p style="color:#7f8c8d;">Find classrooms that are available during your desired days and time.</p>
+
+    <div class="card">
+        <form method="post" action="/schedule/suggestions">
+            <label for="semester">Semester</label>
+            <select name="semester" id="semester" required>
+                <option value="">-- Select Semester --</option>
+                {% for code, label in semesters %}
+                <option value="{{ code }}" {% if search_params.get('semester') == code %}selected{% endif %}>{{ label }}</option>
+                {% endfor %}
+            </select>
+
+            <label>Meeting Days</label>
+            <div class="days-grid">
+                {% for code, name in day_codes.items() %}
+                <label class="day-checkbox">
+                    <input type="checkbox" name="days" value="{{ code }}"
+                        {% if code in search_params.get('days', []) %}checked{% endif %}>
+                    <span>{{ name }}</span>
+                </label>
+                {% endfor %}
+            </div>
+            <p class="hint">Select all days the class would meet.</p>
+
+            <div class="time-row">
+                <div>
+                    <label for="start_time">Start Time</label>
+                    <select name="start_time" id="start_time" class="time-slot-select" required>
+                        <option value="">-- Start --</option>
+                        {% set seen_starts = [] %}
+                        {% for start, end in time_slots %}
+                            {% if start not in seen_starts %}
+                                {% set _ = seen_starts.append(start) %}
+                                <option value="{{ start }}" {% if search_params.get('start_time') == start %}selected{% endif %}>{{ start }}</option>
+                            {% endif %}
+                        {% endfor %}
+                    </select>
+                </div>
+                <div>
+                    <label for="end_time">End Time</label>
+                    <select name="end_time" id="end_time" class="time-slot-select" required>
+                        <option value="">-- End --</option>
+                        {% set seen_ends = [] %}
+                        {% for start, end in time_slots %}
+                            {% if end not in seen_ends %}
+                                {% set _ = seen_ends.append(end) %}
+                                <option value="{{ end }}" {% if search_params.get('end_time') == end %}selected{% endif %}>{{ end }}</option>
+                            {% endif %}
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+            <p class="hint">Select a common time slot or pick any start/end time.</p>
+
+            <button type="submit" class="btn">Find Available Rooms</button>
+        </form>
+    </div>
+
+    {% if searched %}
+    <div class="card">
+        <div class="results-header">
+            <h2 style="margin:0;">Available Rooms</h2>
+            {% if available_rooms %}
+            <span class="badge">{{ available_rooms|length }} found</span>
+            {% else %}
+            <span class="badge badge-none">None available</span>
+            {% endif %}
+        </div>
+
+        {% if search_params %}
+        <p style="color:#555;font-size:14px;margin-top:8px;">
+            Showing rooms free on
+            <strong>{{ search_params.get('days', [])|join(', ') }}</strong>
+            from <strong>{{ search_params.get('start_time') }}</strong>
+            to <strong>{{ search_params.get('end_time') }}</strong>.
+        </p>
+        {% endif %}
+
+        {% if available_rooms %}
+        <ul class="room-list">
+            {% for room in available_rooms %}
+            <li class="room-item">{{ room }}</li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p class="no-rooms">No rooms are available during that time slot. Try a different time or days.</p>
+        {% endif %}
+    </div>
+    {% endif %}
+
+    <a href="/" class="back-link">&larr; Back to Home</a>
+</div>
+</body>
+</html>

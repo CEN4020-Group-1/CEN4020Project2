@@ -6,6 +6,7 @@ from .data_service import (
     DAY_ORDER, DAY_CODES,
     search_classes, get_departments, format_search_results,
     compare_schedules, get_comparison_details,
+    get_available_rooms, get_all_room_utilization,
 )
 
 schedule_routes = Blueprint("schedule", __name__, url_prefix="/schedule")
@@ -244,4 +245,92 @@ def comparison_details(semester1, semester2, course_code):
         sem2_total_enrollment=details['sem2_total_enrollment'],
         sem1_section_count=details['sem1_section_count'],
         sem2_section_count=details['sem2_section_count']
+    )
+
+
+# ============================================================
+# FEATURE 5: Room & Time Slot Suggestions
+# ============================================================
+
+# Common time slots used in college scheduling
+COMMON_TIME_SLOTS = [
+    ("08:00 AM", "08:50 AM"),
+    ("08:00 AM", "09:15 AM"),
+    ("09:00 AM", "09:50 AM"),
+    ("09:30 AM", "10:45 AM"),
+    ("10:00 AM", "10:50 AM"),
+    ("11:00 AM", "11:50 AM"),
+    ("11:00 AM", "12:15 PM"),
+    ("12:00 PM", "12:50 PM"),
+    ("12:30 PM", "01:45 PM"),
+    ("01:00 PM", "01:50 PM"),
+    ("02:00 PM", "02:50 PM"),
+    ("02:00 PM", "03:15 PM"),
+    ("03:00 PM", "03:50 PM"),
+    ("03:30 PM", "04:45 PM"),
+    ("04:00 PM", "04:50 PM"),
+    ("05:00 PM", "05:50 PM"),
+    ("05:00 PM", "06:15 PM"),
+    ("06:00 PM", "07:15 PM"),
+    ("06:30 PM", "07:45 PM"),
+    ("07:00 PM", "08:00 PM"),
+]
+
+
+@schedule_routes.route("/suggestions", methods=["GET", "POST"])
+def room_suggestions():
+    """Suggest available rooms for a given semester, days, and time range."""
+    semesters = get_semesters()
+    available_rooms = []
+    search_params = {}
+    searched = False
+
+    if request.method == "POST":
+        semester = request.form.get("semester", "").strip()
+        days = request.form.getlist("days")
+        start_time = request.form.get("start_time", "").strip()
+        end_time = request.form.get("end_time", "").strip()
+
+        search_params = {
+            "semester": semester,
+            "days": days,
+            "start_time": start_time,
+            "end_time": end_time,
+        }
+
+        if semester and days and start_time and end_time:
+            available_rooms = get_available_rooms(semester, days, start_time, end_time)
+            searched = True
+
+    return render_template(
+        "suggestions.html",
+        semesters=semesters,
+        day_codes=DAY_CODES,
+        day_order=DAY_ORDER,
+        time_slots=COMMON_TIME_SLOTS,
+        available_rooms=available_rooms,
+        search_params=search_params,
+        searched=searched,
+    )
+
+
+# ============================================================
+# FEATURE 7: Classroom Utilization Statistics
+# ============================================================
+
+@schedule_routes.route("/utilization")
+def utilization_stats():
+    """Display classroom utilization statistics for a selected semester."""
+    semesters = get_semesters()
+    semester = request.args.get("semester", "")
+    semester_label = dict(semesters).get(semester, "All Semesters") if semester else "All Semesters"
+
+    stats = get_all_room_utilization(semester if semester else None)
+
+    return render_template(
+        "utilization.html",
+        semesters=semesters,
+        selected_semester=semester,
+        semester_label=semester_label,
+        stats=stats,
     )
