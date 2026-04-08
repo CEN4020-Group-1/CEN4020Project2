@@ -1,6 +1,5 @@
 @startuml
 ' IOD(5)_Pj2_T-1 — User Story 5: Suggest Available Rooms and Time Slots
-' Author: Jose Wong
 
 skinparam DefaultFontName Arial
 skinparam ActivityBackgroundColor #FEFEFE
@@ -10,8 +9,6 @@ skinparam NoteBackgroundColor #FFFFCC
 skinparam NoteBorderColor #AAAAAA
 
 title IOD(5)_Pj2_T-1\nUS5: Suggest Available Rooms and Time Slots
-
-note right: Author: Jose Wong
 
 start
 

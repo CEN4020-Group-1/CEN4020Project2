@@ -1,6 +1,5 @@
 @startuml
 ' IOD(4)_Pj2_T-1 — User Story 4: View Instructor Weekly Schedule
-' Author: Anthony Saade
 
 skinparam DefaultFontName Arial
 skinparam ActivityBackgroundColor #FEFEFE
@@ -10,8 +9,6 @@ skinparam NoteBackgroundColor #FFFFCC
 skinparam NoteBorderColor #AAAAAA
 
 title IOD(4)_Pj2_T-1\nUS4: View Instructor Weekly Schedule
-
-note right: Author: Anthony Saade
 
 start
 

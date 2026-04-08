@@ -1,6 +1,5 @@
 @startuml
 ' IOD(1)_Pj2_T-1 — User Story 1: Upload Excel File and Import Data
-' Author: MayfairMI6
 
 skinparam DefaultFontName Arial
 skinparam ActivityBackgroundColor #FEFEFE
@@ -10,8 +9,6 @@ skinparam NoteBackgroundColor #FFFFCC
 skinparam NoteBorderColor #AAAAAA
 
 title IOD(1)_Pj2_T-1\nUS1: Upload Excel File and Import Data
-
-note right: Author: MayfairMI6
 
 start
 

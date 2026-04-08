@@ -1,6 +1,5 @@
 @startuml
 ' IOD(10)_Pj2_T-1 — User Story 10: View Detailed Class Information
-' Author: MayfairMI6
 
 skinparam DefaultFontName Arial
 skinparam ActivityBackgroundColor #FEFEFE
@@ -10,8 +9,6 @@ skinparam NoteBackgroundColor #FFFFCC
 skinparam NoteBorderColor #AAAAAA
 
 title IOD(10)_Pj2_T-1\nUS10: View Detailed Class Information
-
-note right: Author: MayfairMI6
 
 start
 

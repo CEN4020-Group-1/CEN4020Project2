@@ -1,6 +1,5 @@
 @startuml
 ' IOD(8)_Pj2_T-1 — User Story 8: Export Class Schedule
-' Author: MayfairMI6
 
 skinparam DefaultFontName Arial
 skinparam ActivityBackgroundColor #FEFEFE
@@ -10,8 +9,6 @@ skinparam NoteBackgroundColor #FFFFCC
 skinparam NoteBorderColor #AAAAAA
 
 title IOD(8)_Pj2_T-1\nUS8: Export Class Schedule
-
-note right: Author: MayfairMI6
 
 start
 

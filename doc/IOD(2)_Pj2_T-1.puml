@@ -1,6 +1,5 @@
 @startuml
 ' IOD(2)_Pj2_T-1 — User Story 2: Search and Filter Classes
-' Author: MayfairMI6
 
 skinparam DefaultFontName Arial
 skinparam ActivityBackgroundColor #FEFEFE
@@ -11,12 +10,9 @@ skinparam NoteBorderColor #AAAAAA
 
 title IOD(2)_Pj2_T-1\nUS2: Search and Filter Classes
 
-note right: Author: MayfairMI6
-
 start
 
 :Actor navigates to the Search & Filter Classes Page;
-note right: Prerequisite: at least one\nsemester's data is imported
 
 :Actor enters one or more search criteria\n(course code, instructor, semester, department);
 

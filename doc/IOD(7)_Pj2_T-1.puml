@@ -1,6 +1,5 @@
 @startuml
 ' IOD(7)_Pj2_T-1 — User Story 7: Visualize Classroom Utilization Statistics
-' Author: MayfairMI6
 
 skinparam DefaultFontName Arial
 skinparam ActivityBackgroundColor #FEFEFE
@@ -10,8 +9,6 @@ skinparam NoteBackgroundColor #FFFFCC
 skinparam NoteBorderColor #AAAAAA
 
 title IOD(7)_Pj2_T-1\nUS7: Visualize Classroom Utilization Statistics
-
-note right: Author: MayfairMI6
 
 start
 

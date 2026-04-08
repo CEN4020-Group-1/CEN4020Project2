@@ -1,6 +1,5 @@
 @startuml
 ' IOD(6)_Pj2_T-1 — User Story 6: Compare Semester Schedules
-' Author: MayfairMI6
 
 skinparam DefaultFontName Arial
 skinparam ActivityBackgroundColor #FEFEFE
@@ -11,8 +10,6 @@ skinparam NoteBorderColor #AAAAAA
 
 title IOD(6)_Pj2_T-1\nUS6: Compare Semester Schedules
 
-note right: Author: MayfairMI6
-
 start
 
 :Prerequisite: data for at least two semesters imported\n(see US1 — Upload Excel File);
@@ -21,7 +18,6 @@ start
 
 :Actor selects Semester A from the first dropdown;
 :Actor selects Semester B from the second dropdown;
-note right: Semesters A and B must\nbe different
 
 if (Same semester selected for both fields?) then (yes)
   :System alerts actor to select two different semesters;
