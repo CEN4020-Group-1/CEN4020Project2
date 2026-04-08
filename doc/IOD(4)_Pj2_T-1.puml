@@ -1,0 +1,58 @@
+@startuml
+' IOD(4)_Pj2_T-1 — User Story 4: View Instructor Weekly Schedule
+' Author: Anthony Saade
+
+skinparam DefaultFontName Arial
+skinparam ActivityBackgroundColor #FEFEFE
+skinparam ActivityBorderColor #444444
+skinparam ArrowColor #444444
+skinparam NoteBackgroundColor #FFFFCC
+skinparam NoteBorderColor #AAAAAA
+
+title IOD(4)_Pj2_T-1\nUS4: View Instructor Weekly Schedule
+
+note right: Author: Anthony Saade
+
+start
+
+:Prerequisite: schedule data has been imported\n(see US1 — Upload Excel File);
+
+:Actor navigates to the Instructor Schedule Page;
+
+:Actor selects a semester from the dropdown;
+
+if (Instructors available for that semester?) then (yes)
+
+  :Actor selects an instructor from the dropdown;
+  :Actor clicks "View Schedule";
+
+  #ADD8E6:**ref** UC_INSTRUCTOR — View Instructor Schedule
+  ──────────────────────────────────────────────────────────
+  System retrieves all classes for the selected instructor\nand builds a weekly timetable grid;
+
+  #ADD8E6:**ref** UC_CONFLICT — Detect Scheduling Conflicts
+  ─────────────────────────────────────────────────────────────
+  System checks for overlapping class times on the same day\n(excluding same-CRN duplicates and cross-listed UG/GR pairs);
+
+  if (Conflicts detected?) then (yes)
+    :System highlights conflicting slots in red\nand lists conflicts above the timetable;
+  else (no)
+    :System displays timetable with no conflict warnings;
+  endif
+
+  :Actor reviews weekly schedule and conflict status;
+
+else (no)
+  :System shows empty instructor dropdown;
+  :Actor selects a different semester;
+  stop
+endif
+
+if (Instructor has no valid meeting times?) then (yes)
+  :System displays "No classes scheduled" message;
+  stop
+else (no)
+endif
+
+stop
+@enduml

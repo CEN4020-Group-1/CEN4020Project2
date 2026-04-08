@@ -1,0 +1,54 @@
+@startuml
+' IOD(6)_Pj2_T-1 — User Story 6: Compare Semester Schedules
+' Author: MayfairMI6
+
+skinparam DefaultFontName Arial
+skinparam ActivityBackgroundColor #FEFEFE
+skinparam ActivityBorderColor #444444
+skinparam ArrowColor #444444
+skinparam NoteBackgroundColor #FFFFCC
+skinparam NoteBorderColor #AAAAAA
+
+title IOD(6)_Pj2_T-1\nUS6: Compare Semester Schedules
+
+note right: Author: MayfairMI6
+
+start
+
+:Prerequisite: data for at least two semesters imported\n(see US1 — Upload Excel File);
+
+:Actor navigates to the Compare Schedules Page;
+
+:Actor selects Semester A from the first dropdown;
+:Actor selects Semester B from the second dropdown;
+note right: Semesters A and B must\nbe different
+
+if (Same semester selected for both fields?) then (yes)
+  :System alerts actor to select two different semesters;
+  stop
+else (no)
+endif
+
+:Actor clicks "Compare Schedules";
+
+#ADD8E6:**ref** UC_COMPARE — Compare Semester Schedules
+─────────────────────────────────────────────────────────────
+System identifies courses exclusive to Semester A,\nexclusive to Semester B, and common to both;
+
+#ADD8E6:**ref** UC_STATS — View Semester Statistics
+──────────────────────────────────────────────────────────
+System computes total classes, unique courses,\nand total enrollment for each semester;
+
+:System displays side-by-side comparison\nwith categorized course lists and summary statistics;
+
+if (Actor selects a specific course for details?) then (yes)
+  #ADD8E6:**ref** UC_DETAILS — View Class Details
+  ─────────────────────────────────────────────────
+  System shows section counts, enrollment,\nand a change summary for both semesters;
+  :Actor reviews course-level detail;
+else (no)
+  :Actor reviews high-level comparison results;
+endif
+
+stop
+@enduml

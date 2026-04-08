@@ -1,0 +1,50 @@
+@startuml
+' IOD(1)_Pj2_T-1 — User Story 1: Upload Excel File and Import Data
+' Author: MayfairMI6
+
+skinparam DefaultFontName Arial
+skinparam ActivityBackgroundColor #FEFEFE
+skinparam ActivityBorderColor #444444
+skinparam ArrowColor #444444
+skinparam NoteBackgroundColor #FFFFCC
+skinparam NoteBorderColor #AAAAAA
+
+title IOD(1)_Pj2_T-1\nUS1: Upload Excel File and Import Data
+
+note right: Author: MayfairMI6
+
+start
+
+:Actor navigates to the Upload Page;
+
+#ADD8E6:**ref** UC_VALIDATE — Validate Uploaded File
+─────────────────────────────────
+System checks file extension and content;
+
+if (File is valid?) then (yes)
+
+  #ADD8E6:**ref** UC_DUP_FILE — Detect Duplicate Upload File
+  ─────────────────────────────────────────────────
+  System computes SHA-256 hash and compares to saved files;
+
+  if (Duplicate detected?) then (yes)
+    :System skips saving duplicate file;
+    :System proceeds with import using existing file;
+  else (no)
+    #ADD8E6:**ref** UC_UPLOAD — Upload Excel File
+    ─────────────────────────────────
+    System saves file and imports class data into database;
+  endif
+
+  :System displays import confirmation to actor;
+
+else (no)
+  :System displays file error message;
+  :Actor corrects file selection and retries;
+  stop
+endif
+
+:Actor reviews confirmation;
+
+stop
+@enduml

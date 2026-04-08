@@ -1,0 +1,44 @@
+@startuml
+' IOD(3)_Pj2_T-1 — User Story 3: View Room Weekly Timetable
+' Author: MayfairMI6
+
+skinparam DefaultFontName Arial
+skinparam ActivityBackgroundColor #FEFEFE
+skinparam ActivityBorderColor #444444
+skinparam ArrowColor #444444
+skinparam NoteBackgroundColor #FFFFCC
+skinparam NoteBorderColor #AAAAAA
+
+title IOD(3)_Pj2_T-1\nUS3: View Room Weekly Timetable
+
+note right: Author: MayfairMI6
+
+start
+
+:Prerequisite: schedule data has been imported\n(see US1 — Upload Excel File);
+note right: At least one semester's\ndata must be in the database
+
+:Actor navigates to the Room Timetable Page;
+
+:Actor selects a semester from the dropdown;
+
+if (Rooms available for that semester?) then (yes)
+
+  :Actor selects a room from the dropdown;
+  :Actor clicks "View Timetable";
+
+  #ADD8E6:**ref** UC_ROOM — View Room Schedule
+  ─────────────────────────────────────────────
+  System builds a weekly grid of scheduled classes\nfor the selected room and semester;
+
+  :System displays the weekly timetable grid\n(days as columns, time slots as rows);
+  :Actor reviews room occupancy and available slots;
+
+else (no)
+  :System shows empty dropdown;
+  :Actor selects a different semester;
+  stop
+endif
+
+stop
+@enduml

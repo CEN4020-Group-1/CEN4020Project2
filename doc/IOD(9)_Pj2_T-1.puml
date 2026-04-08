@@ -1,0 +1,42 @@
+@startuml
+' IOD(9)_Pj2_T-1 — User Story 9: Remove Uploaded File
+' Author: MayfairMI6
+
+skinparam DefaultFontName Arial
+skinparam ActivityBackgroundColor #FEFEFE
+skinparam ActivityBorderColor #444444
+skinparam ArrowColor #444444
+skinparam NoteBackgroundColor #FFFFCC
+skinparam NoteBorderColor #AAAAAA
+
+title IOD(9)_Pj2_T-1\nUS9: Remove Uploaded File
+
+note right: Author: MayfairMI6
+
+start
+
+:Actor navigates to the Uploaded Files Page;
+
+:System displays list of all previously uploaded Excel files;
+
+if (Any files in the list?) then (yes)
+
+  :Actor selects the file to remove;
+
+  :Actor clicks the "Remove" button next to the file;
+
+  #ADD8E6:**ref** UC_REMOVE — Remove Uploaded File
+  ────────────────────────────────────────────────────
+  System deletes the selected file from the uploads folder\nand removes its records from the schedule database;
+
+  :System confirms successful removal;
+
+  :Actor reviews updated file list\n(selected file is no longer present);
+
+else (no)
+  :System shows empty uploaded files list;
+  :Actor has nothing to remove;
+endif
+
+stop
+@enduml

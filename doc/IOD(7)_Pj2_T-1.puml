@@ -1,0 +1,48 @@
+@startuml
+' IOD(7)_Pj2_T-1 — User Story 7: Visualize Classroom Utilization Statistics
+' Author: MayfairMI6
+
+skinparam DefaultFontName Arial
+skinparam ActivityBackgroundColor #FEFEFE
+skinparam ActivityBorderColor #444444
+skinparam ArrowColor #444444
+skinparam NoteBackgroundColor #FFFFCC
+skinparam NoteBorderColor #AAAAAA
+
+title IOD(7)_Pj2_T-1\nUS7: Visualize Classroom Utilization Statistics
+
+note right: Author: MayfairMI6
+
+start
+
+:Prerequisite: schedule data has been imported\n(see US1 — Upload Excel File);
+
+:Actor navigates to the Room Timetable Page;
+
+:Actor selects a semester from the dropdown;
+
+if (Rooms available for that semester?) then (yes)
+
+  :Actor selects a room from the dropdown;
+  :Actor clicks "View Timetable";
+
+  #ADD8E6:**ref** UC_ROOM — View Room Schedule
+  ─────────────────────────────────────────────
+  System builds the weekly timetable grid\nshowing all scheduled classes for the room;
+
+  #ADD8E6:**ref** UC_STATS — View Semester Statistics
+  ────────────────────────────────────────────────────────
+  System calculates occupancy percentage\n(hours occupied / total schedulable hours × 100)\nand total number of booked slots;
+
+  :System displays timetable with utilization statistics:\n- Percentage of time occupied\n- Total scheduled sessions\n- Breakdown by day;
+
+  :Actor reviews statistics to assess room usage;
+
+else (no)
+  :System shows empty room dropdown;
+  :Actor selects a different semester;
+  stop
+endif
+
+stop
+@enduml

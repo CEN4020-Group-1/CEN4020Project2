@@ -1,0 +1,19 @@
+User Story 1: As a member of the Bellini scheduling committee, I want to upload the provided Excel files and automatically import the class data into the system, so that the scheduling database can be populated quickly without manual data entry.
+
+User Story 2: As a scheduling committee member, I want to search and filter classes by course code, instructor, semester, or department, so that I can quickly locate specific classes within the large dataset.
+
+User Story 3: As a scheduling committee member, I want to view the weekly timetable of a specific classroom, so that I can understand room utilization and identify available time slots.
+
+User Story 4: As a scheduling committee member, I want to view the weekly teaching schedule of an instructor, so that I can ensure their assigned classes do not overload or conflict with their availability.
+
+User Story 5: As a scheduling committee member, I want the system to suggest available rooms and time slots when scheduling a new class, so that scheduling decisions can be made faster and with fewer conflicts.
+
+User Story 6: As a scheduling committee member, I want to compare schedules across different semesters (e.g., Spring 2025 vs Fall 2025), so that I can analyze course offerings and adjust future scheduling plans.
+
+User Story 7: As a department coordinator, I want to visualize classroom utilization statistics (such as percentage of time rooms are occupied), so that the college can optimize use of physical resources.
+
+User Story 8: As a scheduling committee member, I want to export the finalized class schedule to a downloadable format such as Excel or CSV, so that it can be shared easily with departments and administrative staff.
+
+User Story 9: As a scheduling committee member, I want to delete an uploaded Excel file from the system, so that I can remove outdated or incorrect data and keep the file list clean.
+
+User Story 10: As a scheduling committee member, I want to view the detailed information of a specific class, so that I can review all of its attributes including enrollment, room assignment, meeting days, and times.

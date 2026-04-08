@@ -1,0 +1,42 @@
+@startuml
+' IOD(5)_Pj2_T-1 — User Story 5: Suggest Available Rooms and Time Slots
+' Author: Jose Wong
+
+skinparam DefaultFontName Arial
+skinparam ActivityBackgroundColor #FEFEFE
+skinparam ActivityBorderColor #444444
+skinparam ArrowColor #444444
+skinparam NoteBackgroundColor #FFFFCC
+skinparam NoteBorderColor #AAAAAA
+
+title IOD(5)_Pj2_T-1\nUS5: Suggest Available Rooms and Time Slots
+
+note right: Author: Jose Wong
+
+start
+
+:Prerequisite: schedule data has been imported\n(see US1 — Upload Excel File);
+
+:Actor navigates to the Vacancy Search Page;
+
+:Actor specifies search criteria:\n- Semester\n- Desired class duration (minutes)\n- Optional: specific room filter;
+
+:Actor submits search;
+
+#ADD8E6:**ref** UC_ROOM — View Room Schedule (per candidate room)
+──────────────────────────────────────────────────────────────────
+System loads current timetable for each room\nin the selected semester;
+
+#ADD8E6:**ref** UC_VACANCY — Vacancy Search
+────────────────────────────────────────────────
+System identifies open time slots that are at\nleast as long as the requested duration;
+
+if (Vacant slots found?) then (yes)
+  :System displays vacancy table listing\nroom, day, start time, end time, and duration;
+  :Actor reviews available rooms and time slots;
+else (no)
+  :System displays "No vacant spots found" message;
+endif
+
+stop
+@enduml

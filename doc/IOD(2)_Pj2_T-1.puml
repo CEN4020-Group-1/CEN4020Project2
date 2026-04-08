@@ -1,0 +1,45 @@
+@startuml
+' IOD(2)_Pj2_T-1 — User Story 2: Search and Filter Classes
+' Author: MayfairMI6
+
+skinparam DefaultFontName Arial
+skinparam ActivityBackgroundColor #FEFEFE
+skinparam ActivityBorderColor #444444
+skinparam ArrowColor #444444
+skinparam NoteBackgroundColor #FFFFCC
+skinparam NoteBorderColor #AAAAAA
+
+title IOD(2)_Pj2_T-1\nUS2: Search and Filter Classes
+
+note right: Author: MayfairMI6
+
+start
+
+:Actor navigates to the Search & Filter Classes Page;
+note right: Prerequisite: at least one\nsemester's data is imported
+
+:Actor enters one or more search criteria\n(course code, instructor, semester, department);
+
+#ADD8E6:**ref** UC_SEARCH — Search and Filter Classes
+─────────────────────────────────────────────
+System queries the database and returns matching classes;
+
+if (Results found?) then (yes)
+  :System displays list of matching classes\n(title, section, instructor, room, times, enrollment);
+
+  if (Actor selects a specific class?) then (yes)
+    #ADD8E6:**ref** UC_DETAILS — View Class Details
+    ─────────────────────────────────────────────────
+    System displays full attributes of the selected class;
+    :Actor reviews detailed class information;
+  else (no)
+    :Actor reviews search result list;
+  endif
+
+else (no)
+  :System displays "No results found" message;
+  :Actor adjusts criteria and retries;
+endif
+
+stop
+@enduml

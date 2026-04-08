@@ -1,0 +1,48 @@
+@startuml
+' IOD(8)_Pj2_T-1 — User Story 8: Export Class Schedule
+' Author: MayfairMI6
+
+skinparam DefaultFontName Arial
+skinparam ActivityBackgroundColor #FEFEFE
+skinparam ActivityBorderColor #444444
+skinparam ArrowColor #444444
+skinparam NoteBackgroundColor #FFFFCC
+skinparam NoteBorderColor #AAAAAA
+
+title IOD(8)_Pj2_T-1\nUS8: Export Class Schedule
+
+note right: Author: MayfairMI6
+
+start
+
+:Prerequisite: schedule data has been imported\n(see US1 — Upload Excel File);
+
+:Actor navigates to the Search & Filter Classes Page\n(or directly to the Export / Download Page);
+
+if (Actor wants to filter before export?) then (yes)
+
+  :Actor enters search criteria;
+
+  #ADD8E6:**ref** UC_SEARCH — Search and Filter Classes
+  ─────────────────────────────────────────────────────────
+  System retrieves matching classes from the database;
+
+  :System displays filtered class list;
+
+else (no)
+  :Actor proceeds with full dataset;
+endif
+
+:Actor selects export format (Excel or CSV);
+:Actor clicks "Download" / "Export";
+
+#ADD8E6:**ref** UC_EXPORT — Export Schedule
+────────────────────────────────────────────
+System serializes the selected class data\ninto the chosen file format (xlsx or csv);
+
+:System triggers file download in the browser;
+
+:Actor receives downloaded schedule file\nfor distribution to departments and staff;
+
+stop
+@enduml
