@@ -1,6 +1,5 @@
 @startuml
 ' Sequence(3)_MOSS_Pj2_T-01 — UC3: Compare Semester Schedules
-' Author: MayfairMI6 Team
 
 skinparam DefaultFontName Arial
 skinparam SequenceArrowThickness 1.5
@@ -10,7 +9,7 @@ skinparam NoteBackgroundColor #FFFFCC
 skinparam NoteBorderColor #AAAAAA
 skinparam SequenceLifeLineBorderColor #888888
 
-title Sequence(3)_MOSS_Pj2_T-01\nUC3: Compare Semester Schedules\nAuthor: MayfairMI6 Team
+title Sequence(3)_MOSS_Pj2_T-01\nUC3: Compare Semester Schedules
 
 actor "Scheduling Committee\nMember" as SCM
 

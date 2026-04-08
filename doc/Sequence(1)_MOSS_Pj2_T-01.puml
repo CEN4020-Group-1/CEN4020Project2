@@ -1,6 +1,5 @@
 @startuml
 ' Sequence(1)_MOSS_Pj2_T-01 — UC1: Upload Excel File
-' Author: MayfairMI6 Team
 
 skinparam DefaultFontName Arial
 skinparam SequenceArrowThickness 1.5
@@ -10,7 +9,7 @@ skinparam NoteBackgroundColor #FFFFCC
 skinparam NoteBorderColor #AAAAAA
 skinparam SequenceLifeLineBorderColor #888888
 
-title Sequence(1)_MOSS_Pj2_T-01\nUC1: Upload Excel File\nAuthor: MayfairMI6 Team
+title Sequence(1)_MOSS_Pj2_T-01\nUC1: Upload Excel File
 
 actor "Scheduling Committee\nMember" as SCM
 
@@ -38,7 +37,7 @@ ExcelSvc -> ExcelSvc : validate filename & extension
 note right: Checks .xlsx / .xls extension
 
 alt Invalid file type or empty file
-    ExcelSvc --> UploadCtrl : raise ValueError("Invalid file type / empty")
+    ExcelSvc --> UploadCtrl : return validation failure
     UploadCtrl --> UploadPage : 400 { message: "Invalid file type / empty" }
     UploadPage --> SCM : display error message
 else Valid file
@@ -60,13 +59,13 @@ else Valid file
     note right: Parse spreadsheet into DataFrame
 
     alt Excel content unreadable
-        ExcelSvc --> UploadCtrl : raise ValueError("Invalid Excel file content")
-        UploadCtrl --> UploadPage : 400 { message: "..." }
+        ExcelSvc --> UploadCtrl : return parse failure
+        UploadCtrl --> UploadPage : 400 { message: "Invalid Excel file content" }
         UploadPage --> SCM : display error message
     else Readable content
         alt DataFrame is empty
-            ExcelSvc --> UploadCtrl : raise ValueError("Uploaded Excel file has no rows")
-            UploadCtrl --> UploadPage : 400 { message: "..." }
+            ExcelSvc --> UploadCtrl : return empty-file failure
+            UploadCtrl --> UploadPage : 400 { message: "Uploaded file has no rows" }
             UploadPage --> SCM : display error message
         else Non-empty DataFrame
             ExcelSvc -> DataSvc : normalize_dataframe(df)

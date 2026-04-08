@@ -1,6 +1,5 @@
 @startuml
 ' Sequence(4)_MOSS_Pj2_T-01 — UC4: View Instructor Schedule
-' Author: Anthony Saade
 
 skinparam DefaultFontName Arial
 skinparam SequenceArrowThickness 1.5
@@ -10,7 +9,7 @@ skinparam NoteBackgroundColor #FFFFCC
 skinparam NoteBorderColor #AAAAAA
 skinparam SequenceLifeLineBorderColor #888888
 
-title Sequence(4)_MOSS_Pj2_T-01\nUC4: View Instructor Schedule\nAuthor: Anthony Saade
+title Sequence(4)_MOSS_Pj2_T-01\nUC4: View Instructor Schedule
 
 actor "Scheduling Committee\nMember" as SCM
 
