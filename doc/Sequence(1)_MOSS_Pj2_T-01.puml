@@ -16,7 +16,7 @@ actor "Scheduling Committee\nMember" as SCM
 boundary "UploadPage\n(home.html / upload form)" as UploadPage
 control "UploadController\n(routes.upload)" as UploadCtrl
 control "ExcelService\n(excel_service.import_excel)" as ExcelSvc
-entity "DataService\n(data_service.normalize_dataframe)" as DataSvc
+control "DataService\n(data_service.normalize_dataframe)" as DataSvc
 database "ScheduleDatabase\n(schedule_database.csv)" as DB
 
 == Basic Flow ==

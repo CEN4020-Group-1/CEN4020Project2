@@ -18,7 +18,7 @@ boundary "InstructorSelectPage\n(instructor_select.html)" as SelectPage
 boundary "InstructorSchedulePage\n(instructor_schedule.html)" as SchedulePage
 control "ScheduleController\n(schedule_routes.instructor_select /\ninstructor_schedule)" as SchedCtrl
 control "ConflictDetector\n(schedule_routes._detect_time_conflicts)" as ConflictCtrl
-entity "DataService\n(data_service)" as DataSvc
+control "DataService\n(data_service)" as DataSvc
 database "ScheduleDatabase\n(schedule_database.csv)" as DB
 
 == Step 1 — Navigate to Instructor Weekly Schedule ==
