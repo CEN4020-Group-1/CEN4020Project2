@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audit Report - {{ semester_label }} - Bellini Scheduling System</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        h1 { color: #2c3e50; }
+        h2 { color: #34495e; margin-top: 30px; }
+        .container { max-width: 1000px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .summary { display: flex; gap: 14px; flex-wrap: wrap; margin: 20px 0; }
+        .summary-card { flex: 1; min-width: 160px; padding: 16px; border-radius: 6px; text-align: center; color: #fff; }
+        .summary-card .count { font-size: 28px; font-weight: bold; }
+        .summary-card .label { font-size: 13px; margin-top: 4px; }
+        .bg-red { background: #e74c3c; }
+        .bg-orange { background: #e67e22; }
+        .bg-yellow { background: #f39c12; }
+        .bg-blue { background: #2980b9; }
+        .bg-green { background: #27ae60; }
+        .category { margin-top: 24px; border: 1px solid #ddd; border-radius: 6px; overflow: hidden; }
+        .category-header { padding: 12px 16px; font-weight: bold; font-size: 15px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+        .category-header:hover { filter: brightness(0.95); }
+        .category-header .toggle { font-size: 12px; }
+        .cat-high .category-header { background: #fadbd8; color: #922b21; }
+        .cat-medium .category-header { background: #fdebd0; color: #7e5109; }
+        .cat-low .category-header { background: #d5f5e3; color: #1e8449; }
+        .category-body { display: none; }
+        .category-body.open { display: block; }
+        .issue-row { padding: 10px 16px; border-top: 1px solid #eee; font-size: 13px; line-height: 1.5; }
+        .issue-row:nth-child(even) { background: #fafafa; }
+        .issue-crn { font-weight: bold; color: #2c3e50; }
+        .issue-crn a { color: #2980b9; text-decoration: none; }
+        .issue-crn a:hover { text-decoration: underline; }
+        .severity { display: inline-block; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: bold; color: #fff; margin-left: 8px; }
+        .severity-high { background: #e74c3c; }
+        .severity-medium { background: #e67e22; }
+        .severity-low { background: #27ae60; }
+        .no-issues { padding: 40px; text-align: center; color: #27ae60; font-size: 18px; }
+        .back-link { display: inline-block; margin-top: 15px; color: #2980b9; text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+        .actions { margin-top: 20px; display: flex; gap: 12px; }
+        .btn { display: inline-block; padding: 10px 24px; border: none; border-radius: 4px; font-size: 14px; cursor: pointer; text-decoration: none; color: #fff; }
+        .btn-red { background: #c0392b; }
+        .btn-red:hover { background: #a93226; }
+        .btn-gray { background: #7f8c8d; }
+        .btn-gray:hover { background: #6c7a7d; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="actions" style="margin-top:0; margin-bottom:16px;">
+            <a href="/schedule/audit" class="btn btn-red">New Audit</a>
+            <a href="/" class="btn btn-gray">Back to Home</a>
+        </div>
+
+        <h1>Schedule Audit Report</h1>
+        <p style="color:#7f8c8d;">Semester: <strong>{{ semester_label }}</strong></p>
+
+        <div class="summary">
+            <div class="summary-card bg-red">
+                <div class="count">{{ issues.duplicate_crns|length }}</div>
+                <div class="label">Duplicate CRNs</div>
+            </div>
+            <div class="summary-card bg-orange">
+                <div class="count">{{ issues.instructor_conflicts|length }}</div>
+                <div class="label">Instructor Conflicts</div>
+            </div>
+            <div class="summary-card bg-yellow">
+                <div class="count">{{ issues.room_conflicts|length }}</div>
+                <div class="label">Room Conflicts</div>
+            </div>
+            <div class="summary-card bg-blue">
+                <div class="count">{{ issues.unreasonable_times|length }}</div>
+                <div class="label">Unreasonable Times</div>
+            </div>
+            <div class="summary-card bg-green">
+                <div class="count">{{ issues.missing_data|length }}</div>
+                <div class="label">Missing Data</div>
+            </div>
+        </div>
+
+        {% if total_issues == 0 %}
+        <div class="no-issues">No scheduling issues found for {{ semester_label }}.</div>
+        {% else %}
+        <p style="color:#7f8c8d;">Found <strong>{{ total_issues }}</strong> issue(s) total. Click a category to expand.</p>
+
+        {% set categories = [
+            ("Duplicate CRNs", issues.duplicate_crns, "high"),
+            ("Instructor Time Conflicts", issues.instructor_conflicts, "high"),
+            ("Room Time Conflicts", issues.room_conflicts, "high"),
+            ("Unreasonable Meeting Times", issues.unreasonable_times, "medium"),
+            ("Missing Critical Data", issues.missing_data, "low"),
+        ] %}
+
+        {% for cat_name, cat_issues, sev in categories %}
+        {% if cat_issues %}
+        <div class="category cat-{{ sev }}">
+            <div class="category-header" onclick="toggleCategory(this)">
+                <span>{{ cat_name }} ({{ cat_issues|length }})</span>
+                <span class="toggle">&#9660;</span>
+            </div>
+            <div class="category-body">
+                {% for issue in cat_issues %}
+                <div class="issue-row">
+                    <span class="issue-crn">
+                        {% if ',' not in issue.crn %}
+                        <a href="/schedule/class/{{ issue.crn }}?semester={{ semester }}">CRN {{ issue.crn }}</a>
+                        {% else %}
+                        CRN {{ issue.crn }}
+                        {% endif %}
+                    </span>
+                    <span class="severity severity-{{ issue.severity }}">{{ issue.severity|upper }}</span>
+                    <br>{{ issue.description }}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+
+    </div>
+
+    <script>
+        function toggleCategory(header) {
+            var body = header.nextElementSibling;
+            body.classList.toggle('open');
+            var toggle = header.querySelector('.toggle');
+            toggle.textContent = body.classList.contains('open') ? '\u25B2' : '\u25BC';
+        }
+    </script>
+</body>
+</html>

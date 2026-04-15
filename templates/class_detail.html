@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% if class_data %}{{ class_data.SUBJ }} {{ class_data.CRSE_NUMB }} - {% endif %}Class Detail - Bellini Scheduling System</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        h1 { color: #2c3e50; }
+        h2 { color: #34495e; margin-top: 30px; }
+        .container { max-width: 800px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .not-found { padding: 40px; text-align: center; color: #e74c3c; }
+        .detail-grid { display: grid; grid-template-columns: 160px 1fr; gap: 0; margin-top: 20px; }
+        .detail-label { padding: 10px 14px; background: #ecf0f1; font-weight: bold; color: #2c3e50; font-size: 13px; border-bottom: 1px solid #ddd; }
+        .detail-value { padding: 10px 14px; border-bottom: 1px solid #eee; font-size: 14px; color: #333; }
+        .section-header { margin-top: 30px; padding: 10px 14px; background: #2c3e50; color: #fff; font-weight: bold; font-size: 14px; border-radius: 4px 4px 0 0; }
+        .other-section { padding: 12px 14px; border: 1px solid #eee; border-top: none; font-size: 13px; }
+        .other-section a { color: #2980b9; text-decoration: none; }
+        .other-section a:hover { text-decoration: underline; }
+        .other-section:nth-child(even) { background: #fafafa; }
+        .back-link { display: inline-block; margin-top: 15px; color: #2980b9; text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+        .tag { display: inline-block; padding: 3px 10px; border-radius: 3px; font-size: 12px; font-weight: bold; color: #fff; background: #2980b9; margin-left: 8px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/schedule/search" class="back-link">&larr; Search Classes</a>
+        &nbsp;&nbsp;
+        <a href="/" class="back-link">&larr; Back to Home</a>
+
+        {% if class_data is none %}
+        <h1>Class Not Found</h1>
+        <div class="not-found">
+            No class found with CRN <strong>{{ crn }}</strong>{% if semester %} for the selected semester{% endif %}.
+        </div>
+        {% else %}
+        <h1>{{ class_data.SUBJ }} {{ class_data.CRSE_NUMB }} &mdash; {{ class_data.CRSE_TITLE or 'Untitled' }}</h1>
+        <p style="color:#7f8c8d;">
+            Section {{ class_data.CRSE_SECTION or 'N/A' }}
+            <span class="tag">CRN {{ crn }}</span>
+            {% if semester_label %}<span class="tag">{{ semester_label }}</span>{% endif %}
+            {% if class_data.CRSE_LEVL %}<span class="tag">{{ class_data.CRSE_LEVL }}</span>{% endif %}
+        </p>
+
+        <div class="section-header">Course Information</div>
+        <div class="detail-grid">
+            <div class="detail-label">CRN</div>
+            <div class="detail-value">{{ crn }}</div>
+            <div class="detail-label">Term</div>
+            <div class="detail-value">{{ semester_label or class_data.TERM or 'N/A' }}</div>
+            <div class="detail-label">Subject</div>
+            <div class="detail-value">{{ class_data.SUBJ or 'N/A' }}</div>
+            <div class="detail-label">Course Number</div>
+            <div class="detail-value">{{ class_data.CRSE_NUMB or 'N/A' }}</div>
+            <div class="detail-label">Course Title</div>
+            <div class="detail-value">{{ class_data.CRSE_TITLE or 'N/A' }}</div>
+            <div class="detail-label">Section</div>
+            <div class="detail-value">{{ class_data.CRSE_SECTION or 'N/A' }}</div>
+            <div class="detail-label">Level</div>
+            <div class="detail-value">{{ class_data.CRSE_LEVL or 'N/A' }}</div>
+            <div class="detail-label">Campus</div>
+            <div class="detail-value">{{ class_data.CAMPUS or 'N/A' }}</div>
+        </div>
+
+        <div class="section-header">Schedule</div>
+        <div class="detail-grid">
+            <div class="detail-label">Meeting Days</div>
+            <div class="detail-value">{{ class_data.MEETING_DAYS or 'TBA' }}</div>
+            <div class="detail-label">Meeting Times</div>
+            <div class="detail-value">{{ class_data.MEETING_TIMES or 'TBA' }}</div>
+            <div class="detail-label">Meeting Room</div>
+            <div class="detail-value">{{ class_data.MEETING_ROOM or 'TBA' }}</div>
+            <div class="detail-label">Start Date</div>
+            <div class="detail-value">{{ class_data['START DATE'] or 'N/A' }}</div>
+            <div class="detail-label">End Date</div>
+            <div class="detail-value">{{ class_data['END DATE'] or 'N/A' }}</div>
+        </div>
+
+        <div class="section-header">Instructor</div>
+        <div class="detail-grid">
+            <div class="detail-label">Instructor</div>
+            <div class="detail-value">{{ class_data.INSTRUCTOR or 'TBA' }}</div>
+            <div class="detail-label">Email</div>
+            <div class="detail-value">{{ class_data.INSTRUCTOR_EMAIL or 'N/A' }}</div>
+        </div>
+
+        <div class="section-header">Enrollment</div>
+        <div class="detail-grid">
+            <div class="detail-label">Enrollment</div>
+            <div class="detail-value">{{ class_data.ENROLLMENT or '0' }}</div>
+            <div class="detail-label">Prior Section Enrl</div>
+            <div class="detail-value">{{ class_data['PRIOR SECT ENRL'] or 'N/A' }}</div>
+            <div class="detail-label">Wait List Actual</div>
+            <div class="detail-value">{{ class_data['WAIT LIST ACTUAL'] or '0' }}</div>
+            <div class="detail-label">Wait List Max</div>
+            <div class="detail-value">{{ class_data['WAIT LIST MAX'] or '0' }}</div>
+            <div class="detail-label">Multiple Sections</div>
+            <div class="detail-value">{{ class_data['MULTIPLE SECTIONS'] or 'N/A' }}</div>
+        </div>
+
+        <div class="section-header">Teaching Assistants</div>
+        <div class="detail-grid">
+            <div class="detail-label">Grad TA(s)</div>
+            <div class="detail-value">{{ class_data.GRAD_TAS or 'None' }}</div>
+            <div class="detail-label">Grad TA Hours</div>
+            <div class="detail-value">{{ class_data.GRAD_TA_HOURS or '0' }}</div>
+            <div class="detail-label">Grad TA Emails</div>
+            <div class="detail-value">{{ class_data.GRAD_TA_EMAILS or 'N/A' }}</div>
+            <div class="detail-label">UG TA(s)</div>
+            <div class="detail-value">{{ class_data.UGTAS or 'None' }}</div>
+            <div class="detail-label">UG TA Hours</div>
+            <div class="detail-value">{{ class_data.UGTA_HOURS or '0' }}</div>
+            <div class="detail-label">UG TA Emails</div>
+            <div class="detail-value">{{ class_data.UGTA_EMAILS or 'N/A' }}</div>
+        </div>
+
+        {% if other_sections %}
+        <h2>Other Sections of {{ class_data.SUBJ }} {{ class_data.CRSE_NUMB }}</h2>
+        {% for sec in other_sections %}
+        <div class="other-section">
+            <a href="/schedule/class/{{ sec.crn }}?semester={{ semester }}">
+                Section {{ sec.section }} (CRN {{ sec.crn }})
+            </a>
+            &mdash; {{ sec.instructor or 'TBA' }}
+            | {{ sec.meeting_days or 'TBA' }} {{ sec.meeting_times or '' }}
+            | Room: {{ sec.meeting_room or 'TBA' }}
+        </div>
+        {% endfor %}
+        {% endif %}
+
+        {% endif %}
+    </div>
+</body>
+</html>

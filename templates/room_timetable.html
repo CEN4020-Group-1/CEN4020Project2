@@ -27,6 +27,10 @@
 </head>
 <body>
     <div class="container">
+        <a href="/schedule/room?semester={{ semester }}" class="back-link">&larr; Back to Room Selection</a>
+        &nbsp;&nbsp;
+        <a href="/" class="back-link">&larr; Back to Home</a>
+
         <h1>Room: {{ room }}</h1>
         <p class="subtitle">{{ semester_label }} &mdash; Weekly Timetable</p>
 
@@ -59,7 +63,7 @@
                                     <div class="class-code">{{ cls.subj }} {{ cls.crse_numb }}</div>
                                     <div class="class-detail">{{ cls.crse_title }}</div>
                                     <div class="class-detail">Instructor: {{ cls.instructor }}</div>
-                                    <div class="class-detail">Section: {{ cls.section }} | CRN: {{ cls.crn }}</div>
+                                    <div class="class-detail">Section: {{ cls.section }} | CRN: <a href="/schedule/class/{{ cls.crn }}?semester={{ semester }}" style="color:#2980b9;">{{ cls.crn }}</a></div>
                                 </div>
                                 {% endfor %}
                             {% else %}
@@ -78,9 +82,6 @@
         </div>
         {% endif %}
 
-        <a href="/schedule/room?semester={{ semester }}" class="back-link">&larr; Back to Room Selection</a>
-        <br>
-        <a href="/" class="back-link">&larr; Back to Home</a>
     </div>
 </body>
 </html>

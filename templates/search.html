@@ -29,6 +29,8 @@
 </head>
 <body>
     <div class="container">
+        <a href="/" class="back-link">&larr; Back to Home</a>
+
         <h1>Search & Filter Classes</h1>
         
         <div class="search-form">
@@ -81,7 +83,7 @@
                         </div>
                         <div class="result-details">
                             <div class="result-detail-item">
-                                <span class="label">CRN:</span> {{ result.crn }}
+                                <span class="label">CRN:</span> <a href="/schedule/class/{{ result.crn }}?semester={{ result.term }}" style="color:#2980b9;">{{ result.crn }}</a>
                             </div>
                             <div class="result-detail-item">
                                 <span class="label">Section:</span> {{ result.section }}
@@ -115,7 +117,6 @@
             <div class="no-params">Enter search criteria above to find classes.</div>
         {% endif %}
         
-        <a href="/" class="back-link">&larr; Back to Home</a>
     </div>
 </body>
 </html>

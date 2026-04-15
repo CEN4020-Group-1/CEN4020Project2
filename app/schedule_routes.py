@@ -3,10 +3,11 @@ from .data_service import (
     get_semesters, get_rooms, get_instructors,
     get_classes_by_room, get_classes_by_instructor,
     build_weekly_grid, build_time_row_grid, percentage_occupied,
-    DAY_ORDER, DAY_CODES,
+    DAY_ORDER, DAY_CODES, TERM_LABELS,
     search_classes, get_departments, format_search_results,
     compare_schedules, get_comparison_details,
     load_schedule, parse_meeting_days, parse_meeting_time, _time_sort_key,
+    generate_audit_report, get_class_by_crn,
 )
 
 schedule_routes = Blueprint("schedule", __name__, url_prefix="/schedule")
@@ -396,4 +397,58 @@ def comparison_details(semester1, semester2, course_code):
         sem2_total_enrollment=details['sem2_total_enrollment'],
         sem1_section_count=details['sem1_section_count'],
         sem2_section_count=details['sem2_section_count']
+    )
+
+
+# ============================================================
+# FEATURE 9: Schedule Audit Report
+# ============================================================
+
+@schedule_routes.route("/audit", methods=["GET"])
+def audit_select():
+    semesters = get_semesters()
+    return render_template("audit_select.html", semesters=semesters)
+
+
+@schedule_routes.route("/audit/results", methods=["GET"])
+def audit_results():
+    semester = request.args.get("semester", "").strip()
+    if not semester:
+        return redirect(url_for("schedule.audit_select"))
+
+    semester_label = TERM_LABELS.get(semester, f"Term {semester}")
+    issues = generate_audit_report(semester)
+
+    total = sum(len(v) for v in issues.values())
+
+    return render_template(
+        "audit_report.html",
+        semester=semester,
+        semester_label=semester_label,
+        issues=issues,
+        total_issues=total,
+    )
+
+
+# ============================================================
+# FEATURE 10: Detailed Class View
+# ============================================================
+
+@schedule_routes.route("/class/<crn>")
+def class_detail(crn):
+    semester = request.args.get("semester", "").strip()
+    class_data, other_sections = get_class_by_crn(crn, semester or None)
+
+    if class_data is None:
+        return render_template("class_detail.html", class_data=None, crn=crn, semester=semester)
+
+    semester_label = TERM_LABELS.get(str(class_data.get("TERM", "")), "")
+
+    return render_template(
+        "class_detail.html",
+        class_data=class_data,
+        other_sections=other_sections,
+        crn=crn,
+        semester=semester,
+        semester_label=semester_label,
     )

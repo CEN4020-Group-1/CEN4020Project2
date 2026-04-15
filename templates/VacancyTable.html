@@ -16,6 +16,12 @@
 </head>
 <body>
     <div class="container">
+        <div class="links" style="margin-bottom:10px;">
+            <a href="/schedule/vacancy">&larr; Back to Vacancy Search</a>
+            &nbsp;&nbsp;
+            <a href="/">&larr; Back to Home</a>
+        </div>
+
         <h1>Vacancy Results</h1>
         <p>Semester: <strong>{{ semester }}</strong> | Duration: <strong>{{ duration }}</strong> minutes {% if room_filter %}| Room filter: <strong>{{ room_filter }}</strong>{% endif %}</p>
 
@@ -50,10 +56,6 @@
             </tbody>
         </table>
 
-        <div class="links">
-            <a href="/schedule/vacancy">&larr; Back to Vacancy Search</a><br>
-            <a href="/">&larr; Back to Home</a>
-        </div>
     </div>
 </body>
 </html>
