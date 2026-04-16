@@ -134,24 +134,13 @@ def get_classes_by_instructor(instructor, semester=None):
 
 #parse a meeting days string like 'MW' or 'TR' into a list of day codes
 def parse_meeting_days(days_str):
-    if days_str is None:
-        return []
-    # Some imported rows contain NaN/float values for meeting days.
-    if not isinstance(days_str, str):
-        return []
-    days_str = days_str.strip()
-    if not days_str or days_str.lower() == "nan":
+    if not days_str or days_str == "nan":
         return []
     return [ch for ch in days_str if ch in DAY_CODES]
 
 #parse a time string like '11:00 AM - 01:45 PM' into (start, end) strings
 def parse_meeting_time(time_str):
-    if time_str is None:
-        return None, None
-    if not isinstance(time_str, str):
-        return None, None
-    time_str = time_str.strip()
-    if not time_str or time_str.lower() == "nan":
+    if not time_str or time_str == "nan":
         return None, None
 
     parts = time_str.split(" - ")
@@ -250,7 +239,7 @@ def percentage_occupied(time_grid, weekday = False):
     Also assuming that percentage utilization cares about days where no class uses them
     weekday as a bool will inidcate that the function should only count Monday - Thursday
     """
-    max_time =  16 * 60
+    max_time =  12 * 60
     max_time *= 4 if weekday else 6
 
     total_occupied = 0
@@ -273,6 +262,140 @@ def percentage_occupied(time_grid, weekday = False):
 
     return "{:.2f}".format(round(percent, 2))
 
+def get_departments(semester=None):
+    """Return sorted list of unique subject codes (departments)."""
+    df = load_schedule(semester)
+    if df.empty or "SUBJ" not in df.columns:
+        return []
+    return sorted(df["SUBJ"].dropna().unique())
+
+
+def search_classes(semester=None, query=None, subj=None, instructor=None):
+    """Search/filter classes by free-text query, subject, or instructor."""
+    df = load_schedule(semester)
+    if df.empty:
+        return df
+
+    if query:
+        q = query.lower()
+        str_cols = {
+            "SUBJ": df.get("SUBJ", pd.Series(dtype=str)),
+            "CRSE_NUMB": df.get("CRSE_NUMB", pd.Series(dtype=str)),
+            "CRSE_TITLE": df.get("CRSE_TITLE", pd.Series(dtype=str)),
+            "INSTRUCTOR": df.get("INSTRUCTOR", pd.Series(dtype=str)),
+        }
+        mask = pd.Series(False, index=df.index)
+        for col_series in str_cols.values():
+            mask = mask | col_series.fillna("").astype(str).str.lower().str.contains(q, regex=False)
+        df = df[mask]
+
+    if subj:
+        df = df[df["SUBJ"].str.upper() == subj.upper()]
+
+    if instructor:
+        df = df[df["INSTRUCTOR"].fillna("").str.lower().str.contains(instructor.lower(), regex=False)]
+
+    return df
+
+
+def get_open_slots(room, semester, start_filter=None, end_filter=None):
+    """
+    Return (occupied, open_by_day) for a room in a semester.
+
+    occupied   – {time_display: [day_codes where room is booked]}
+    open_by_day – {day_code: [time_display strings where room is free]}
+
+    start_filter / end_filter are optional strings in HH:MM (24-hour) format.
+    Only time slots whose range overlaps the requested window are considered.
+    """
+    df = get_classes_by_room(room, semester)
+    time_slots, time_grid = build_time_row_grid(df)
+
+    def _hhmm_to_min(hhmm):
+        h, m = hhmm.split(":")
+        return int(h) * 60 + int(m)
+
+    filter_start = _hhmm_to_min(start_filter) if start_filter else 0
+    filter_end = _hhmm_to_min(end_filter) if end_filter else 24 * 60
+
+    occupied = {}
+    for slot in time_slots:
+        parts = slot.split(" - ")
+        if len(parts) != 2:
+            continue
+        slot_start = _time_sort_key(parts[0])
+        slot_end = _time_sort_key(parts[1])
+        if slot_end <= filter_start or slot_start >= filter_end:
+            continue
+        booked_days = [day for day in DAY_ORDER if time_grid[slot][day]]
+        occupied[slot] = booked_days
+
+    open_by_day = {day: [] for day in DAY_ORDER}
+    for slot, booked_days in occupied.items():
+        for day in DAY_ORDER:
+            if day not in booked_days:
+                open_by_day[day].append(slot)
+
+    return occupied, open_by_day
+
+
+def compare_semesters(sem1, sem2):
+    """
+    Compare two semesters.
+
+    Returns (only_in_sem1, in_both, only_in_sem2) where each element is a
+    list of dicts with keys: subj, crse_numb, crse_title.
+    """
+    df1 = load_schedule(sem1)
+    df2 = load_schedule(sem2)
+
+    def _course_set(df):
+        if df.empty:
+            return {}
+        rows = {}
+        for _, row in df[["SUBJ", "CRSE_NUMB", "CRSE_TITLE"]].drop_duplicates().iterrows():
+            key = (
+                str(row.get("SUBJ", "") or "").strip().upper(),
+                str(row.get("CRSE_NUMB", "") or "").strip(),
+            )
+            rows[key] = {
+                "subj": key[0],
+                "crse_numb": key[1],
+                "crse_title": str(row.get("CRSE_TITLE", "") or "").strip(),
+            }
+        return rows
+
+    courses1 = _course_set(df1)
+    courses2 = _course_set(df2)
+
+    keys1 = set(courses1)
+    keys2 = set(courses2)
+
+    only_in_sem1 = sorted([courses1[k] for k in keys1 - keys2], key=lambda x: (x["subj"], x["crse_numb"]))
+    in_both = sorted([courses1[k] for k in keys1 & keys2], key=lambda x: (x["subj"], x["crse_numb"]))
+    only_in_sem2 = sorted([courses2[k] for k in keys2 - keys1], key=lambda x: (x["subj"], x["crse_numb"]))
+
+    return only_in_sem1, in_both, only_in_sem2
+
+
+def get_room_utilization(semester):
+    """Return a list of utilization stats dicts for every room in a semester, sorted by % descending."""
+    rooms = get_rooms(semester)
+    stats = []
+    for room in rooms:
+        df = get_classes_by_room(room, semester)
+        _, time_grid = build_time_row_grid(df)
+        pct = float(percentage_occupied(time_grid))
+        weekday_pct = float(percentage_occupied(time_grid, weekday=True))
+        stats.append({
+            "room": room,
+            "total_classes": len(df),
+            "percent": pct,
+            "weekday_percent": weekday_pct,
+        })
+    return sorted(stats, key=lambda x: x["percent"], reverse=True)
+
+
 #convert '11:00 AM' to a sortable value (minutes since midnight)
 def _time_sort_key(time_str):
     try:
@@ -290,191 +413,3 @@ def _time_sort_key(time_str):
         return hour * 60 + minute
     except (IndexError, ValueError):
         return 9999
-
-
-def _safe_enrollment_total(df):
-    """Safely sum enrollment values that may include blanks or non-numeric text."""
-    if df.empty or "ENROLLMENT" not in df.columns:
-        return 0
-    numeric = pd.to_numeric(df["ENROLLMENT"], errors="coerce").fillna(0)
-    return int(numeric.sum())
-
-
-# ============================================================
-# FEATURE 2: Search and Filter Classes
-# ============================================================
-
-def search_classes(course_code=None, instructor=None, semester=None, department=None):
-    """
-    Search and filter classes by course code, instructor, semester, or department.
-    
-    Args:
-        course_code: Partial or full course number (e.g., '4703' or 'COP4703')
-        instructor: Instructor name (partial match)
-        semester: Term code (e.g., '202501')
-        department: Department/subject code (e.g., 'COP', 'ENG')
-    
-    Returns:
-        DataFrame of matching classes
-    """
-    df = load_schedule(semester)
-    if df.empty:
-        return df
-    
-    # Filter by course code (SUBJ + CRSE_NUMB combination)
-    if course_code:
-        course_code_upper = str(course_code).upper()
-        # Try to match as "SUBJ CRSE_NUMB" or just the number part
-        course_code_parts = course_code_upper.split()
-        if len(course_code_parts) >= 2:
-            # Full format like "COP 4703"
-            subj = course_code_parts[0]
-            numb = course_code_parts[1] if len(course_code_parts) > 1 else ""
-            mask = (df['SUBJ'].astype(str).str.upper() == subj) & (df['CRSE_NUMB'].astype(str) == numb)
-        elif course_code_upper.isdigit():
-            # Just the number
-            mask = df['CRSE_NUMB'].astype(str) == course_code_upper
-        else:
-            # Check if it contains letters and numbers (like COP4703)
-            letters = ''.join(c for c in course_code_upper if c.isalpha())
-            numbers = ''.join(c for c in course_code_upper if c.isdigit())
-            if letters and numbers:
-                mask = (df['SUBJ'].astype(str).str.upper() == letters) & (df['CRSE_NUMB'].astype(str) == numbers)
-            else:
-                mask = df['CRSE_NUMB'].astype(str).str.contains(course_code_upper, case=False, na=False)
-        df = df[mask]
-    
-    # Filter by instructor name
-    if instructor:
-        instructor_upper = str(instructor).upper()
-        mask = df['INSTRUCTOR'].astype(str).str.contains(instructor_upper, case=False, na=False)
-        df = df[mask]
-    
-    # Filter by department/subject
-    if department:
-        department_upper = str(department).upper()
-        mask = df['SUBJ'].astype(str).str.upper() == department_upper
-        df = df[mask]
-    
-    return df.reset_index(drop=True)
-
-
-def get_departments():
-    """Return a sorted list of unique department/subject codes."""
-    df = load_schedule()
-    if df.empty:
-        return []
-    
-    departments = df['SUBJ'].dropna().unique()
-    return sorted(d for d in departments if d)
-
-
-def format_search_results(classes_df):
-    """Format search results as a list of dictionaries with relevant class info."""
-    results = []
-    
-    for _, row in classes_df.iterrows():
-        result = {
-            'crn': row.get('CRN', ''),
-            'term': row.get('TERM', ''),
-            'department': row.get('SUBJ', ''),
-            'course_number': row.get('CRSE_NUMB', ''),
-            'course_title': row.get('CRSE_TITLE', ''),
-            'section': row.get('CRSE_SECTION', ''),
-            'instructor': row.get('INSTRUCTOR', ''),
-            'meeting_days': row.get('MEETING_DAYS', ''),
-            'meeting_times': row.get('MEETING_TIMES', ''),
-            'meeting_room': row.get('MEETING_ROOM', ''),
-            'enrollment': row.get('ENROLLMENT', ''),
-            'course_code': f"{row.get('SUBJ', '')} {row.get('CRSE_NUMB', '')}",
-        }
-        results.append(result)
-    
-    return results
-
-
-# ============================================================
-# FEATURE 6: Compare Schedules Across Semesters
-# ============================================================
-
-def compare_schedules(semester1, semester2):
-    """
-    Compare course offerings and enrollment between two semesters.
-    
-    Args:
-        semester1: First term code (e.g., '202501')
-        semester2: Second term code (e.g., '202508')
-    
-    Returns:
-        Dictionary with comparison data
-    """
-    df1 = load_schedule(semester1)
-    df2 = load_schedule(semester2)
-    
-    sem1_label = dict(get_semesters()).get(semester1, semester1)
-    sem2_label = dict(get_semesters()).get(semester2, semester2)
-    
-    # Get unique courses in each semester
-    courses1 = set((df1['SUBJ'].astype(str) + df1['CRSE_NUMB'].astype(str)).unique()) if not df1.empty else set()
-    courses2 = set((df2['SUBJ'].astype(str) + df2['CRSE_NUMB'].astype(str)).unique()) if not df2.empty else set()
-    
-    # Categorize courses
-    only_in_sem1 = courses1 - courses2
-    only_in_sem2 = courses2 - courses1
-    in_both = courses1 & courses2
-    
-    return {
-        'semester1': semester1,
-        'semester1_label': sem1_label,
-        'semester2': semester2,
-        'semester2_label': sem2_label,
-        'df1': df1,
-        'df2': df2,
-        'only_in_sem1': sorted(only_in_sem1),
-        'only_in_sem2': sorted(only_in_sem2),
-        'in_both': sorted(in_both),
-        'stats': {
-            'total_classes_sem1': len(df1) if not df1.empty else 0,
-            'total_classes_sem2': len(df2) if not df2.empty else 0,
-            'total_courses_sem1': len(courses1),
-            'total_courses_sem2': len(courses2),
-            'enrollment_sem1': _safe_enrollment_total(df1),
-            'enrollment_sem2': _safe_enrollment_total(df2),
-        }
-    }
-
-
-def get_comparison_details(semester1, semester2, course_code):
-    """Get detailed comparison of a specific course across two semesters."""
-    df1 = load_schedule(semester1)
-    df2 = load_schedule(semester2)
-    
-    # Parse course code
-    course_parts = course_code.upper().split()
-    if len(course_parts) >= 2:
-        subj, numb = course_parts[0], course_parts[1]
-    else:
-        letters = ''.join(c for c in course_code.upper() if c.isalpha())
-        numbers = ''.join(c for c in course_code.upper() if c.isdigit())
-        subj, numb = letters, numbers
-    
-    # Filter by course
-    if not df1.empty:
-        course1_df = df1[(df1['SUBJ'].astype(str).str.upper() == subj) & (df1['CRSE_NUMB'].astype(str) == numb)]
-    else:
-        course1_df = pd.DataFrame()
-    
-    if not df2.empty:
-        course2_df = df2[(df2['SUBJ'].astype(str).str.upper() == subj) & (df2['CRSE_NUMB'].astype(str) == numb)]
-    else:
-        course2_df = pd.DataFrame()
-    
-    return {
-        'course_code': course_code,
-        'semester1_sections': format_search_results(course1_df),
-        'semester2_sections': format_search_results(course2_df),
-        'sem1_total_enrollment': _safe_enrollment_total(course1_df),
-        'sem2_total_enrollment': _safe_enrollment_total(course2_df),
-        'sem1_section_count': len(course1_df),
-        'sem2_section_count': len(course2_df),
-    }

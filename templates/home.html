@@ -13,66 +13,31 @@
         .btn-blue:hover { background: #2471a3; }
         .btn-green { background: #27ae60; }
         .btn-green:hover { background: #219a52; }
+        .btn-red { background: #cd5334 }
+        .btn-red:hover { background: #993c25 }
         .btn-gray { background: #7f8c8d; }
         .btn-gray:hover { background: #6c7a7d; }
-        .upload-box { margin-top: 24px; padding-top: 18px; border-top: 1px solid #e6e6e6; text-align: left; }
-        .upload-box h3 { margin: 0 0 10px 0; color: #2c3e50; }
-        .upload-actions { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
-        .upload-msg { margin-top: 10px; color: #2c3e50; font-size: 14px; }
+        .btn-purple { background: #8e44ad; }
+        .btn-purple:hover { background: #7d3c98; }
+        .btn-teal { background: #1abc9c; }
+        .btn-teal:hover { background: #17a589; }
+        .btn-orange { background: #e67e22; }
+        .btn-orange:hover { background: #ca6f1e; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Bellini Scheduling System</h1>
         <p>Welcome! Select an option below to get started.</p>
-
-        <div class="upload-box">
-            <h3>Upload Excel File</h3>
-            <form id="upload-form" action="/upload" method="post" enctype="multipart/form-data">
-                <div class="upload-actions">
-                    <input type="file" name="file" accept=".xlsx,.xls" required>
-                    <button type="submit" class="btn btn-green">Upload & Import</button>
-                </div>
-            </form>
-            <div id="upload-msg" class="upload-msg"></div>
-        </div>
-
         <div class="nav-buttons">
             <a href="/files" class="btn btn-gray">View Uploaded Files</a>
+            <a href="/search" class="btn btn-purple">Search &amp; Filter Classes</a>
             <a href="/schedule/room" class="btn btn-blue">Room Weekly Timetable</a>
             <a href="/schedule/instructor" class="btn btn-green">Instructor Weekly Schedule</a>
-            <a href="/schedule/vacancy" class="btn btn-gray">Vacancy Search</a>
-            <a href="/schedule/search" class="btn btn-blue">Search & Filter Classes</a>
-            <a href="/schedule/comparison" class="btn btn-green">Compare Schedules</a>
+            <a href="/schedule/suggest" class="btn btn-red">Search for Available Rooms</a>
+            <a href="/schedule/compare" class="btn btn-teal">Semester Comparison</a>
+            <a href="/schedule/utilization" class="btn btn-orange">Classroom Utilization</a>
         </div>
     </div>
-
-    <script>
-        const form = document.getElementById("upload-form");
-        const msg = document.getElementById("upload-msg");
-
-        form.addEventListener("submit", async (event) => {
-            event.preventDefault();
-            msg.textContent = "Uploading...";
-
-            try {
-                const response = await fetch("/upload", {
-                    method: "POST",
-                    body: new FormData(form),
-                });
-                const data = await response.json();
-
-                if (!response.ok) {
-                    msg.textContent = data.message || "Upload failed.";
-                    return;
-                }
-
-                msg.textContent = `${data.message}. Rows in database: ${data.rows}`;
-                form.reset();
-            } catch (error) {
-                msg.textContent = "Upload failed. Please try again.";
-            }
-        });
-    </script>
 </body>
 </html>

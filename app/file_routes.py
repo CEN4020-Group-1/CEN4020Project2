@@ -1,8 +1,7 @@
 import os
-from flask import Blueprint, render_template, render_template_string, send_file, request, redirect, url_for
+from flask import Blueprint, render_template, render_template_string, send_file
 import pandas as pd
 from urllib.parse import unquote
-from .excel_service import rebuild_schedule_database_from_uploads
 
 file_routes = Blueprint("file_routes", __name__)
 
@@ -13,8 +12,7 @@ UPLOAD_FOLDER = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__f
 @file_routes.route("/files")
 def list_files():
     files = os.listdir(UPLOAD_FOLDER)
-    message = request.args.get("message", "")
-    return render_template("files.html", files=files, message=message)
+    return render_template("files.html", files=files)
 
 @file_routes.route("/view/<filename>")
 def view_excel(filename):
@@ -62,18 +60,3 @@ def download_excel(filename):
         return f"File {filename} not found!", 404
 
     return send_file(filepath, as_attachment=True)
-
-
-@file_routes.route("/delete/<filename>", methods=["POST"])
-def delete_excel(filename):
-    requested_name = os.path.basename(filename)
-    if not requested_name:
-        return redirect(url_for("file_routes.list_files", message="Invalid file name."))
-
-    filepath = os.path.join(UPLOAD_FOLDER, requested_name)
-    if not os.path.exists(filepath):
-        return redirect(url_for("file_routes.list_files", message=f"File not found: {requested_name}"))
-
-    os.remove(filepath)
-    row_count = rebuild_schedule_database_from_uploads()
-    return redirect(url_for("file_routes.list_files", message=f"Deleted file: {requested_name}. Rebuilt schedule with {row_count} rows."))

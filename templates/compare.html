@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Semester Comparison - Bellini Scheduling System</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        h1 { color: #2c3e50; }
+        .container { max-width: 1100px; margin: 0 auto; }
+        .filter-card { background: #fff; padding: 20px 25px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 25px; display: flex; gap: 20px; align-items: flex-end; flex-wrap: wrap; }
+        label { display: block; font-weight: bold; color: #34495e; margin-bottom: 4px; font-size: 13px; }
+        select { padding: 9px 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; min-width: 180px; }
+        .btn { padding: 9px 22px; background: #1abc9c; color: #fff; border: none; border-radius: 4px; font-size: 14px; cursor: pointer; }
+        .btn:hover { background: #17a589; }
+        .summary-bar { display: flex; gap: 20px; margin-bottom: 20px; flex-wrap: wrap; }
+        .summary-box { flex: 1; min-width: 220px; background: #fff; padding: 16px 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); border-top: 4px solid; }
+        .summary-box.only1 { border-color: #e74c3c; }
+        .summary-box.both  { border-color: #27ae60; }
+        .summary-box.only2 { border-color: #2980b9; }
+        .summary-box .count { font-size: 28px; font-weight: bold; }
+        .summary-box.only1 .count { color: #e74c3c; }
+        .summary-box.both  .count { color: #27ae60; }
+        .summary-box.only2 .count { color: #2980b9; }
+        .summary-box .label { font-size: 13px; color: #7f8c8d; margin-top: 4px; }
+        .section-title { font-size: 15px; font-weight: bold; margin: 20px 0 10px 0; padding-left: 10px; border-left: 4px solid; }
+        .section-title.only1 { color: #c0392b; border-color: #e74c3c; }
+        .section-title.both  { color: #1e8449; border-color: #27ae60; }
+        .section-title.only2 { color: #1a5276; border-color: #2980b9; }
+        table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        th { padding: 9px 12px; text-align: left; font-size: 13px; color: #fff; }
+        th.only1 { background: #e74c3c; }
+        th.both  { background: #27ae60; }
+        th.only2 { background: #2980b9; }
+        td { padding: 7px 12px; border-bottom: 1px solid #eee; font-size: 13px; color: #2c3e50; }
+        tr:last-child td { border-bottom: none; }
+        .back-link { display: inline-block; margin-top: 15px; color: #2980b9; text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+        .hint { color: #7f8c8d; font-size: 13px; margin-bottom: 20px; }
+        .error { color: #e74c3c; margin-bottom: 15px; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Semester Comparison</h1>
+
+        <div class="filter-card">
+            <form method="get" action="/schedule/compare" style="display:flex;gap:20px;align-items:flex-end;flex-wrap:wrap;">
+                <div>
+                    <label for="sem1">Semester A</label>
+                    <select name="sem1" id="sem1">
+                        <option value="">-- Select --</option>
+                        {% for code, label in semesters %}
+                        <option value="{{ code }}" {% if code == sem1 %}selected{% endif %}>{{ label }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div>
+                    <label for="sem2">Semester B</label>
+                    <select name="sem2" id="sem2">
+                        <option value="">-- Select --</option>
+                        {% for code, label in semesters %}
+                        <option value="{{ code }}" {% if code == sem2 %}selected{% endif %}>{{ label }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <button type="submit" class="btn">Compare</button>
+            </form>
+        </div>
+
+        {% if sem1 and sem2 and sem1 == sem2 %}
+        <p class="error">Please select two <em>different</em> semesters to compare.</p>
+        {% endif %}
+
+        {% if compared %}
+        <div class="summary-bar">
+            <div class="summary-box only1">
+                <div class="count">{{ only_in_sem1|length }}</div>
+                <div class="label">Only in {{ sem1_label }}</div>
+            </div>
+            <div class="summary-box both">
+                <div class="count">{{ in_both|length }}</div>
+                <div class="label">Offered in both semesters</div>
+            </div>
+            <div class="summary-box only2">
+                <div class="count">{{ only_in_sem2|length }}</div>
+                <div class="label">Only in {{ sem2_label }}</div>
+            </div>
+        </div>
+
+        {% if only_in_sem1 %}
+        <div class="section-title only1">Courses only in {{ sem1_label }} ({{ only_in_sem1|length }})</div>
+        <table>
+            <thead><tr><th class="only1">Subj</th><th class="only1">Number</th><th class="only1">Title</th></tr></thead>
+            <tbody>
+                {% for c in only_in_sem1 %}
+                <tr><td>{{ c.subj }}</td><td>{{ c.crse_numb }}</td><td>{{ c.crse_title }}</td></tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+
+        {% if in_both %}
+        <div class="section-title both">Courses offered in both semesters ({{ in_both|length }})</div>
+        <table>
+            <thead><tr><th class="both">Subj</th><th class="both">Number</th><th class="both">Title</th></tr></thead>
+            <tbody>
+                {% for c in in_both %}
+                <tr><td>{{ c.subj }}</td><td>{{ c.crse_numb }}</td><td>{{ c.crse_title }}</td></tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+
+        {% if only_in_sem2 %}
+        <div class="section-title only2">Courses only in {{ sem2_label }} ({{ only_in_sem2|length }})</div>
+        <table>
+            <thead><tr><th class="only2">Subj</th><th class="only2">Number</th><th class="only2">Title</th></tr></thead>
+            <tbody>
+                {% for c in only_in_sem2 %}
+                <tr><td>{{ c.subj }}</td><td>{{ c.crse_numb }}</td><td>{{ c.crse_title }}</td></tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+
+        {% else %}
+        <p class="hint">Select two semesters above and click Compare to see what changed between them.</p>
+        {% endif %}
+
+        <a href="/" class="back-link">&larr; Back to Home</a>
+    </div>
+</body>
+</html>

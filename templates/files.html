@@ -5,18 +5,12 @@
 </head>
 <body>
     <h2>Uploaded Excel Files</h2>
-    {% if message %}
-        <p><strong>{{ message }}</strong></p>
-    {% endif %}
     <ul>
     {% for file in files %}
         <li>
             {{ file }}
             <a href="{{ url_for('file_routes.view_excel', filename=file) }}">[View]</a>
             <a href="{{ url_for('file_routes.download_excel', filename=file) }}">[Download]</a>
-            <form action="{{ url_for('file_routes.delete_excel', filename=file) }}" method="post" style="display:inline;">
-                <button type="submit">Delete</button>
-            </form>
 
         </li>
     {% endfor %}
