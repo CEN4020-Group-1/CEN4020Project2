@@ -50,6 +50,7 @@
                     name="starting-time"
                     min="08:00"
                     max="20:00"
+                    value="08:00"
                     step="900"
                     />
             <label for="end"> Ending Time </label>
@@ -59,6 +60,7 @@
                     name="ending-time"
                     min="08:00"
                     max="20:00"
+                    value="20:00"
                     step="900"
                     />
             <p class="info">Times must be from 8 AM to 8 PM</p>
@@ -77,8 +79,20 @@
             var room = document.getElementById('room').value;
             var start = document.getElementById('start').value;
             var end = document.getElementById('end').value;
+            var valid_times = true
+            console.log('start:', start, 'end:', end);
 
-            if (semester) {
+            if (start){
+                valid_times = (start >= "08:00" && start <= "20:00")
+            }
+            if (end){
+                valid_times = (end >= "08:00" && end <= "20:00")
+            }
+            if (start && end){
+                valid_times = start < end;
+            }
+
+            if (semester && valid_times) {
                 window.location.href = '/schedule/suggest/open?' +
                     'room=' + encodeURIComponent(room) +
                     '&start=' + encodeURIComponent(start) +

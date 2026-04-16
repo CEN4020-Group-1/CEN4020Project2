@@ -136,6 +136,9 @@ def get_classes_by_instructor(instructor, semester=None):
 def parse_meeting_days(days_str):
     if not days_str or days_str == "nan":
         return []
+    if days_str is float:
+        pass
+
     return [ch for ch in days_str if ch in DAY_CODES]
 
 #parse a time string like '11:00 AM - 01:45 PM' into (start, end) strings
@@ -236,8 +239,8 @@ def percentage_occupied(time_grid, weekday = False):
     Calculates the percentage of time that a room is occupied across a week
 
     Assuming classes can be held from 8 AM to 8 PM
-    Also assuming that percentage utilization cares about days where no class uses them
-    weekday as a bool will inidcate that the function should only count Monday - Thursday
+    Also assuming that percentage utilization cares about days when no class uses them
+    weekday as a bool will indicate that the function should only count Monday - Thursday
     """
     max_time =  12 * 60
     max_time *= 4 if weekday else 6
@@ -262,6 +265,110 @@ def percentage_occupied(time_grid, weekday = False):
 
     return "{:.2f}".format(round(percent, 2))
 
+
+def get_time_slots(classes_df):
+    taken_times = {}
+
+    for room in classes_df["MEETING_ROOM"].unique():
+        taken_times[room] = {}
+        for day in ["M","T","W","R","F","S"]:
+            taken_times[room][day] = []
+
+    # NOTE: Do not count NaN or OFFT OFF
+    for _, row in classes_df.iterrows():
+        room = row.get("MEETING_ROOM", "")
+        if room == "NaN" or room == "" or room == "OFFT OFF":
+            continue
+
+        days = parse_meeting_days(row.get("MEETING_DAYS", ""))
+        if days == ["nan"] or days == []:
+            continue
+
+        times = parse_meeting_time(row.get("MEETING_TIMES", ""))# Check where the class takes place
+
+        for day in days:
+            taken_times[room][day] = _append_time_slots(taken_times[room][day], times)
+
+    return taken_times
+
+#Using defined start and end time, find time slots not taken up by previously existing time slots
+def get_open_time_slots_range(taken_slots, start_time, end_time):
+    conv_start = _time_sort_key(start_time)
+    conv_end = _time_sort_key(end_time)
+    full_time = [conv_start, conv_end]
+    open_times = {}
+
+    for room in taken_slots:
+        open_times[room] = {}
+        for day in taken_slots[room]:
+            open_times[room][day] = [full_time.copy()]
+            day_time = open_times[room][day]
+
+            for cut_out in taken_slots[room][day]:
+                will_cut_out = []
+                #Make a slice of day_time, one from beginning to time's start and time's end to
+                for section in day_time:
+                    #If any section in day_time engulfs a taken slot then cut of that section in day_time
+
+                print(room, day, ": ", will_cut_out, "Will get cut out with", cut_out)
+                new_sections = _make_pair_split(will_cut_out, cut_out)
+                day_time.remove(will_cut_out)
+                if new_sections[0]:
+                    day_time.append(new_sections[0])
+                if new_sections[1]:
+                    day_time.append(new_sections[1])
+                print("RESULT: ", day_time)
+
+    return open_times
+
+def _make_pair_split(pair, cutout):
+    split_start = [pair[0], cutout[0]]
+    split_end = [cutout[1], pair[1]]
+
+    #If the start extends beyond the pair's start, then that side is gone completely
+    if cutout[0] < pair[0] or pair[0] == cutout[0]:
+        return split_end, []
+    #If the end extends beyond the pair's end, then that side is gone completely
+    if cutout[1] > pair[1]:
+            return split_start, []
+
+    if cutout[0] < pair[0] and cutout[1] > pair[1]:
+        return [], []
+
+    return split_start, split_end
+
+def _append_time_slots(room_taken_times, times):
+    converted_times = []
+    for time in times:
+        converted_times.append(_time_sort_key(time))
+
+    start, end = converted_times
+    original = room_taken_times.copy()
+    added = False
+
+    for i in range(len(room_taken_times)):
+        time = room_taken_times[i]
+        #If this time is already in the list
+        if start == time[0] and end == time[1]:
+            added = True
+            break
+        #If this time engulfs a preexisting time
+        if start < time[0] and end > time[1]:
+            room_taken_times[i] = converted_times
+            added = True
+        #If this time's beginning overlaps another time's end
+        if start <= time[1] <= end:
+            room_taken_times[i][1] = end
+            added = True
+        #If this time's end overlaps another time's beginning
+        elif end >= time[0] >= start:
+            room_taken_times[i][0] = start
+            added = True
+    if not added:
+        room_taken_times.append(converted_times)
+
+    return room_taken_times
+
 #convert '11:00 AM' to a sortable value (minutes since midnight)
 def _time_sort_key(time_str):
     try:
@@ -269,13 +376,29 @@ def _time_sort_key(time_str):
         hm = parts[0].split(":")
         hour = int(hm[0])
         minute = int(hm[1])
-        period = parts[1].upper()
 
-        if period == "PM" and hour != 12:
-            hour += 12
-        elif period == "AM" and hour == 12:
-            hour = 0
+        #Since this might be used on time string that already converted to 24 hr
+        if len(parts) == 2:
+            period = parts[1].upper()
+            period = parts[1].upper()
+
+            if period == "PM" and hour != 12:
+                hour += 12
+            elif period == "AM" and hour == 12:
+                hour = 0
 
         return hour * 60 + minute
+    except (IndexError, ValueError):
+        return 9999
+
+def _input_label_time_convert(time_str):
+    try:
+        parts = time_str.split()
+        hm = parts[0].split(":")
+        hour = int(hm[0])
+        minute = int(hm[1])
+        period = parts[1].upper()
+
+        return hour, minute, period
     except (IndexError, ValueError):
         return 9999
