@@ -320,8 +320,11 @@ def get_open_slots(room, semester, start_filter=None, end_filter=None):
 
     occupied = {}
     for slot in time_slots:
-        slot_start = _time_sort_key(slot.split(" - ")[0])
-        slot_end = _time_sort_key(slot.split(" - ")[1])
+        parts = slot.split(" - ")
+        if len(parts) != 2:
+            continue
+        slot_start = _time_sort_key(parts[0])
+        slot_end = _time_sort_key(parts[1])
         if slot_end <= filter_start or slot_start >= filter_end:
             continue
         booked_days = [day for day in DAY_ORDER if time_grid[slot][day]]
