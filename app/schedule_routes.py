@@ -3,7 +3,7 @@ from .data_service import (
     get_semesters, get_rooms, get_instructors,
     get_classes_by_room, get_classes_by_instructor,
     build_weekly_grid, build_time_row_grid, percentage_occupied,
-    get_time_slots, get_open_time_slots_range, DAY_ORDER, DAY_CODES, load_schedule,
+    DAY_ORDER, DAY_CODES,
 )
 
 schedule_routes = Blueprint("schedule", __name__, url_prefix="/schedule")
@@ -95,10 +95,10 @@ def room_suggest():
     return render_template("suggest_filter.html", semesters=semesters, rooms=rooms, selected_semester=semester)
 
 
-@schedule_routes.route("/suggest/open/", methods=["GET"])
+@schedule_routes.route("/suggest/open", methods=["GET"])
 def suggest_open_times():
     semester = request.args.get("semester", "")
-    room_name = request.args.get("room", "")
+    room = request.args.get("room", "")
     start_time = request.args.get("start", "")
     end_time = request.args.get("end", "")
 
@@ -107,16 +107,8 @@ def suggest_open_times():
 
     semesters = get_semesters()
     semester_label = dict(semesters).get(semester, semester)
-    if room_name:
-        classes_df = get_classes_by_room(room_name, semester)
-    else:
-        classes_df = load_schedule(semester)
 
-    taken_times = get_time_slots(classes_df)
-    open_times = get_open_time_slots_range(taken_times, start_time, end_time)
-
-
-    return render_template("suggest_open.html", open_times=open_times, selected_semester=semester, start_time=start_time, end_time=end_time)
+    return render_template("suggest_open.html")
 
 def _active_days_from_time_grid(time_grid):
     """Determine which days have at least one class across all time slots."""
