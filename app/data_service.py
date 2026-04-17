@@ -684,3 +684,108 @@ def get_class_by_crn(crn, semester=None):
     other_sections = format_search_results(other) if not other.empty else []
 
     return row, other_sections
+
+
+# ============================================================
+# MANDATORY STORY 1: Add / Edit / Delete Classes
+# ============================================================
+
+REQUIRED_ADD_FIELDS = ("TERM", "SUBJ", "CRSE_NUMB")
+
+def _next_crn(df):
+    """Generate the next available CRN as an integer string."""
+    if df.empty or "CRN" not in df.columns:
+        return "90001"
+    numeric = pd.to_numeric(df["CRN"], errors="coerce").dropna()
+    if numeric.empty:
+        return "90001"
+    return str(int(numeric.max()) + 1)
+
+
+def add_class(data_dict):
+    """
+    Append a new class row to the schedule database.
+    Returns (new_row_dict, error_string).
+    """
+    missing = [f for f in REQUIRED_ADD_FIELDS if not data_dict.get(f)]
+    if missing:
+        return None, f"Missing required fields: {', '.join(missing)}"
+
+    df = load_schedule()
+
+    if not data_dict.get("CRN"):
+        data_dict["CRN"] = _next_crn(df)
+
+    crn = str(data_dict["CRN"]).replace(".0", "")
+    term = str(data_dict["TERM"]).replace(".0", "")
+    if not df.empty and "CRN" in df.columns and "TERM" in df.columns:
+        dup = df[
+            (df["CRN"].astype(str).str.replace(r"\.0$", "", regex=True) == crn) &
+            (df["TERM"].astype(str).str.replace(r"\.0$", "", regex=True) == term)
+        ]
+        if not dup.empty:
+            return None, f"CRN {crn} already exists for term {term}"
+
+    new_row = pd.DataFrame([data_dict])
+    df = pd.concat([df, new_row], ignore_index=True)
+    df.to_csv(DATA_FILE, index=False)
+    return data_dict, None
+
+
+def update_class(crn, semester, data_dict):
+    """
+    Update an existing class identified by CRN + TERM.
+    Returns (updated_row_dict, error_string).
+    """
+    df = load_schedule()
+    if df.empty:
+        return None, "No schedule data loaded"
+
+    crn_str = str(crn).replace(".0", "")
+    sem_str = str(semester).replace(".0", "")
+
+    mask = (
+        (df["CRN"].astype(str).str.replace(r"\.0$", "", regex=True) == crn_str) &
+        (df["TERM"].astype(str).str.replace(r"\.0$", "", regex=True) == sem_str)
+    )
+
+    if mask.sum() == 0:
+        return None, f"No class found with CRN {crn_str} in term {sem_str}"
+
+    for col, val in data_dict.items():
+        if col in ("CRN", "TERM"):
+            continue
+        if col in df.columns:
+            col_dtype = df[col].dtype
+            if col_dtype != object:
+                df[col] = df[col].astype(object)
+            df.loc[mask, col] = val
+
+    df.to_csv(DATA_FILE, index=False)
+    updated = df[mask].iloc[0].to_dict()
+    return updated, None
+
+
+def delete_class(crn, semester):
+    """
+    Remove a class identified by CRN + TERM from the schedule database.
+    Returns (success_bool, error_string).
+    """
+    df = load_schedule()
+    if df.empty:
+        return False, "No schedule data loaded"
+
+    crn_str = str(crn).replace(".0", "")
+    sem_str = str(semester).replace(".0", "")
+
+    mask = (
+        (df["CRN"].astype(str).str.replace(r"\.0$", "", regex=True) == crn_str) &
+        (df["TERM"].astype(str).str.replace(r"\.0$", "", regex=True) == sem_str)
+    )
+
+    if mask.sum() == 0:
+        return False, f"No class found with CRN {crn_str} in term {sem_str}"
+
+    df = df[~mask]
+    df.to_csv(DATA_FILE, index=False)
+    return True, None

@@ -5,7 +5,13 @@ A web-based scheduling system for the Bellini College class scheduling committee
 
 ## Features
 
-### Implemented User Stories
+### Mandatory Stories
+
+- **Class Schedule Management** — Add new classes, edit existing class details (room, time, instructor, TAs, enrollment), and delete classes directly from the system. Accessible via the "Add New Class" button on the home page or the "Edit" and "Delete" buttons on any class detail page.
+
+- **Schedule Audit Report** — Generate a comprehensive audit report per semester that scans for duplicate CRNs, instructor time conflicts, room time conflicts, unreasonable meeting times, and missing critical data. Issues are categorized by severity with expandable detail sections.
+
+### Team User Stories
 
 1. **Excel File Upload & Import** — Upload Excel files and automatically import class data into the system, populating the scheduling database without manual data entry.
 
@@ -22,10 +28,6 @@ A web-based scheduling system for the Bellini College class scheduling committee
 7. **Classroom Utilization Statistics** — Visualize classroom utilization statistics such as percentage of time rooms are occupied, integrated into the room timetable view.
 
 8. **Schedule Export** — Export the finalized class schedule to downloadable Excel or CSV format.
-
-9. **Schedule Audit Report** — Generate a comprehensive audit report that scans for duplicate CRNs, instructor time conflicts, room time conflicts, unreasonable meeting times, and missing data. Color-coded by severity with expandable categories.
-
-10. **Detailed Class View** — Open a detailed view for any class section showing all scheduling information in one place: course data, schedule, instructor, enrollment, TAs, and related sections. Accessible via clickable CRN links throughout the app.
 
 ### Data
 
@@ -54,8 +56,8 @@ CEN4020Project2/
 │   ├── __init__.py                  # App factory, blueprint registration
 │   ├── routes.py                    # Home page, upload, schedule export
 │   ├── file_routes.py               # File listing, viewing, downloading, deletion
-│   ├── schedule_routes.py           # Room/instructor/vacancy/search/comparison/audit/class routes
-│   ├── data_service.py              # Data normalization, queries, grid building, audit logic
+│   ├── schedule_routes.py           # Room/instructor/vacancy/search/comparison/audit/class/CRUD routes
+│   ├── data_service.py              # Data normalization, queries, grid building, audit, CRUD
 │   ├── excel_service.py             # Excel import with normalization & dedup
 │   └── export_service.py            # Schedule export (CSV/Excel)
 ├── templates/
@@ -73,7 +75,8 @@ CEN4020Project2/
 │   ├── VacancyTable.html            # Vacancy search results
 │   ├── audit_select.html            # Audit report semester selection
 │   ├── audit_report.html            # Audit report with categorized issues
-│   └── class_detail.html            # Detailed class section view
+│   ├── class_detail.html            # Detailed class section view with edit/delete
+│   └── class_form.html             # Add / edit class form
 ├── data/
 │   └── schedule_database.csv        # Normalized schedule database
 ├── uploads/                         # Pre-loaded Excel source files
@@ -144,10 +147,13 @@ print(f'Imported {len(combined)} classes')
 | GET | `/schedule/audit` | Audit report selection |
 | GET | `/schedule/audit/results?semester=<term>` | Schedule audit report |
 | GET | `/schedule/class/<crn>?semester=<term>` | Detailed class section view |
+| GET/POST | `/schedule/class/add` | Add a new class |
+| GET/POST | `/schedule/class/<crn>/edit?semester=<term>` | Edit an existing class |
+| POST | `/schedule/class/<crn>/delete` | Delete a class |
 
 ## Contributors
 
 - **Seyoung Kan** — Stories 1 & 8 (File upload/import, schedule export)
-- **Anthony Saade** — Stories 3, 4, 9 & 10 (Room timetable, instructor schedule, audit report, class detail)
+- **Anthony Saade** — Stories 3 & 4, Mandatory Stories (Room timetable, instructor schedule, class CRUD, audit report)
 - **Haruto Venkatesan** — Stories 2 & 6 (Search/filter, semester comparison)
 - **Jose Wong** — Stories 5 & 7 (Room suggestions, utilization stats)

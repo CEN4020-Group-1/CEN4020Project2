@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% if mode == 'edit' %}Edit{% else %}Add New{% endif %} Class - Bellini Scheduling System</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        h1 { color: #2c3e50; }
+        .container { max-width: 760px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .back-link { display: inline-block; margin-bottom: 10px; color: #2980b9; text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+        .error-box { background: #fdedec; border: 1px solid #e74c3c; color: #c0392b; padding: 12px 16px; border-radius: 4px; margin-bottom: 18px; }
+        .form-section { margin-top: 22px; padding: 10px 14px; background: #2c3e50; color: #fff; font-weight: bold; font-size: 14px; border-radius: 4px 4px 0 0; }
+        .form-grid { display: grid; grid-template-columns: 160px 1fr; gap: 0; }
+        .form-label { padding: 10px 14px; background: #ecf0f1; font-weight: bold; color: #2c3e50; font-size: 13px; border-bottom: 1px solid #ddd; display: flex; align-items: center; }
+        .form-field { padding: 8px 14px; border-bottom: 1px solid #eee; }
+        .form-field input[type="text"],
+        .form-field input[type="number"],
+        .form-field select { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; box-sizing: border-box; }
+        .form-field input[readonly] { background: #ecf0f1; color: #7f8c8d; }
+        .day-checks { display: flex; gap: 14px; flex-wrap: wrap; padding-top: 4px; }
+        .day-checks label { font-size: 14px; color: #2c3e50; cursor: pointer; }
+        .day-checks input { margin-right: 3px; }
+        .time-row { display: flex; gap: 8px; align-items: center; }
+        .time-row input { width: 120px; }
+        .time-row span { color: #7f8c8d; font-size: 13px; }
+        .actions { margin-top: 24px; display: flex; gap: 12px; }
+        .btn { display: inline-block; padding: 10px 24px; border: none; border-radius: 4px; font-size: 14px; cursor: pointer; text-decoration: none; color: #fff; }
+        .btn-blue { background: #2980b9; }
+        .btn-blue:hover { background: #2471a3; }
+        .btn-gray { background: #7f8c8d; }
+        .btn-gray:hover { background: #6c7a7d; }
+        .required { color: #e74c3c; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back-link">&larr; Back to Home</a>
+        {% if mode == 'edit' %}
+        &nbsp;&nbsp;<a href="/schedule/class/{{ crn }}?semester={{ semester }}" class="back-link">&larr; Back to Class Detail</a>
+        {% endif %}
+
+        <h1>{% if mode == 'edit' %}Edit Class (CRN {{ crn }}){% else %}Add New Class{% endif %}</h1>
+
+        {% if error %}
+        <div class="error-box">{{ error }}</div>
+        {% endif %}
+
+        <form method="post">
+            {% if mode == 'edit' %}
+            <input type="hidden" name="semester_hidden" value="{{ semester }}">
+            {% endif %}
+
+            <div class="form-section">Course Information</div>
+            <div class="form-grid">
+                <div class="form-label">Semester <span class="required">*</span></div>
+                <div class="form-field">
+                    <select name="TERM" {% if mode == 'edit' %}disabled{% endif %}>
+                        <option value="">-- Select --</option>
+                        {% for code, label in semesters %}
+                        <option value="{{ code }}" {% if form_data.get('TERM','') == code %}selected{% endif %}>{{ label }}</option>
+                        {% endfor %}
+                    </select>
+                    {% if mode == 'edit' %}<input type="hidden" name="TERM" value="{{ form_data.get('TERM','') }}">{% endif %}
+                </div>
+
+                <div class="form-label">CRN</div>
+                <div class="form-field">
+                    <input type="text" name="CRN" value="{{ form_data.get('CRN','') }}" {% if mode == 'edit' %}readonly{% endif %} placeholder="Auto-generated if blank">
+                </div>
+
+                <div class="form-label">Subject <span class="required">*</span></div>
+                <div class="form-field">
+                    <input type="text" name="SUBJ" value="{{ form_data.get('SUBJ','') }}" placeholder="e.g. COP">
+                </div>
+
+                <div class="form-label">Course Number <span class="required">*</span></div>
+                <div class="form-field">
+                    <input type="text" name="CRSE_NUMB" value="{{ form_data.get('CRSE_NUMB','') }}" placeholder="e.g. 4703">
+                </div>
+
+                <div class="form-label">Course Title</div>
+                <div class="form-field">
+                    <input type="text" name="CRSE_TITLE" value="{{ form_data.get('CRSE_TITLE','') }}">
+                </div>
+
+                <div class="form-label">Section</div>
+                <div class="form-field">
+                    <input type="text" name="CRSE_SECTION" value="{{ form_data.get('CRSE_SECTION','') }}" placeholder="e.g. 001">
+                </div>
+
+                <div class="form-label">Level</div>
+                <div class="form-field">
+                    <input type="text" name="CRSE_LEVL" value="{{ form_data.get('CRSE_LEVL','') }}" placeholder="e.g. UG or GR">
+                </div>
+            </div>
+
+            <div class="form-section">Schedule</div>
+            <div class="form-grid">
+                <div class="form-label">Meeting Days</div>
+                <div class="form-field">
+                    <div class="day-checks">
+                        {% for code in day_order %}
+                        <label>
+                            <input type="checkbox" name="day_checks" value="{{ code }}"
+                                {% if code in form_data.get('MEETING_DAYS','') %}checked{% endif %}>
+                            {{ day_names[code] }}
+                        </label>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="form-label">Meeting Times</div>
+                <div class="form-field">
+                    <div class="time-row">
+                        {% set times = form_data.get('MEETING_TIMES','').split(' - ') if form_data.get('MEETING_TIMES') else ['',''] %}
+                        <input type="text" name="time_start" value="{{ times[0] }}" placeholder="08:00 AM">
+                        <span>to</span>
+                        <input type="text" name="time_end" value="{{ times[1] if times|length > 1 else '' }}" placeholder="09:15 AM">
+                    </div>
+                </div>
+
+                <div class="form-label">Meeting Room</div>
+                <div class="form-field">
+                    <input type="text" name="MEETING_ROOM" value="{{ form_data.get('MEETING_ROOM','') }}" placeholder="e.g. CWY 107">
+                </div>
+
+                <div class="form-label">Campus</div>
+                <div class="form-field">
+                    <input type="text" name="CAMPUS" value="{{ form_data.get('CAMPUS','') }}">
+                </div>
+            </div>
+
+            <div class="form-section">Instructor & Enrollment</div>
+            <div class="form-grid">
+                <div class="form-label">Instructor</div>
+                <div class="form-field">
+                    <input type="text" name="INSTRUCTOR" value="{{ form_data.get('INSTRUCTOR','') }}">
+                </div>
+
+                <div class="form-label">Instructor Email</div>
+                <div class="form-field">
+                    <input type="text" name="INSTRUCTOR_EMAIL" value="{{ form_data.get('INSTRUCTOR_EMAIL','') }}">
+                </div>
+
+                <div class="form-label">Enrollment</div>
+                <div class="form-field">
+                    <input type="number" name="ENROLLMENT" value="{{ form_data.get('ENROLLMENT','') }}" min="0">
+                </div>
+            </div>
+
+            <div class="form-section">Teaching Assistants</div>
+            <div class="form-grid">
+                <div class="form-label">Grad TA(s)</div>
+                <div class="form-field">
+                    <input type="text" name="GRAD_TAS" value="{{ form_data.get('GRAD_TAS','') }}">
+                </div>
+
+                <div class="form-label">Grad TA Hours</div>
+                <div class="form-field">
+                    <input type="text" name="GRAD_TA_HOURS" value="{{ form_data.get('GRAD_TA_HOURS','') }}">
+                </div>
+
+                <div class="form-label">UG TA(s)</div>
+                <div class="form-field">
+                    <input type="text" name="UGTAS" value="{{ form_data.get('UGTAS','') }}">
+                </div>
+
+                <div class="form-label">UG TA Hours</div>
+                <div class="form-field">
+                    <input type="text" name="UGTA_HOURS" value="{{ form_data.get('UGTA_HOURS','') }}">
+                </div>
+            </div>
+
+            <div class="actions">
+                <button type="submit" class="btn btn-blue">{% if mode == 'edit' %}Save Changes{% else %}Add Class{% endif %}</button>
+                <a href="/" class="btn btn-gray">Cancel</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,3 +1,14 @@
+Mandatory User Stories
+=====================
+
+Mandatory Story 1: As a member of class scheduling committee of Bellini College, I want to use the system to assign rooms, datetimes, TAs, instructors, course data and other necessary data to schedule new classes or delete or update existing classes, so I can maintain the class schedule effectively.
+
+Mandatory Story 2: As the chair of class scheduling committee of Bellini College, I want to generate reports to list inconsistent and invalid class scheduling data such as duplicate CRN, overlapping class meeting time of the same room or instructor, unreasonable class meeting time, and any kind of erroneous data, so I can audit class schedule before it is released.
+
+
+Team User Stories
+=================
+
 User Story 1: As a member of the Bellini scheduling committee, I want to upload the provided Excel files and automatically import the class data into the system, so that the scheduling database can be populated quickly without manual data entry.
 
 User Story 2: As a scheduling committee member, I want to search and filter classes by course code, instructor, semester, or department, so that I can quickly locate specific classes within the large dataset.
@@ -13,7 +24,3 @@ User Story 6: As a scheduling committee member, I want to compare schedules acro
 User Story 7: As a department coordinator, I want to visualize classroom utilization statistics (such as percentage of time rooms are occupied), so that the college can optimize use of physical resources.
 
 User Story 8: As a scheduling committee member, I want to export the finalized class schedule to a downloadable format such as Excel or CSV, so that it can be shared easily with departments and administrative staff.
-
-User Story 9: As the chair of the scheduling committee, I want to generate a schedule audit report that lists scheduling issues such as duplicate CRNs, overlapping instructor or room times, and unreasonable meeting times, so that I can identify and fix errors before the schedule is released.
-
-User Story 10: As a scheduling committee member, I want to open a detailed view for a specific class section, so that I can see all of its scheduling information in one place.

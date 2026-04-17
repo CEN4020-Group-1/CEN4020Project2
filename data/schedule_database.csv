@@ -1,219 +1,219 @@
 TERM,CRSE_LEVL,CRSE_SECTION,CRN,SUBJ,CRSE_NUMB,CRSE_TITLE,GRAD_TA_HOURS,GRAD_TAS,UGTA_HOURS,UGTAS,MEETING_DAYS,MEETING_TIMES,MEETING_ROOM,INSTRUCTOR,INSTRUCTOR_EMAIL,CAMPUS,ENROLLMENT,UGTA_EMAILS,PRIOR SECT ENRL,WAIT LIST ACTUAL,WAIT LIST MAX,START DATE,END DATE,MULTIPLE SECTIONS,GRAD_TA_EMAILS
-202501.0,UG,1.0,15533.0,COP,4703,Adv Database Systems for IT,30.0,"Christopher Morris (10)
+202501,UG,1.0,15533.0,COP,4703,Adv Database Systems for IT,30.0,"Christopher Morris (10)
 Nafis Azad (10)
 Theophilus Amaefuna (10)",,,F,11:00 AM - 01:45 PM,CWY 107,Suey-Chyun Fang,fang1@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,15509.0,COP,3515,Adv Program Design,,,40.0,"Moyosoreoluwa Ayoade (10)
+202501,UG,1.0,15509.0,COP,3515,Adv Program Design,,,40.0,"Moyosoreoluwa Ayoade (10)
 Anh Nguyen (10)
 Kayla Homatas (10)
 Quinn Berichon (10)",MW,12:30 PM - 01:45 PM,CMC 141,Hye Yi,hsyi@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,15541.0,CIS,4930,Advanced OOP in C++,5.0,Caio da Silva (5),10.0,Rachit Kansagra (10),TR,12:30 PM - 01:45 PM,CHE 103,Henry Jeanty,hjeanty@usf.edu,,,,,,,,,,
-202501.0,UG,2.0,15542.0,COP,4931,Advanced OOP in C++ for IT,5.0,Caio da Silva (5),,,MW,12:30 PM - 01:45 PM,ENB 118,Henry Jeanty,hjeanty@usf.edu,,,,,,,,,,
-202501.0,GR,7.0,19011.0,COP,6536,Advances in Data Structures,,See COP 4538,,,TR,02:00 PM - 03:15 PM,CPR 115,Philip Ventura,pventura@usf.edu,,,,,,,,,,
-202501.0,GR,1.0,18954.0,CAI,5615,Affective Computing,10.0,Tara Nourivandi (10),,,MW,05:00 PM - 06:15 PM,CPR 103,Shaun Canavan,scanavan@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,15933.0,CAP,4628,Affective Computing,10.0,Tara Nourivandi (10),,,MW,05:00 PM - 06:15 PM,CPR 103,Shaun Canavan,scanavan@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,15510.0,COT,4400,Analysis Of Algorithms,15.0,"Harshitha Sudhakar (5)
+202501,UG,1.0,15541.0,CIS,4930,Advanced OOP in C++,5.0,Caio da Silva (5),10.0,Rachit Kansagra (10),TR,12:30 PM - 01:45 PM,CHE 103,Henry Jeanty,hjeanty@usf.edu,,,,,,,,,,
+202501,UG,2.0,15542.0,COP,4931,Advanced OOP in C++ for IT,5.0,Caio da Silva (5),,,MW,12:30 PM - 01:45 PM,ENB 118,Henry Jeanty,hjeanty@usf.edu,,,,,,,,,,
+202501,GR,7.0,19011.0,COP,6536,Advances in Data Structures,,See COP 4538,,,TR,02:00 PM - 03:15 PM,CPR 115,Philip Ventura,pventura@usf.edu,,,,,,,,,,
+202501,GR,1.0,18954.0,CAI,5615,Affective Computing,10.0,Tara Nourivandi (10),,,MW,05:00 PM - 06:15 PM,CPR 103,Shaun Canavan,scanavan@usf.edu,,,,,,,,,,
+202501,UG,1.0,15933.0,CAP,4628,Affective Computing,10.0,Tara Nourivandi (10),,,MW,05:00 PM - 06:15 PM,CPR 103,Shaun Canavan,scanavan@usf.edu,,,,,,,,,,
+202501,UG,1.0,15510.0,COT,4400,Analysis Of Algorithms,15.0,"Harshitha Sudhakar (5)
 Nishat Nayla Labiba (10)",20.0,"Harshavardan Yuvaraj (10)
 Anthony Martini (10)",MW,05:00 PM - 06:15 PM,ISA 1061,Oguzhan Topsakal,topsakal@usf.edu,,,,,,,,,,
-202501.0,UG,2.0,15511.0,COT,4400,Analysis Of Algorithms,25.0,"Nishat Nayla Labiba (10)
+202501,UG,2.0,15511.0,COT,4400,Analysis Of Algorithms,25.0,"Nishat Nayla Labiba (10)
 Md Hasin Akhyear(10)
 Harshitha Sudhakar (5)",,,MW,11:00 AM - 12:15 PM,CHE 111,Oguzhan Topsakal,topsakal@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,15506.0,COT,4210,Automata Thry/Formal Languages,10.0,Anika Anjum (10),20.0,"Aanthoni Nevan Dsouza (10)
+202501,UG,1.0,15506.0,COT,4210,Automata Thry/Formal Languages,10.0,Anika Anjum (10),20.0,"Aanthoni Nevan Dsouza (10)
 Umar Khan (10)",F,11:00 AM - 01:45 PM,CHE 100,Valentina Korzhova,korzhova@usf.edu,,,,,,,,,,
-202501.0,GR,1.0,19021.0,CAI,5815,Autonomous Mobile Robots,10.0,Chance Hamilton (10),,,TR,03:30 PM - 04:45 PM,CHE 303,Alfredo Weitzenfeld,aweitzenfeld@usf.edu,,,,,,,,,,
-202501.0,UG,7.0,18957.0,CIS,4930,Capture the Flag,10.0,Maria Zapata (10),,,MW,11:00 AM - 12:15 PM,BSF 100,Marbin Pazos Revilla,marbin@usf.edu,,,,,,,,,,
-202501.0,UG,5.0,18958.0,COP,4931,Capture the Flag,10.0,Uthman Tijani (10),,,MW,11:00 AM - 12:15 PM,BSF 100,Marbin Pazos Revilla,marbin@usf.edu,,,,,,,,,,
-202501.0,UG,3.0,15922.0,CIS,4930,Comp Methods for Imaging,,TBD,,,TR,03:30 PM - 04:45 PM,BEH 103,Oluwaremilekun John Murray-Bruce,murraybruce@usf.edu,,,,,,,,,,
-202501.0,GR,2.0,15921.0,CIS,6930,Comp Methods for Imaging,,TBD,,,TR,03:30 PM - 04:45 PM,BEH 103,Oluwaremilekun John Murray-Bruce,murraybruce@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,15919.0,COP,4620,Compilers,10.0,Gabriel Laverghetta (10),,,MW,05:00 PM - 06:15 PM,CHE 100,Jarred Ligatti,ligatti@usf.edu,,,,,,,,,,
-202501.0,GR,1.0,15920.0,COP,6625,Compilers,10.0,Parisa Momeni (10),,,MW,05:00 PM - 06:15 PM,CHE 100,Jarred Ligatti,ligatti@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,15500.0,CDA,4205,Computer Architecture,25.0,"Samir Ahmed (10)
+202501,GR,1.0,19021.0,CAI,5815,Autonomous Mobile Robots,10.0,Chance Hamilton (10),,,TR,03:30 PM - 04:45 PM,CHE 303,Alfredo Weitzenfeld,aweitzenfeld@usf.edu,,,,,,,,,,
+202501,UG,7.0,18957.0,CIS,4930,Capture the Flag,10.0,Maria Zapata (10),,,MW,11:00 AM - 12:15 PM,BSF 100,Marbin Pazos Revilla,marbin@usf.edu,,,,,,,,,,
+202501,UG,5.0,18958.0,COP,4931,Capture the Flag,10.0,Uthman Tijani (10),,,MW,11:00 AM - 12:15 PM,BSF 100,Marbin Pazos Revilla,marbin@usf.edu,,,,,,,,,,
+202501,UG,3.0,15922.0,CIS,4930,Comp Methods for Imaging,,TBD,,,TR,03:30 PM - 04:45 PM,BEH 103,Oluwaremilekun John Murray-Bruce,murraybruce@usf.edu,,,,,,,,,,
+202501,GR,2.0,15921.0,CIS,6930,Comp Methods for Imaging,,TBD,,,TR,03:30 PM - 04:45 PM,BEH 103,Oluwaremilekun John Murray-Bruce,murraybruce@usf.edu,,,,,,,,,,
+202501,UG,1.0,15919.0,COP,4620,Compilers,10.0,Gabriel Laverghetta (10),,,MW,05:00 PM - 06:15 PM,CHE 100,Jarred Ligatti,ligatti@usf.edu,,,,,,,,,,
+202501,GR,1.0,15920.0,COP,6625,Compilers,10.0,Parisa Momeni (10),,,MW,05:00 PM - 06:15 PM,CHE 100,Jarred Ligatti,ligatti@usf.edu,,,,,,,,,,
+202501,UG,1.0,15500.0,CDA,4205,Computer Architecture,25.0,"Samir Ahmed (10)
 Amanuel Ergogo (5)
 Ahmed Ghoneim (10)",,,MW,09:30 AM - 10:45 AM,CPR 115,Robert Karam,rkaram@usf.edu,,,,,,,,,,
-202501.0,UG,2.0,15499.0,CDA,4205,Computer Architecture,25.0,"
+202501,UG,2.0,15499.0,CDA,4205,Computer Architecture,25.0,"
 Rupal Agarwal (10)
 Robinson Czajkowski (10)
 Amanuel Ergogo (5)",10.0,Marwan Abdelwahab (10),TR,08:00 AM - 09:15 AM,CMC 141,Marvin Andujar,andujar1@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,16768.0,CDA,4205L,Computer Architecture Lab,10.0,Abdullah Al Monsur (10),,,F,09:30 AM - 11:15 AM,ENB 214,Robert Karam,rkaram@usf.edu,,,,,,,,,,
-202501.0,UG,2.0,16769.0,CDA,4205L,Computer Architecture Lab,10.0,Samir Ahmed (10),,,F,11:30 AM - 01:15 PM,ENB 214,Robert Karam,rkaram@usf.edu,,,,,,,,,,
-202501.0,UG,3.0,16773.0,CDA,4205L,Computer Architecture Lab,10.0,Robinson Czajkowski (10),,,W,11:30 AM - 01:15 PM,ENB 214,"Andujar, Marvin",andujar1@usf.edu,,,,,,,,,,
-202501.0,UG,4.0,16774.0,CDA,4205L,Computer Architecture Lab,10.0,Rupal Agarwal (10),,,W,01:30 PM - 03:15 PM,ENB 214,"Andujar, Marvin",andujar1@usf.edu,,,,,,,,,,
-202501.0,UG,5.0,16775.0,CDA,4205L,Computer Architecture Lab,10.0,Neil Sambhu  (10),,,R,09:00 AM - 10:50 AM,ENB 214,"Andujar, Marvin",andujar1@usf.edu,,,,,,,,,,
-202501.0,UG,6.0,16776.0,CDA,4205L,Computer Architecture Lab,10.0,Anton Shepelev (10),,,R,11:30 AM - 01:15 PM,ENB 214,"Andujar, Marvin",andujar1@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,16700.0,CNT,4104,Computer Info Networks for IT,10.0,Phaneshwar Dundigalla (10),20.0,"Eth Drelles (10)
+202501,UG,1.0,16768.0,CDA,4205L,Computer Architecture Lab,10.0,Abdullah Al Monsur (10),,,F,09:30 AM - 11:15 AM,ENB 214,Robert Karam,rkaram@usf.edu,,,,,,,,,,
+202501,UG,2.0,16769.0,CDA,4205L,Computer Architecture Lab,10.0,Samir Ahmed (10),,,F,11:30 AM - 01:15 PM,ENB 214,Robert Karam,rkaram@usf.edu,,,,,,,,,,
+202501,UG,3.0,16773.0,CDA,4205L,Computer Architecture Lab,10.0,Robinson Czajkowski (10),,,W,11:30 AM - 01:15 PM,ENB 214,"Andujar, Marvin",andujar1@usf.edu,,,,,,,,,,
+202501,UG,4.0,16774.0,CDA,4205L,Computer Architecture Lab,10.0,Rupal Agarwal (10),,,W,01:30 PM - 03:15 PM,ENB 214,"Andujar, Marvin",andujar1@usf.edu,,,,,,,,,,
+202501,UG,5.0,16775.0,CDA,4205L,Computer Architecture Lab,10.0,Neil Sambhu  (10),,,R,09:00 AM - 10:50 AM,ENB 214,"Andujar, Marvin",andujar1@usf.edu,,,,,,,,,,
+202501,UG,6.0,16776.0,CDA,4205L,Computer Architecture Lab,10.0,Anton Shepelev (10),,,R,11:30 AM - 01:15 PM,ENB 214,"Andujar, Marvin",andujar1@usf.edu,,,,,,,,,,
+202501,UG,1.0,16700.0,CNT,4104,Computer Info Networks for IT,10.0,Phaneshwar Dundigalla (10),20.0,"Eth Drelles (10)
 Willam Livengood (10)",TR,05:00 PM - 06:15 PM,BSF 100,"Rauscher, Richard L.",rrauscher@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,15512.0,CDA,3201,Computer Logic & Design,,,20.0,"Duong Mai (10)
+202501,UG,1.0,15512.0,CDA,3201,Computer Logic & Design,,,20.0,"Duong Mai (10)
 Amber Nguyen (10)",TR,02:00 PM - 03:15 PM,ULH 101,"Rahman, Taseef  .",taseefr@usf.edu,,,,,,,,,,
-202501.0,UG,2.0,15513.0,CDA,3201,Computer Logic & Design,,,40.0,"Divyansh Maurya (10)
+202501,UG,2.0,15513.0,CDA,3201,Computer Logic & Design,,,40.0,"Divyansh Maurya (10)
 Isfahan Juboraj (10)
 Neeraj Pillai (10)
 Nathan Allen (10)",MW,05:00 PM - 06:15 PM,ULH 101,"Rahman, Taseef  .",taseefr@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,16782.0,CDA,3201L,Computer Logic Design Lab,10.0,"
+202501,UG,1.0,16782.0,CDA,3201L,Computer Logic Design Lab,10.0,"
 Anthony Mccofie (10)",,,F,12:00 PM - 01:50 PM,,,,,,,,,,,,,
-202501.0,UG,2.0,16783.0,CDA,3201L,Computer Logic Design Lab,10.0,TBD,,,F,02:00 PM - 03:50 PM,ENB 214,,,,,,,,,,,,
-202501.0,UG,3.0,16784.0,CDA,3201L,Computer Logic Design Lab,,TBD,,,R,03:00 PM - 04:50 PM,,,,,,,,,,,,,
-202501.0,UG,4.0,16777.0,CDA,3201L,Computer Logic Design Lab,10.0,Anis Elebiary (10),,,W,05:00 PM - 06:50 PM,ENB 214,,,,,,,,,,,,
-202501.0,UG,5.0,16778.0,CDA,3201L,Computer Logic Design Lab,,TBD,,,T,02:00 PM - 03:50 PM,,,,,,,,,,,,,
-202501.0,UG,6.0,16779.0,CDA,3201L,Computer Logic Design Lab,10.0,Alabi Anisha (10),,,T,04:00 PM - 05:50 PM,,,,,,,,,,,,,
-202501.0,UG,7.0,16780.0,CDA,3201L,Computer Logic Design Lab,10.0,TBD,,,T,10:00 AM - 11:50 AM,ENB 214,,,,,,,,,,,,
-202501.0,UG,8.0,16781.0,CDA,3201L,Computer Logic Design Lab,10.0,Bardia Nadimi (10),,,T,12:00 PM - 01:50 PM,,,,,,,,,,,,,
-202501.0,UG,1.0,20487.0,CNT,4004,Computer Networks I,10.0,Ahmed Ghoneim (10),,,TR,05:00 PM - 06:15 PM,BSF 100,,,,,,,,,,,,
-202501.0,UG,1.0,16791.0,CNT,4104L,Computer Networks Lab for IT,10.0,Molud Esmali (10),,,R,09:00 AM - 10:50 AM,NEC 300,,,,,,,,,,,,
-202501.0,UG,2.0,16790.0,CNT,4104L,Computer Networks Lab for IT,10.0,Brendon Johnson (10),,,R,11:00 AM - 12:50 PM,NEC 300,"Rauscher, Richard L.",rrauscher@usf.edu,,,,,,,,,,
-202501.0,UG,3.0,16788.0,CNT,4104L,Computer Networks Lab for IT,,TBD,,,R,01:00 PM - 02:50 PM,NEC 300,"Rauscher, Richard L.",rrauscher@usf.edu,,,,,,,,,,
-202501.0,UG,4.0,16789.0,CNT,4104L,Computer Networks Lab for IT,,TBD,,,F,09:00 AM - 10:50 AM,NEC 300,"Rauscher, Richard L.",rrauscher@usf.edu,,,,,,,,,,
-202501.0,UG,5.0,16787.0,CNT,4104L,Computer Networks Lab for IT,10.0,Molud Esmali (10),,,R,03:00 PM - 04:50 PM,NEC 300,"Rauscher, Richard L.",rrauscher@usf.edu,,,,,,,,,,
-202501.0,UG,6.0,19006.0,CNT,4104L,Computer Networks Lab for IT,10.0,Brendon Johnson (10),,,F,11:00 AM - 12:50 PM,NEC 300,"Rauscher, Richard L.",rrauscher@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,15498.0,CDA,3103,Computer Organization,20.0,"Mohammad Ahmadi (10)
+202501,UG,2.0,16783.0,CDA,3201L,Computer Logic Design Lab,10.0,TBD,,,F,02:00 PM - 03:50 PM,ENB 214,,,,,,,,,,,,
+202501,UG,3.0,16784.0,CDA,3201L,Computer Logic Design Lab,,TBD,,,R,03:00 PM - 04:50 PM,,,,,,,,,,,,,
+202501,UG,4.0,16777.0,CDA,3201L,Computer Logic Design Lab,10.0,Anis Elebiary (10),,,W,05:00 PM - 06:50 PM,ENB 214,,,,,,,,,,,,
+202501,UG,5.0,16778.0,CDA,3201L,Computer Logic Design Lab,,TBD,,,T,02:00 PM - 03:50 PM,,,,,,,,,,,,,
+202501,UG,6.0,16779.0,CDA,3201L,Computer Logic Design Lab,10.0,Alabi Anisha (10),,,T,04:00 PM - 05:50 PM,,,,,,,,,,,,,
+202501,UG,7.0,16780.0,CDA,3201L,Computer Logic Design Lab,10.0,TBD,,,T,10:00 AM - 11:50 AM,ENB 214,,,,,,,,,,,,
+202501,UG,8.0,16781.0,CDA,3201L,Computer Logic Design Lab,10.0,Bardia Nadimi (10),,,T,12:00 PM - 01:50 PM,,,,,,,,,,,,,
+202501,UG,1.0,20487.0,CNT,4004,Computer Networks I,10.0,Ahmed Ghoneim (10),,,TR,05:00 PM - 06:15 PM,BSF 100,,,,,,,,,,,,
+202501,UG,1.0,16791.0,CNT,4104L,Computer Networks Lab for IT,10.0,Molud Esmali (10),,,R,09:00 AM - 10:50 AM,NEC 300,,,,,,,,,,,,
+202501,UG,2.0,16790.0,CNT,4104L,Computer Networks Lab for IT,10.0,Brendon Johnson (10),,,R,11:00 AM - 12:50 PM,NEC 300,"Rauscher, Richard L.",rrauscher@usf.edu,,,,,,,,,,
+202501,UG,3.0,16788.0,CNT,4104L,Computer Networks Lab for IT,,TBD,,,R,01:00 PM - 02:50 PM,NEC 300,"Rauscher, Richard L.",rrauscher@usf.edu,,,,,,,,,,
+202501,UG,4.0,16789.0,CNT,4104L,Computer Networks Lab for IT,,TBD,,,F,09:00 AM - 10:50 AM,NEC 300,"Rauscher, Richard L.",rrauscher@usf.edu,,,,,,,,,,
+202501,UG,5.0,16787.0,CNT,4104L,Computer Networks Lab for IT,10.0,Molud Esmali (10),,,R,03:00 PM - 04:50 PM,NEC 300,"Rauscher, Richard L.",rrauscher@usf.edu,,,,,,,,,,
+202501,UG,6.0,19006.0,CNT,4104L,Computer Networks Lab for IT,10.0,Brendon Johnson (10),,,F,11:00 AM - 12:50 PM,NEC 300,"Rauscher, Richard L.",rrauscher@usf.edu,,,,,,,,,,
+202501,UG,1.0,15498.0,CDA,3103,Computer Organization,20.0,"Mohammad Ahmadi (10)
 Kenneth Verzyl (10)",30.0,"Misha Nguyen (10)
 Felix Mendez (10)
 Andrew Harig (10)
 ",MW,02:00 PM - 03:15 PM,BSF 100,Yan Zhang,yzhang16@usf.edu,,,,,,,,,,
-202501.0,UG,2.0,15515.0,CDA,3103,Computer Organization,10.0,Md Hasin Akhyear (10),40.0,"John Liu (10)
+202501,UG,2.0,15515.0,CDA,3103,Computer Organization,10.0,Md Hasin Akhyear (10),40.0,"John Liu (10)
 Zahran Yahia Khan (10)
 Tran Ho (10)
 Zhanna Sergeeva (10)",TR,02:00 PM - 03:15 PM,CWY 109,Yan Zhang,yzhang16@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,16585.0,CDA,4203,Computer System Design,10.0,Saeed Aghapour (10),,,MW,03:30 PM - 04:45 PM,CHE 217,Mehran Mozaffari Kermani,mehran2@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,16785.0,CDA,4203L,Computer System Design Lab,10.0,Saeed Aghapour (10),,,T,01:30 PM - 03:15 PM,ENB 214,,,,,,,,,,,,
-202501.0,UG,2.0,16786.0,CDA,4203L,Computer System Design Lab,10.0,Mohammad Ahmadi (10),,,T,03:30 PM - 05:15 PM,ENB 214,,,,,,,,,,,,
-202501.0,UG,1.0,18996.0,COP,4520,Computing Massive Parallel Sys,10.0,Harshitha Sudhakar (10),,,MW,09:30 AM - 10:45 AM,SOC 149,"Tu, Yicheng",tuy@usf.edu,,,,,,,,,,
-202501.0,GR,1.0,18997.0,COP,6527,Computing Massive Parallel Sys,,,,,MW,09:30 AM - 10:45 AM,SOC 149,"Tu, Yicheng",tuy@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,15704.0,CDA,4621,Control of Mobile Robots,10.0,Chance Hamilton (10),,,TR,03:30 PM - 04:45 PM,CHE 303,"Weitzenfeld, Alfredo",aweitzenfeld@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,16686.0,CIS,4910,CSE Project,,TBD,,,F,11:00 AM - 01:45 PM,ENC 1002,Kenneth Christensen,kchriste@usf.edu,,,,,,,,,,
-202501.0,UG,4.0,16792.0,COP,4931,CyS Biometrics,20.0,"Sayde King (10)
+202501,UG,1.0,16585.0,CDA,4203,Computer System Design,10.0,Saeed Aghapour (10),,,MW,03:30 PM - 04:45 PM,CHE 217,Mehran Mozaffari Kermani,mehran2@usf.edu,,,,,,,,,,
+202501,UG,1.0,16785.0,CDA,4203L,Computer System Design Lab,10.0,Saeed Aghapour (10),,,T,01:30 PM - 03:15 PM,ENB 214,,,,,,,,,,,,
+202501,UG,2.0,16786.0,CDA,4203L,Computer System Design Lab,10.0,Mohammad Ahmadi (10),,,T,03:30 PM - 05:15 PM,ENB 214,,,,,,,,,,,,
+202501,UG,1.0,18996.0,COP,4520,Computing Massive Parallel Sys,10.0,Harshitha Sudhakar (10),,,MW,09:30 AM - 10:45 AM,SOC 149,"Tu, Yicheng",tuy@usf.edu,,,,,,,,,,
+202501,GR,1.0,18997.0,COP,6527,Computing Massive Parallel Sys,,,,,MW,09:30 AM - 10:45 AM,SOC 149,"Tu, Yicheng",tuy@usf.edu,,,,,,,,,,
+202501,UG,1.0,15704.0,CDA,4621,Control of Mobile Robots,10.0,Chance Hamilton (10),,,TR,03:30 PM - 04:45 PM,CHE 303,"Weitzenfeld, Alfredo",aweitzenfeld@usf.edu,,,,,,,,,,
+202501,UG,1.0,16686.0,CIS,4910,CSE Project,,TBD,,,F,11:00 AM - 01:45 PM,ENC 1002,Kenneth Christensen,kchriste@usf.edu,,,,,,,,,,
+202501,UG,4.0,16792.0,COP,4931,CyS Biometrics,20.0,"Sayde King (10)
 Meghna Chaudhury (10)",,,TR,09:30 AM - 10:45 AM,BEH 104,"Neal, Tempestt J.",tjneal@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,15516.0,COP,4530,Data Structures,10.0,Abdullah as-Sami (10),30.0,"Raja Ijlal Sultan (10)
+202501,UG,1.0,15516.0,COP,4530,Data Structures,10.0,Abdullah as-Sami (10),30.0,"Raja Ijlal Sultan (10)
 Dang Nguyen (10)
 Tam Do (10)",TR,02:00 PM - 03:15 PM,FAH 101,Valentina Korzhova,korzhova@usf.edu,,,,,,,,,,
-202501.0,UG,2.0,15517.0,COP,4530,Data Structures,,,20.0,"Seastien Ghent (10)
+202501,UG,2.0,15517.0,COP,4530,Data Structures,,,20.0,"Seastien Ghent (10)
 Chi Vo (10)",MW,02:00 PM - 03:15 PM,SOC 152,Taseef Rahman,taseefr@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,15534.0,COP,4710,Database Design,,,20.0,"Austin Martin (10)
+202501,UG,1.0,15534.0,COP,4710,Database Design,,,20.0,"Austin Martin (10)
 Abdul Nafeh (10)
 ",MW,02:00 PM - 03:15 PM,CHE 111,Oguzhan Topsakal,topsakal@usf.edu,,,,,,,,,,
-202501.0,GR,1.0,18998.0,CAI,5205,Deep Learning,10.0,Abhiram Kandiyana (10),,,TR,05:00 PM - 06:15 PM,CHE 101,Yu Sun,yusun@usf.edu,,,,,,,,,,
-202501.0,GR,1.0,16698.0,CNT,6410,Emrg Topics Network Security,20.0,"Changjia Zhu (10)
+202501,GR,1.0,18998.0,CAI,5205,Deep Learning,10.0,Abhiram Kandiyana (10),,,TR,05:00 PM - 06:15 PM,CHE 101,Yu Sun,yusun@usf.edu,,,,,,,,,,
+202501,GR,1.0,16698.0,CNT,6410,Emrg Topics Network Security,20.0,"Changjia Zhu (10)
 Yuwen Cui (10)",,,MW,03:30 PM - 04:45 PM,SOC 152,Yao Liu,yliu21@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,16675.0,CIS,4250,Ethical Issues/Profess Conduct,20.0,Sree Mamidala (20),,,TR,03:30 PM - 04:45 PM,EDU 115,John Licato,licato@usf.edu,,,,,,,,,,
-202501.0,UG,2.0,16676.0,CIS,4250,Ethical Issues/Profess Conduct,20.0,Md Mehedi Hasan Jibon (20),,,MW,05:00 PM - 06:15 PM,CWY 107,Julia Woodward,juliaevewoodward@usf.edu,,,,,,,,,,
-202501.0,UG,3.0,19926.0,CIS,4250,Ethical Issues/Profess Conduct,20.0,Fadlullah Raji (20),,,MW,12:30 PM - 01:45 PM,BSN 1301,Amanda Holloman,akholloman@usf.edu,,,,,,,,,,
-202501.0,GR,9.0,18999.0,CIS,6930,Fair ML,20.0,Dmytro Vitel (20),,,MW,02:00 PM - 03:15 PM,BSN 1201,Anshuman Chhabra,anshumanc@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,19000.0,CIS,3213,Foundations of Cybersecurity,10.0,"
+202501,UG,1.0,16675.0,CIS,4250,Ethical Issues/Profess Conduct,20.0,Sree Mamidala (20),,,TR,03:30 PM - 04:45 PM,EDU 115,John Licato,licato@usf.edu,,,,,,,,,,
+202501,UG,2.0,16676.0,CIS,4250,Ethical Issues/Profess Conduct,20.0,Md Mehedi Hasan Jibon (20),,,MW,05:00 PM - 06:15 PM,CWY 107,Julia Woodward,juliaevewoodward@usf.edu,,,,,,,,,,
+202501,UG,3.0,19926.0,CIS,4250,Ethical Issues/Profess Conduct,20.0,Fadlullah Raji (20),,,MW,12:30 PM - 01:45 PM,BSN 1301,Amanda Holloman,akholloman@usf.edu,,,,,,,,,,
+202501,GR,9.0,18999.0,CIS,6930,Fair ML,20.0,Dmytro Vitel (20),,,MW,02:00 PM - 03:15 PM,BSN 1201,Anshuman Chhabra,anshumanc@usf.edu,,,,,,,,,,
+202501,UG,1.0,19000.0,CIS,3213,Foundations of Cybersecurity,10.0,"
 Meghna Chaudhury (10)",20.0,"Villa Keth (10)
 Vraj Patel (10)",,,OFFT OFF,William Gauvin Jr,wgauvin@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,16691.0,CIS,4622,Hands-on Cybersecurity,10.0,Kenneth Verzyl (10),10.0,Brandon Oung (10),TR,03:30 PM - 04:45 PM,ENB 216,Marbin Pazos Revilla,marbin@usf.edu,,,,,,,,,,
-202501.0,UG,2.0,16697.0,CIS,4622,Hands-on Cybersecurity,10.0,Satya Uday Sanku (10),10.0,Suzi Meldrum-Green (10),TR,09:30 AM - 10:45 AM,ENB 216,Philip Ventura,pventura@usf.edu,,,,,,,,,,
-202501.0,UG,2.0,15697.0,CIS,4930,Hardware Accelerators for ML,10.0,Parsa Khorrami (10),,,TR,09:30 AM - 10:45 AM,BSN 1301,Dayane Alfenas Reis,dayane3@usf.edu,,,,,,,,,,
-202501.0,GR,1.0,15698.0,CIS,6930,Hardware Accelerators for ML,10.0,Parsa Khorrami (10),,,TR,09:30 AM - 10:45 AM,BSN 1301,Dayane Alfenas Reis,dayane3@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,15519.0,CIS,4219,Human Aspects of Cybersecurity,20.0,"Zhengyuan Jiang (10)
+202501,UG,1.0,16691.0,CIS,4622,Hands-on Cybersecurity,10.0,Kenneth Verzyl (10),10.0,Brandon Oung (10),TR,03:30 PM - 04:45 PM,ENB 216,Marbin Pazos Revilla,marbin@usf.edu,,,,,,,,,,
+202501,UG,2.0,16697.0,CIS,4622,Hands-on Cybersecurity,10.0,Satya Uday Sanku (10),10.0,Suzi Meldrum-Green (10),TR,09:30 AM - 10:45 AM,ENB 216,Philip Ventura,pventura@usf.edu,,,,,,,,,,
+202501,UG,2.0,15697.0,CIS,4930,Hardware Accelerators for ML,10.0,Parsa Khorrami (10),,,TR,09:30 AM - 10:45 AM,BSN 1301,Dayane Alfenas Reis,dayane3@usf.edu,,,,,,,,,,
+202501,GR,1.0,15698.0,CIS,6930,Hardware Accelerators for ML,10.0,Parsa Khorrami (10),,,TR,09:30 AM - 10:45 AM,BSN 1301,Dayane Alfenas Reis,dayane3@usf.edu,,,,,,,,,,
+202501,UG,1.0,15519.0,CIS,4219,Human Aspects of Cybersecurity,20.0,"Zhengyuan Jiang (10)
 Sudharshan Balaji (10)",,,TR,12:30 PM - 01:45 PM,CIS 1048,NING WANG,ningw@usf.edu,,,,,,,,,,
-202501.0,UG,2.0,19005.0,CIS,4219,Human Aspects of Cybersecurity,20.0,"
+202501,UG,2.0,19005.0,CIS,4219,Human Aspects of Cybersecurity,20.0,"
 Aastha Sharma (10)
 Anton Shepelev (10)",,,TR,06:30 PM - 07:45 PM,CMC 141,,,,,,,,,,,,
-202501.0,GR,1.0,19004.0,CIS,6218,Human Aspects of Cybersecurity,,,,,TR,12:30 PM - 01:45 PM,CIS 1048,NING WANG,ningw@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,15520.0,CGS,2060,Intro to Computer Programming,,,10.0,Eleanor Duffey (10),MW,05:00 PM - 06:15 PM,BEH 104,James Anderson,jmanderson@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,15521.0,CGS,1540,Intro to Databases for IT,,,20.0,"Sophia Fasano (10)
+202501,GR,1.0,19004.0,CIS,6218,Human Aspects of Cybersecurity,,,,,TR,12:30 PM - 01:45 PM,CIS 1048,NING WANG,ningw@usf.edu,,,,,,,,,,
+202501,UG,1.0,15520.0,CGS,2060,Intro to Computer Programming,,,10.0,Eleanor Duffey (10),MW,05:00 PM - 06:15 PM,BEH 104,James Anderson,jmanderson@usf.edu,,,,,,,,,,
+202501,UG,1.0,15521.0,CGS,1540,Intro to Databases for IT,,,20.0,"Sophia Fasano (10)
 Aldo Espino(10)",MW,12:30 PM - 01:45 PM,BEH 104,Isabela Hidalgo,imoura@usf.edu,,,,,,,,,,
-202501.0,GR,1.0,15522.0,COT,6405,Intro to Theory of Algorithms,10.0,Satya Uday Sanku (10),,,MW,11:00 AM - 12:15 PM,CHE 103,Seungbae Kim,seungbae@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,19010.0,CAI,4002,Introduction to AI,20.0,"Stephen Steinle (10)
+202501,GR,1.0,15522.0,COT,6405,Intro to Theory of Algorithms,10.0,Satya Uday Sanku (10),,,MW,11:00 AM - 12:15 PM,CHE 103,Seungbae Kim,seungbae@usf.edu,,,,,,,,,,
+202501,UG,1.0,19010.0,CAI,4002,Introduction to AI,20.0,"Stephen Steinle (10)
 Youjian Tang (10)",,,MW,03:30 PM - 04:45 PM,SOC 150,John Licato,licato@usf.edu,,,,,,,,,,
-202501.0,GR,4.0,20335.0,CIS,6930,IoT Security,,TBD,,,F,11:00 AM - 01:45 PM,BSN 1201,Kaushal Kafle,kafle@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,15523.0,COP,4538,IT Data Structures,20.0,"Nitesh Bommisetty (10)
+202501,GR,4.0,20335.0,CIS,6930,IoT Security,,TBD,,,F,11:00 AM - 01:45 PM,BSN 1201,Kaushal Kafle,kafle@usf.edu,,,,,,,,,,
+202501,UG,1.0,15523.0,COP,4538,IT Data Structures,20.0,"Nitesh Bommisetty (10)
 Abdullah Al Monsur (10)",,,TR,02:00 PM - 03:15 PM,CPR 115,Philip Ventura,pventura@usf.edu,,,,,,,,,,
-202501.0,UG,2.0,15524.0,COP,4538,IT Data Structures,10.0,Anika Anjum (10),10.0,"Anil Mumbuc (10)
+202501,UG,2.0,15524.0,COP,4538,IT Data Structures,10.0,Anika Anjum (10),10.0,"Anil Mumbuc (10)
 ",TR,11:00 AM - 12:15 PM,CPR 115,,,,,,,,,,,,
-202501.0,UG,1.0,15501.0,COP,2513,IT Object Oriented Programming,,,20.0,"Ralph Toussaint (10)
+202501,UG,1.0,15501.0,COP,2513,IT Object Oriented Programming,,,20.0,"Ralph Toussaint (10)
 Sophia Husain (10)",MW,02:00 PM - 03:15 PM,CWY 107,Isabela Hidalgo,imoura@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,15503.0,COP,2512,IT Programming Fundamentals,30.0,"Parush Gera (10)
+202501,UG,1.0,15503.0,COP,2512,IT Programming Fundamentals,30.0,"Parush Gera (10)
 Mobasshira Urmi (10)
 Maria Zapata (10)",,,MW,06:30 PM - 07:45 PM,CWY 109,Alessio Gaspar,alessio@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,15518.0,COP,4931,Linux Command Line Interface,20.0,"
+202501,UG,1.0,15518.0,COP,4931,Linux Command Line Interface,20.0,"
 Kok Cheng Tan (20)",,,TR,05:00 PM - 06:15 PM,SOC 151,Alessio Gaspar,alessio@usf.edu,,,,,,,,,,
-202501.0,GR,901.0,19012.0,CAI,5307,Natural Language Processing,,,,,TR,06:30 PM - 07:45 PM,CHE 101,Ankur Mali,ankurarjunmali@usf.edu,,,,,,,,,,
-202501.0,UG,901.0,15700.0,CAP,4641,Natural Language Processing,10.0,"
+202501,GR,901.0,19012.0,CAI,5307,Natural Language Processing,,,,,TR,06:30 PM - 07:45 PM,CHE 101,Ankur Mali,ankurarjunmali@usf.edu,,,,,,,,,,
+202501,UG,901.0,15700.0,CAP,4641,Natural Language Processing,10.0,"
 Fahim Rahman (10)",,,TR,06:30 PM - 07:45 PM,CHE 101,Ankur Mali,ankurarjunmali@usf.edu,,,,,,,,,,
-202501.0,UG,700.0,16696.0,CNT,4403,Network Security & Firewalls,20.0,"Yuwen Cui (10)
+202501,UG,700.0,16696.0,CNT,4403,Network Security & Firewalls,20.0,"Yuwen Cui (10)
 Abhiram Kandiyana (10)",,,,,OFFT OFF,William Gauvin Jr,wgauvin@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,15526.0,COP,4600,Operating Systems,,,20.0,"Shrabon Das (10)
+202501,UG,1.0,15526.0,COP,4600,Operating Systems,,,20.0,"Shrabon Das (10)
 Ishaq Sharfuddin Sadiq Ali (10)",TR,06:30 PM - 07:45 PM,CHE 103,Mauricio Pamplona Segundo,mauriciop@usf.edu,,,,,,,,,,
-202501.0,UG,2.0,15527.0,COP,4600,Operating Systems,20.0,"Theophilus Amaefuna (10)
+202501,UG,2.0,15527.0,COP,4600,Operating Systems,20.0,"Theophilus Amaefuna (10)
 Chibuike Ezeokoli (10)
 ",,,TR,06:30 PM - 07:45 PM,CPR 115,Mauricio Pamplona Segundo,mauriciop@usf.edu,,,,,,,,,,
-202501.0,UG,3.0,19013.0,COP,4600,Operating Systems,20.0,"
+202501,UG,3.0,19013.0,COP,4600,Operating Systems,20.0,"
 Varun Sai Raigir (10)
 Mahit Kumpatla (10)",,,TR,09:30 AM - 10:45 AM,SOC 151,Hye Yi,hsyi@usf.edu,,,,,,,,,,
-202501.0,GR,1.0,15507.0,COP,6611,Operating Systems,10.0,"
+202501,GR,1.0,15507.0,COP,6611,Operating Systems,10.0,"
 Nitesh Bommisetty (10)",,,TR,05:00 PM - 06:15 PM,CPR 115,Gene Kim,genekim@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,15925.0,CIS,4200,Penetration Testing for IT,20.0,"
+202501,UG,1.0,15925.0,CIS,4200,Penetration Testing for IT,20.0,"
 Chi Zhang (10)
 Xiaowen Li (10)",,,MW,08:00 AM - 09:15 AM,FAH 101,Philip Ventura,pventura@usf.edu,,,,,,,,,,
-202501.0,GR,1.0,15926.0,CIS,6220,Penetration Testing for IT,10.0,Nazeefa Muzammil (10),,,MW,08:00 AM - 09:15 AM,FAH 101,Philip Ventura,pventura@usf.edu,,,,,,,,,,
-202501.0,GR,1.0,15508.0,EEL,6764,Princ of Computer Architecture,20.0,"
+202501,GR,1.0,15926.0,CIS,6220,Penetration Testing for IT,10.0,Nazeefa Muzammil (10),,,MW,08:00 AM - 09:15 AM,FAH 101,Philip Ventura,pventura@usf.edu,,,,,,,,,,
+202501,GR,1.0,15508.0,EEL,6764,Princ of Computer Architecture,20.0,"
 Varun Sai Raigir (10)
 Lakshmi Kavya Kalyanam (10)",,,MW,05:00 PM - 06:15 PM,CWY 109,Srinivas Katkoori,katkoori@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,15497.0,COP,3514,Program Design,,,50.0,"Faith Nittala (10)
+202501,UG,1.0,15497.0,COP,3514,Program Design,,,50.0,"Faith Nittala (10)
 Luisa Navarrete (10)
 Liza Jivani (10)
 Dean Diasti (10)
 Hieu Nguyen (10)",TR,12:30 PM - 01:45 PM,CWY 107,Jing Wang,jw@usf.edu,,,,,,,,,,
-202501.0,UG,2.0,15505.0,COP,3514,Program Design,30.0,"
+202501,UG,2.0,15505.0,COP,3514,Program Design,30.0,"
 TBD (10)
 Nazeefa Muzammil (10)
 TBD (10)",20.0,"Patrick Aabram (10)
 Mohammed Elwaei (10)",MW,06:30 PM - 07:45 PM,CHE 100,Jing Wang,jw@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,15745.0,COP,2510,Programming Concepts,,,10.0,Dat Truong (10),TR,03:30 PM - 04:45 PM,BSN 1100,Schinnel Small,sksmall@usf.edu,,,,,,,,,,
-202501.0,UG,2.0,15747.0,COP,2510,Programming Concepts,10.0,Jason Rudinsky (10),,,TR,03:30 PM - 04:45 PM,BSN 1100,Schinnel Small,sksmall@usf.edu,,,,,,,,,,
-202501.0,UG,4.0,15746.0,COP,2510,Programming Concepts,10.0,Mahit Kumpatla (10),,,TR,03:30 PM - 04:45 PM,BSN 1100,Schinnel Small,sksmall@usf.edu,,,,,,,,,,
-202501.0,UG,6.0,15750.0,COP,2510,Programming Concepts,,,,,TR,03:30 PM - 04:45 PM,BSN 1100,Schinnel Small,sksmall@usf.edu,,,,,,,,,,
-202501.0,UG,9.0,15753.0,COP,2510,Programming Concepts,10.0,Jason Rudinsky (10),,,TR,03:30 PM - 04:45 PM,BSN 1100,Schinnel Small,sksmall@usf.edu,,,,,,,,,,
-202501.0,UG,10.0,15754.0,COP,2510,Programming Concepts,10.0,"
+202501,UG,1.0,15745.0,COP,2510,Programming Concepts,,,10.0,Dat Truong (10),TR,03:30 PM - 04:45 PM,BSN 1100,Schinnel Small,sksmall@usf.edu,,,,,,,,,,
+202501,UG,2.0,15747.0,COP,2510,Programming Concepts,10.0,Jason Rudinsky (10),,,TR,03:30 PM - 04:45 PM,BSN 1100,Schinnel Small,sksmall@usf.edu,,,,,,,,,,
+202501,UG,4.0,15746.0,COP,2510,Programming Concepts,10.0,Mahit Kumpatla (10),,,TR,03:30 PM - 04:45 PM,BSN 1100,Schinnel Small,sksmall@usf.edu,,,,,,,,,,
+202501,UG,6.0,15750.0,COP,2510,Programming Concepts,,,,,TR,03:30 PM - 04:45 PM,BSN 1100,Schinnel Small,sksmall@usf.edu,,,,,,,,,,
+202501,UG,9.0,15753.0,COP,2510,Programming Concepts,10.0,Jason Rudinsky (10),,,TR,03:30 PM - 04:45 PM,BSN 1100,Schinnel Small,sksmall@usf.edu,,,,,,,,,,
+202501,UG,10.0,15754.0,COP,2510,Programming Concepts,10.0,"
 Anthony Mccofie (10)",,,TR,03:30 PM - 04:45 PM,BSN 1100,Schinnel Small,sksmall@usf.edu,,,,,,,,,,
-202501.0,GR,700.0,16690.0,CIS,6930,Robotics Process Automation,10.0,Hong Wang (10),,,,,OFFT OFF,Marilynn Carol Hoeke,hoeke@usf.edu,,,,,,,,,,
-202501.0,UG,700.0,16689.0,COP,4931,Robotics Process Automation,10.0,Bardia Nadimi (10),,,,,OFFT OFF,Marilynn Carol Hoeke,hoeke@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,15528.0,CNT,4419,Secure Coding,20.0,"Parisa Momeni (10)
+202501,GR,700.0,16690.0,CIS,6930,Robotics Process Automation,10.0,Hong Wang (10),,,,,OFFT OFF,Marilynn Carol Hoeke,hoeke@usf.edu,,,,,,,,,,
+202501,UG,700.0,16689.0,COP,4931,Robotics Process Automation,10.0,Bardia Nadimi (10),,,,,OFFT OFF,Marilynn Carol Hoeke,hoeke@usf.edu,,,,,,,,,,
+202501,UG,1.0,15528.0,CNT,4419,Secure Coding,20.0,"Parisa Momeni (10)
 Gabriel Laverghetta (10)",,,MW,03:30 PM - 04:45 PM,CHE 103,Jarred Ligatti,ligatti@usf.edu,,,,,,,,,,
-202501.0,UG,2.0,15529.0,CNT,4419,Secure Coding,30.0,"Francis Hahn (10)
+202501,UG,2.0,15529.0,CNT,4419,Secure Coding,30.0,"Francis Hahn (10)
 Faayed Al Faisal (10)
 Kritan Banstola (10)",,,MW,12:30 PM - 01:45 PM,SOC 150,Xinming Ou,xou@usf.edu,,,,,,,,,,
-202501.0,UG,4.0,15923.0,CIS,4930,Smart & Connected Health,10.0,Taofeek Braimoh (10),,,TR,11:00 AM - 12:15 PM,SOC 152,John Templeton,jtemplet@usf.edu,,,,,,,,,,
-202501.0,GR,3.0,15924.0,CIS,6930,Smart & Connected Health,10.0,Taofeek Braimoh (10),,,TR,11:00 AM - 12:15 PM,SOC 152,John Templeton,jtemplet@usf.edu,,,,,,,,,,
-202501.0,GR,1.0,19014.0,CAI,5133,Social Media Mining,10.0,Anis Elebiary (10),,,TR,03:30 PM - 04:45 PM,CIS 1048,Raiyan Abdul Baten,rbaten@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,15930.0,CAP,4773,Social Media Mining,10.0,Mohammad Ratul Mahjabin (10),,,TR,03:30 PM - 04:45 PM,CIS 1048,Raiyan Abdul Baten,rbaten@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,15531.0,CEN,4020,Software Engineering,20.0,"
+202501,UG,4.0,15923.0,CIS,4930,Smart & Connected Health,10.0,Taofeek Braimoh (10),,,TR,11:00 AM - 12:15 PM,SOC 152,John Templeton,jtemplet@usf.edu,,,,,,,,,,
+202501,GR,3.0,15924.0,CIS,6930,Smart & Connected Health,10.0,Taofeek Braimoh (10),,,TR,11:00 AM - 12:15 PM,SOC 152,John Templeton,jtemplet@usf.edu,,,,,,,,,,
+202501,GR,1.0,19014.0,CAI,5133,Social Media Mining,10.0,Anis Elebiary (10),,,TR,03:30 PM - 04:45 PM,CIS 1048,Raiyan Abdul Baten,rbaten@usf.edu,,,,,,,,,,
+202501,UG,1.0,15930.0,CAP,4773,Social Media Mining,10.0,Mohammad Ratul Mahjabin (10),,,TR,03:30 PM - 04:45 PM,CIS 1048,Raiyan Abdul Baten,rbaten@usf.edu,,,,,,,,,,
+202501,UG,1.0,15531.0,CEN,4020,Software Engineering,20.0,"
 Ridhima Phatak (10)
 Hong Wang (10)",,,MW,08:00 AM - 09:15 AM,CHE 100,Zhao Han,zhaohan@usf.edu,,,,,,,,,,
-202501.0,UG,2.0,15532.0,CEN,4020,Software Engineering,,,20.0,"Celina Vo (10)
+202501,UG,2.0,15532.0,CEN,4020,Software Engineering,,,20.0,"Celina Vo (10)
 Bhuvan Panikkaveettil (10)",MW,03:30 PM - 04:45 PM,BEH 104,Suey-Chyun Fang,fang1@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,15543.0,COP,4365,Software System Development,,,20.0,"
+202501,UG,1.0,15543.0,COP,4365,Software System Development,,,20.0,"
 Daishak Patel (10)
 Mihir Karnani (10)",TR,09:30 AM - 10:45 AM,ENB 118,Henry Jeanty,hjeanty@usf.edu,,,,,,,,,,
-202501.0,UG,2.0,15544.0,COP,4365,Software System Development,,,10.0,Deepey Panchal (10),MW,09:30 AM - 10:45 AM,ENB 118,Henry Jeanty,hjeanty@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,16692.0,CIS,3433,Sys Integration & Architecture,10.0,Xiangfei Kong (10),,,MW,05:00 PM - 06:15 PM,CHE 102,Marilynn Carol Hoeke,hoeke@usf.edu,,,,,,,,,,
-202501.0,GR,10.0,20336.0,CIS,6930,Trustworthy AI Systems,20.0,"
+202501,UG,2.0,15544.0,COP,4365,Software System Development,,,10.0,Deepey Panchal (10),MW,09:30 AM - 10:45 AM,ENB 118,Henry Jeanty,hjeanty@usf.edu,,,,,,,,,,
+202501,UG,1.0,16692.0,CIS,3433,Sys Integration & Architecture,10.0,Xiangfei Kong (10),,,MW,05:00 PM - 06:15 PM,CHE 102,Marilynn Carol Hoeke,hoeke@usf.edu,,,,,,,,,,
+202501,GR,10.0,20336.0,CIS,6930,Trustworthy AI Systems,20.0,"
 Aastha Sharma (10)
 Fahim Rahman (10)",,,MW,06:30 PM - 07:45 PM,CHE 103,Guangjing Wang,guangjingwang@usf.edu,,,,,,,,,,
-202501.0,UG,1.0,15707.0,CIS,4212,Trustworthy Infrastructures,10.0,"
+202501,UG,1.0,15707.0,CIS,4212,Trustworthy Infrastructures,10.0,"
 Sudharshan Balaji (10)",,,MW,02:00 PM - 03:15 PM,CWY 109,Attila Yavuz,attilaayavuz@usf.edu,,,,,,,,,,
-202501.0,GR,1.0,15706.0,CIS,6214,Trustworthy Infrastructures,,,,,MW,02:00 PM - 03:15 PM,CWY 109,Attila Yavuz,attilaayavuz@usf.edu,,,,,,,,,,
-202501.0,UG,9.0,20022.0,CIS,4930,User Experience Design,20.0,"Chibuike Ezeokoli (10)
+202501,GR,1.0,15706.0,CIS,6214,Trustworthy Infrastructures,,,,,MW,02:00 PM - 03:15 PM,CWY 109,Attila Yavuz,attilaayavuz@usf.edu,,,,,,,,,,
+202501,UG,9.0,20022.0,CIS,4930,User Experience Design,20.0,"Chibuike Ezeokoli (10)
 Neil Sambhu  (10)",,,TR,03:30 PM - 04:45 PM,CHE 103,"Holloman, Amanda K.",akholloman@usf.edu,,,,,,,,,,
-202501.0,UG,5.0,15936.0,CIS,4930,Wireless and Mobile Computing,10.0,Jingzhe Zhang (10),,,MW,12:30 PM - 01:45 PM,CHE 217,"Ren, Yili  .",yiliren@usf.edu,,,,,,,,,,
-202501.0,GR,5.0,15935.0,CIS,6930,Wireless and Mobile Computing,10.0,Jingzhe Zhang (10),,,MW,12:30 PM - 01:45 PM,CHE 217,"Ren, Yili  .",yiliren@usf.edu,,,,,,,,,,
-202508.0,UG,1.0,91940.0,COP,4703,Advanced Database Systems,30,"Shrestha Datta (20)
+202501,UG,5.0,15936.0,CIS,4930,Wireless and Mobile Computing,10.0,Jingzhe Zhang (10),,,MW,12:30 PM - 01:45 PM,CHE 217,"Ren, Yili  .",yiliren@usf.edu,,,,,,,,,,
+202501,GR,5.0,15935.0,CIS,6930,Wireless and Mobile Computing,10.0,Jingzhe Zhang (10),,,MW,12:30 PM - 01:45 PM,CHE 217,"Ren, Yili  .",yiliren@usf.edu,,,,,,,,,,
+202508,UG,1.0,91940.0,COP,4703,Advanced Database Systems,30,"Shrestha Datta (20)
 Nithish Reddy Gade (10)",,,F,11:00 AM - 01:45 PM,BEH 104,"Fang, Suey-Chyun",fang1@usf.edu,Tampa,99,,66.0,0.0,0.0,08/25/2025,12/11/2025,,"nithishreddygade@usf.edu
 shresthadatta@usf.edu
 "
-202508.0,UG,5.0,92859.0,CIS,4930,Advanced OOP in C++,,,,,TR,09:30 AM - 10:45 AM,ENB 118,"Jeanty, Henry H.",hjeanty@usf.edu,Tampa,9,,53.0,0.0,0.0,08/25/2025,12/11/2025,,
-202508.0,UG,1.0,91938.0,COP,3515,Advanced Program Design,40,"Hoorad Abootalebi (20)
+202508,UG,5.0,92859.0,CIS,4930,Advanced OOP in C++,,,,,TR,09:30 AM - 10:45 AM,ENB 118,"Jeanty, Henry H.",hjeanty@usf.edu,Tampa,9,,53.0,0.0,0.0,08/25/2025,12/11/2025,,
+202508,UG,1.0,91938.0,COP,3515,Advanced Program Design,40,"Hoorad Abootalebi (20)
 Harshitha Marichetty Sudhakar (10)
 
 ",,Ethan Thompson (10),TR,05:00 PM - 06:15 PM,ULH 101,"Holloman, Amanda K.",akholloman@usf.edu,Tampa,141,"
 ethanthompson@usf.edu",143.0,0.0,0.0,08/25/2025,12/11/2025,,"abootalebi@usf.edu
 hmarichettysudhakar@usf.edu
 "
-202508.0,GR,1.0,93316.0,COP,6536,Advances in Data Structures,Cross-listed,,,,TR,02:00 PM - 03:15 PM,ULH 101,"Chakraburtty, Manisha  .",mchakraburtty@usf.edu,Tampa,9,,19.0,0.0,0.0,08/25/2025,12/11/2025,,
-202508.0,UG,801.0,97869.0,EGN,4930,AI Bootcamp,,,,,MTWRF,10:00 AM - 05:00 PM,TBAT TBA,"Pamplona Segundo, Mauricio",mauriciop@usf.edu,Tampa,14,,,0.0,0.0,08/18/2025,08/22/2025,,
-202508.0,GR,11.0,97765.0,CIS,6930,AI for Integrated Sensing Comm,,,,,TR,06:30 PM - 07:45 PM,EDU 347,"Zhang, Shichen",szhang1@usf.edu,Tampa,5,,4.0,0.0,0.0,08/25/2025,12/11/2025,,
-202508.0,UG,10.0,97766.0,CIS,4930,AI for Integrated Sensing Comm,Cross-listed,,,,TR,06:30 PM - 07:45 PM,EDU 347,"Zhang, Shichen",szhang1@usf.edu,Tampa,9,,,0.0,0.0,08/25/2025,12/11/2025,,
-202508.0,UG,1.0,91941.0,COT,4400,Analysis Of Algorithms,50,,,"Anelle Utegen (10)
+202508,GR,1.0,93316.0,COP,6536,Advances in Data Structures,Cross-listed,,,,TR,02:00 PM - 03:15 PM,ULH 101,"Chakraburtty, Manisha  .",mchakraburtty@usf.edu,Tampa,9,,19.0,0.0,0.0,08/25/2025,12/11/2025,,
+202508,UG,801.0,97869.0,EGN,4930,AI Bootcamp,,,,,MTWRF,10:00 AM - 05:00 PM,TBAT TBA,"Pamplona Segundo, Mauricio",mauriciop@usf.edu,Tampa,14,,,0.0,0.0,08/18/2025,08/22/2025,,
+202508,GR,11.0,97765.0,CIS,6930,AI for Integrated Sensing Comm,,,,,TR,06:30 PM - 07:45 PM,EDU 347,"Zhang, Shichen",szhang1@usf.edu,Tampa,5,,4.0,0.0,0.0,08/25/2025,12/11/2025,,
+202508,UG,10.0,97766.0,CIS,4930,AI for Integrated Sensing Comm,Cross-listed,,,,TR,06:30 PM - 07:45 PM,EDU 347,"Zhang, Shichen",szhang1@usf.edu,Tampa,9,,,0.0,0.0,08/25/2025,12/11/2025,,
+202508,UG,1.0,91941.0,COT,4400,Analysis Of Algorithms,50,,,"Anelle Utegen (10)
 Zyad Abd-Elrahman (10)
 Dang Pham (10)
 Cameron Prichard (10)
@@ -223,27 +223,27 @@ zabdelrahman@usf.edu
 danghuupham@usf.edu
 cameronpritchard@usf.edu
 bekhruzjonpulatov@usf.edu",186.0,0.0,0.0,08/25/2025,12/11/2025,,
-202508.0,UG,2.0,97672.0,COT,4400,Analysis Of Algorithms,10,Xianqi Cao (10),,,TR,05:00 PM - 06:15 PM,EDU 347,"Qiao, Fengchun",fengchun@usf.edu,Tampa,45,,,0.0,0.0,08/25/2025,12/11/2025,,cao110@usf.edu
-202508.0,UG,2.0,95430.0,CIS,4930,Augmented Reality,10,Xiangfei Kong (10),,,TR,08:00 AM - 09:15 AM,SOC 150,"Han, Zhao  .",zhaohan@usf.edu,Tampa,13,,11.0,0.0,0.0,08/25/2025,12/11/2025,,xiangfeikong@usf.edu
-202508.0,GR,9.0,98256.0,CAP,6110,Augmented Reality,Cross-listed,,,,TR,08:00 AM - 09:15 AM,SOC 150,"Han, Zhao  .",zhaohan@usf.edu,Tampa,9,,17.0,0.0,0.0,08/25/2025,12/11/2025,,
-202508.0,UG,1.0,91945.0,COT,4210,Automata Thry/Formal Languages,18,,,"Aanthoni Dsouza (10)
+202508,UG,2.0,97672.0,COT,4400,Analysis Of Algorithms,10,Xianqi Cao (10),,,TR,05:00 PM - 06:15 PM,EDU 347,"Qiao, Fengchun",fengchun@usf.edu,Tampa,45,,,0.0,0.0,08/25/2025,12/11/2025,,cao110@usf.edu
+202508,UG,2.0,95430.0,CIS,4930,Augmented Reality,10,Xiangfei Kong (10),,,TR,08:00 AM - 09:15 AM,SOC 150,"Han, Zhao  .",zhaohan@usf.edu,Tampa,13,,11.0,0.0,0.0,08/25/2025,12/11/2025,,xiangfeikong@usf.edu
+202508,GR,9.0,98256.0,CAP,6110,Augmented Reality,Cross-listed,,,,TR,08:00 AM - 09:15 AM,SOC 150,"Han, Zhao  .",zhaohan@usf.edu,Tampa,9,,17.0,0.0,0.0,08/25/2025,12/11/2025,,
+202508,UG,1.0,91945.0,COT,4210,Automata Thry/Formal Languages,18,,,"Aanthoni Dsouza (10)
 An Hong Pham (8)",F,11:00 AM - 01:45 PM,CWY 107,"Korzhova, Valentina N.",korzhova@usf.edu,Tampa,61,"adsouza34@usf.edu
 anhongpham@usf.edu",195.0,0.0,0.0,08/25/2025,12/11/2025,,
-202508.0,GR,8.0,93981.0,CIS,6930,Bellini College TA Training,,,,,,,TBAT TBA,"Small, Schinnel K.",sksmall@usf.edu,Tampa,27,,95.0,0.0,0.0,08/25/2025,12/11/2025,,
-202508.0,GR,700.0,91394.0,COP,5227,C Programming Essentials,,Onur Bilgin,,,,,OFFT OFF,"Gaspar, Alessio",alessio@usf.edu,Off-campus - Tampa,18,,25.0,0.0,0.0,10/20/2025,12/11/2025,,onurbilgin@usf.edu
-202508.0,UG,1.0,91947.0,CIS,4930,Capture the Flag,10,Maria Zapata (10),,,MW,12:30 PM - 01:45 PM,CHE 101,"Pazos Revilla, Marbin",marbin@usf.edu,Tampa,40,,39.0,0.0,0.0,08/25/2025,12/11/2025,,mazapatamontano@usf.edu
-202508.0,UG,1.0,91949.0,COP,4931,Capture the Flag,10,Zhengyuan Jiang (10),,,MW,12:30 PM - 01:45 PM,CPR 125,"Alam, Md Rabbi",mdrabbi@usf.edu,Tampa,39,,40.0,0.0,0.0,08/25/2025,12/11/2025,,jz1@usf.edu
-202508.0,GR,1.0,93150.0,CIS,6082,Cloud Computing,10,Dmytro Vitel (10),,,TR,03:30 PM - 04:45 PM,SOC 149,"Ventura, Philip R.",pventura@usf.edu,Tampa,15,,11.0,0.0,0.0,08/25/2025,12/11/2025,,dvitel@usf.edu
-202508.0,UG,1.0,91951.0,CIS,4083,Cloud Computing for IT,10,Nazeefa Muzammil (10),,,TR,03:30 PM - 04:45 PM,SOC 149,"Ventura, Philip R.",pventura@usf.edu,Tampa,67,,44.0,0.0,0.0,08/25/2025,12/11/2025,,nazeefamuzammil@usf.edu
-202508.0,UG,2.0,97679.0,CIS,4083,Cloud Computing for IT,10,Nazeefa Muzammil (10),,,TR,11:00 AM - 12:15 PM,BSN 1102,"Ventura, Philip R.",pventura@usf.edu,Tampa,45,,,0.0,0.0,08/25/2025,12/11/2025,,nazeefamuzammil@usf.edu
-202508.0,GR,5.0,91842.0,CIS,6930,CMOS-VLSI Design,Cross-listed,,,,MW,08:00 AM - 09:15 AM,PCD 1147,"Sheng, Yi",sheng1@usf.edu,Tampa,9,,8.0,0.0,0.0,08/25/2025,12/11/2025,,
-202508.0,UG,1.0,91952.0,CDA,4213,CMOS-VLSI Design,20,"Parsa Khorrami (10)
+202508,GR,8.0,93981.0,CIS,6930,Bellini College TA Training,,,,,,,TBAT TBA,"Small, Schinnel K.",sksmall@usf.edu,Tampa,27,,95.0,0.0,0.0,08/25/2025,12/11/2025,,
+202508,GR,700.0,91394.0,COP,5227,C Programming Essentials,,Onur Bilgin,,,,,OFFT OFF,"Gaspar, Alessio",alessio@usf.edu,Off-campus - Tampa,18,,25.0,0.0,0.0,10/20/2025,12/11/2025,,onurbilgin@usf.edu
+202508,UG,1.0,91947.0,CIS,4930,Capture the Flag,10,Maria Zapata (10),,,MW,12:30 PM - 01:45 PM,CHE 101,"Pazos Revilla, Marbin",marbin@usf.edu,Tampa,40,,39.0,0.0,0.0,08/25/2025,12/11/2025,,mazapatamontano@usf.edu
+202508,UG,1.0,91949.0,COP,4931,Capture the Flag,10,Zhengyuan Jiang (10),,,MW,12:30 PM - 01:45 PM,CPR 125,"Alam, Md Rabbi",mdrabbi@usf.edu,Tampa,39,,40.0,0.0,0.0,08/25/2025,12/11/2025,,jz1@usf.edu
+202508,GR,1.0,93150.0,CIS,6082,Cloud Computing,10,Dmytro Vitel (10),,,TR,03:30 PM - 04:45 PM,SOC 149,"Ventura, Philip R.",pventura@usf.edu,Tampa,15,,11.0,0.0,0.0,08/25/2025,12/11/2025,,dvitel@usf.edu
+202508,UG,1.0,91951.0,CIS,4083,Cloud Computing for IT,10,Nazeefa Muzammil (10),,,TR,03:30 PM - 04:45 PM,SOC 149,"Ventura, Philip R.",pventura@usf.edu,Tampa,67,,44.0,0.0,0.0,08/25/2025,12/11/2025,,nazeefamuzammil@usf.edu
+202508,UG,2.0,97679.0,CIS,4083,Cloud Computing for IT,10,Nazeefa Muzammil (10),,,TR,11:00 AM - 12:15 PM,BSN 1102,"Ventura, Philip R.",pventura@usf.edu,Tampa,45,,,0.0,0.0,08/25/2025,12/11/2025,,nazeefamuzammil@usf.edu
+202508,GR,5.0,91842.0,CIS,6930,CMOS-VLSI Design,Cross-listed,,,,MW,08:00 AM - 09:15 AM,PCD 1147,"Sheng, Yi",sheng1@usf.edu,Tampa,9,,8.0,0.0,0.0,08/25/2025,12/11/2025,,
+202508,UG,1.0,91952.0,CDA,4213,CMOS-VLSI Design,20,"Parsa Khorrami (10)
 Ahmed Ahmed (10)",,,MW,08:00 AM - 09:15 AM,PCD 1147,"Sheng, Yi",sheng1@usf.edu,Tampa,67,,56.0,0.0,0.0,08/25/2025,12/11/2025,,"parsak@usf.edu
 ahmed749@usf.edu"
-202508.0,UG,1.0,92905.0,CDA,4213L,CMOS-VLSI Design Lab,10,Jaime Imperial (10),,,T,10:00 AM - 11:45 AM,ENB 214,"Sheng, Yi",sheng1@usf.edu,Tampa,30,,26.0,0.0,0.0,08/25/2025,12/11/2025,,imperialj@usf.edu
-202508.0,UG,2.0,92906.0,CDA,4213L,CMOS-VLSI Design Lab,10,Jaime Imperial (10),,,T,12:00 PM - 01:45 PM,ENB 214,"Sheng, Yi",sheng1@usf.edu,Tampa,36,,11.0,0.0,0.0,08/25/2025,12/11/2025,,imperialj@usf.edu
-202508.0,UG,2.0,97596.0,CDA,4205,Computer Architecture,20,Yiyi Wang (20),,,TR,02:00 PM - 03:15 PM,CHE 101,"Huang, Jiajun",jiajunhuang@usf.edu,Tampa,64,,,0.0,0.0,08/25/2025,12/11/2025,,yw22@usf.edu
-202508.0,UG,1.0,91955.0,CDA,4205,Computer Architecture,40,"Dylan Girrens (10)
+202508,UG,1.0,92905.0,CDA,4213L,CMOS-VLSI Design Lab,10,Jaime Imperial (10),,,T,10:00 AM - 11:45 AM,ENB 214,"Sheng, Yi",sheng1@usf.edu,Tampa,30,,26.0,0.0,0.0,08/25/2025,12/11/2025,,imperialj@usf.edu
+202508,UG,2.0,92906.0,CDA,4213L,CMOS-VLSI Design Lab,10,Jaime Imperial (10),,,T,12:00 PM - 01:45 PM,ENB 214,"Sheng, Yi",sheng1@usf.edu,Tampa,36,,11.0,0.0,0.0,08/25/2025,12/11/2025,,imperialj@usf.edu
+202508,UG,2.0,97596.0,CDA,4205,Computer Architecture,20,Yiyi Wang (20),,,TR,02:00 PM - 03:15 PM,CHE 101,"Huang, Jiajun",jiajunhuang@usf.edu,Tampa,64,,,0.0,0.0,08/25/2025,12/11/2025,,yw22@usf.edu
+202508,UG,1.0,91955.0,CDA,4205,Computer Architecture,40,"Dylan Girrens (10)
 Amanuel Ergogo (10)
 Tasnim Tabassum (10)
 Md Hasin Khan (10)",,,MW,03:30 PM - 04:45 PM,CWY 109,"Karam, Robert A.",rkaram@usf.edu,Tampa,154,,147.0,0.0,0.0,08/25/2025,12/11/2025,,"dylangirrens@usf.edu
@@ -251,163 +251,163 @@ aergogo@usf.edu
 tasnimtabassum@usf.edu
 mdhasink@usf.edu
 "
-202508.0,UG,3.0,97824.0,CDA,4205,Computer Architecture,10,Nithish Reddy Gade (10),,,MW,03:30 PM - 04:45 PM,CHE 102,"Pandey, Santosh",spandey1@usf.edu,Tampa,38,,60.0,0.0,0.0,08/25/2025,12/11/2025,,nithishreddygade@usf.edu
-202508.0,UG,4.0,92903.0,CDA,4205L,Computer Architecture Lab,10,Kasra Ahmadi (10),,,W,08:00 AM - 09:45 AM,ENB 214,"Karam, Robert A.",rkaram@usf.edu,Tampa,29,,35.0,0.0,0.0,08/25/2025,12/11/2025,,ahmadi1@usf.edu
-202508.0,UG,7.0,97659.0,CDA,4205L,Computer Architecture Lab,10,Abhiram Kandiyana (10),,,W,06:00 PM - 07:45 PM,ENB 214,"Pandey, Santosh",spandey1@usf.edu,Tampa,33,,8.0,0.0,0.0,08/25/2025,12/11/2025,,kandiyana@usf.edu
-202508.0,UG,1.0,92900.0,CDA,4205L,Computer Architecture Lab,10,Rupal Agarwal (10),,,R,08:00 AM - 09:45 AM,ENB 214,"Huang, Jiajun",jiajunhuang@usf.edu,Tampa,35,,37.0,0.0,0.0,08/25/2025,12/11/2025,,rupalagarwal@usf.edu
-202508.0,UG,2.0,92901.0,CDA,4205L,Computer Architecture Lab,10,Rupal Agarwal (10),,,R,12:00 PM - 01:45 PM,ENB 214,"Huang, Jiajun",jiajunhuang@usf.edu,Tampa,38,,34.0,0.0,0.0,08/25/2025,12/11/2025,,rupalagarwal@usf.edu
-202508.0,UG,3.0,92902.0,CDA,4205L,Computer Architecture Lab,10,Kasra Ahmadi (10),,,W,10:00 AM - 11:45 AM,ENB 214,"Karam, Robert A.",rkaram@usf.edu,Tampa,37,,38.0,0.0,0.0,08/25/2025,12/11/2025,,ahmadi1@usf.edu
-202508.0,UG,5.0,92904.0,CDA,4205L,Computer Architecture Lab,10,Dylan Girrens (10),,,W,12:00 PM - 01:45 PM,ENB 214,"Karam, Robert A.",rkaram@usf.edu,Tampa,38,,38.0,0.0,0.0,08/25/2025,12/11/2025,,dylangirrens@usf.edu
-202508.0,UG,6.0,95881.0,CDA,4205L,Computer Architecture Lab,10,Ahmed Ghoneim (10),,,R,10:00 AM - 11:45 AM,ENB 214,"Pandey, Santosh",spandey1@usf.edu,Tampa,36,,17.0,0.0,0.0,08/25/2025,12/11/2025,,ahmedghoneim@usf.edu
-202508.0,UG,1.0,92870.0,CNT,4104L,Computer Info Networks Lab,5,"Gabriel Laverghetta (5)
+202508,UG,3.0,97824.0,CDA,4205,Computer Architecture,10,Nithish Reddy Gade (10),,,MW,03:30 PM - 04:45 PM,CHE 102,"Pandey, Santosh",spandey1@usf.edu,Tampa,38,,60.0,0.0,0.0,08/25/2025,12/11/2025,,nithishreddygade@usf.edu
+202508,UG,4.0,92903.0,CDA,4205L,Computer Architecture Lab,10,Kasra Ahmadi (10),,,W,08:00 AM - 09:45 AM,ENB 214,"Karam, Robert A.",rkaram@usf.edu,Tampa,29,,35.0,0.0,0.0,08/25/2025,12/11/2025,,ahmadi1@usf.edu
+202508,UG,7.0,97659.0,CDA,4205L,Computer Architecture Lab,10,Abhiram Kandiyana (10),,,W,06:00 PM - 07:45 PM,ENB 214,"Pandey, Santosh",spandey1@usf.edu,Tampa,33,,8.0,0.0,0.0,08/25/2025,12/11/2025,,kandiyana@usf.edu
+202508,UG,1.0,92900.0,CDA,4205L,Computer Architecture Lab,10,Rupal Agarwal (10),,,R,08:00 AM - 09:45 AM,ENB 214,"Huang, Jiajun",jiajunhuang@usf.edu,Tampa,35,,37.0,0.0,0.0,08/25/2025,12/11/2025,,rupalagarwal@usf.edu
+202508,UG,2.0,92901.0,CDA,4205L,Computer Architecture Lab,10,Rupal Agarwal (10),,,R,12:00 PM - 01:45 PM,ENB 214,"Huang, Jiajun",jiajunhuang@usf.edu,Tampa,38,,34.0,0.0,0.0,08/25/2025,12/11/2025,,rupalagarwal@usf.edu
+202508,UG,3.0,92902.0,CDA,4205L,Computer Architecture Lab,10,Kasra Ahmadi (10),,,W,10:00 AM - 11:45 AM,ENB 214,"Karam, Robert A.",rkaram@usf.edu,Tampa,37,,38.0,0.0,0.0,08/25/2025,12/11/2025,,ahmadi1@usf.edu
+202508,UG,5.0,92904.0,CDA,4205L,Computer Architecture Lab,10,Dylan Girrens (10),,,W,12:00 PM - 01:45 PM,ENB 214,"Karam, Robert A.",rkaram@usf.edu,Tampa,38,,38.0,0.0,0.0,08/25/2025,12/11/2025,,dylangirrens@usf.edu
+202508,UG,6.0,95881.0,CDA,4205L,Computer Architecture Lab,10,Ahmed Ghoneim (10),,,R,10:00 AM - 11:45 AM,ENB 214,"Pandey, Santosh",spandey1@usf.edu,Tampa,36,,17.0,0.0,0.0,08/25/2025,12/11/2025,,ahmedghoneim@usf.edu
+202508,UG,1.0,92870.0,CNT,4104L,Computer Info Networks Lab,5,"Gabriel Laverghetta (5)
 ",,,R,02:00 PM - 03:45 PM,NEC 300,"Rauscher, Richard L.",rrauscher@usf.edu,Tampa,13,,32.0,0.0,0.0,08/25/2025,12/11/2025,,glaverghetta@usf.edu
-202508.0,UG,2.0,92878.0,CNT,4104L,Computer Info Networks Lab,10,Youjian Tang (10),,,R,10:00 AM - 11:45 AM,NEC 300,"Rauscher, Richard L.",rrauscher@usf.edu,Tampa,32,,32.0,0.0,0.0,08/25/2025,12/11/2025,,tang24@usf.edu
-202508.0,UG,3.0,92882.0,CNT,4104L,Computer Info Networks Lab,15,"Gabriel Laverghetta (15)
+202508,UG,2.0,92878.0,CNT,4104L,Computer Info Networks Lab,10,Youjian Tang (10),,,R,10:00 AM - 11:45 AM,NEC 300,"Rauscher, Richard L.",rrauscher@usf.edu,Tampa,32,,32.0,0.0,0.0,08/25/2025,12/11/2025,,tang24@usf.edu
+202508,UG,3.0,92882.0,CNT,4104L,Computer Info Networks Lab,15,"Gabriel Laverghetta (15)
 ",,,R,12:00 PM - 01:45 PM,NEC 300,"Rauscher, Richard L.",rrauscher@usf.edu,Tampa,31,,21.0,0.0,0.0,08/25/2025,12/11/2025,,glaverghetta@usf.edu
-202508.0,UG,4.0,92884.0,CNT,4104L,Computer Info Networks Lab,10,Kavya Kalyanam (10),,,F,10:00 AM - 11:45 AM,NEC 300,"Rauscher, Richard L.",rrauscher@usf.edu,Tampa,32,,24.0,0.0,0.0,08/25/2025,12/11/2025,,lakshmikavya@usf.edu
-202508.0,UG,5.0,95436.0,CNT,4104L,Computer Info Networks Lab,10,Anil Mumbuc (10),,,F,12:00 PM - 01:45 PM,NEC 300,"Rauscher, Richard L.",rrauscher@usf.edu,Tampa,25,,,0.0,0.0,08/25/2025,12/11/2025,,anilmumbuc@usf.edu
-202508.0,UG,1.0,91973.0,CNT,4104,Computer Information Networks,30,Andrew Musa (20),,Dang Nguyen (10),TR,08:00 AM - 09:15 AM,ULH 101,"Rauscher, Richard L.",rrauscher@usf.edu,Tampa,137,dang262@usf.edu,144.0,0.0,0.0,08/25/2025,12/11/2025,,andrewmusa@usf.edu
-202508.0,UG,1.0,91918.0,CDA,3201,Computer Logic & Design,30,"
+202508,UG,4.0,92884.0,CNT,4104L,Computer Info Networks Lab,10,Kavya Kalyanam (10),,,F,10:00 AM - 11:45 AM,NEC 300,"Rauscher, Richard L.",rrauscher@usf.edu,Tampa,32,,24.0,0.0,0.0,08/25/2025,12/11/2025,,lakshmikavya@usf.edu
+202508,UG,5.0,95436.0,CNT,4104L,Computer Info Networks Lab,10,Anil Mumbuc (10),,,F,12:00 PM - 01:45 PM,NEC 300,"Rauscher, Richard L.",rrauscher@usf.edu,Tampa,25,,,0.0,0.0,08/25/2025,12/11/2025,,anilmumbuc@usf.edu
+202508,UG,1.0,91973.0,CNT,4104,Computer Information Networks,30,Andrew Musa (20),,Dang Nguyen (10),TR,08:00 AM - 09:15 AM,ULH 101,"Rauscher, Richard L.",rrauscher@usf.edu,Tampa,137,dang262@usf.edu,144.0,0.0,0.0,08/25/2025,12/11/2025,,andrewmusa@usf.edu
+202508,UG,1.0,91918.0,CDA,3201,Computer Logic & Design,30,"
 Ridhima Phatak (10)",,"Amber Nguyen (10)
 Marwan Abdelwahab (10)
 ",TR,12:30 PM - 01:45 PM,CWY 107,"Rahman, Taseef  .",taseefr@usf.edu,Tampa,109,"ambernhungocnguyen@usf.edu
 abdelwahab2@usf.edu
 ",78.0,0.0,0.0,08/25/2025,12/11/2025,,phatakr@usf.edu
-202508.0,UG,2.0,97734.0,CDA,3201,Computer Logic & Design,,,,,TR,03:30 PM - 04:45 PM,SOC 152,"Rahman, Taseef  .",taseefr@usf.edu,Tampa,29,,120.0,0.0,0.0,08/25/2025,12/11/2025,,
-202508.0,UG,3.0,92910.0,CDA,3201L,Computer Logic Design Lab,5,Kenneth Verzyl (5),,,F,08:00 AM - 09:45 AM,ENB 214,"Rahman, Taseef  .",taseefr@usf.edu,Tampa,17,,,0.0,0.0,08/25/2025,12/11/2025,,kennethverzyl@usf.edu
-202508.0,UG,4.0,93280.0,CDA,3201L,Computer Logic Design Lab,10,Ethan Kocses (10),,,F,10:00 AM - 11:45 AM,ENB 214,"Rahman, Taseef  .",taseefr@usf.edu,Tampa,26,,31.0,0.0,0.0,08/25/2025,12/11/2025,,ekocses@usf.edu
-202508.0,UG,5.0,93281.0,CDA,3201L,Computer Logic Design Lab,5,Kenneth Verzyl (5),,,F,12:00 PM - 01:45 PM,ENB 214,"Rahman, Taseef  .",taseefr@usf.edu,Tampa,22,,23.0,0.0,0.0,08/25/2025,12/11/2025,,kennethverzyl@usf.edu
-202508.0,UG,1.0,92907.0,CDA,3201L,Computer Logic Design Lab,10,Neil Sambhu (10),,,R,04:00 PM - 05:45 PM,ENB 214,"Rahman, Taseef  .",taseefr@usf.edu,Tampa,38,,30.0,0.0,0.0,08/25/2025,12/11/2025,,nsambhu@usf.edu
-202508.0,UG,2.0,92908.0,CDA,3201L,Computer Logic Design Lab,10,Neil Sambhu (10),,,R,06:00 PM - 07:45 PM,ENB 214,"Rahman, Taseef  .",taseefr@usf.edu,Tampa,36,,37.0,0.0,0.0,08/25/2025,12/11/2025,,nsambhu@usf.edu
-202508.0,UG,2.0,91980.0,CDA,3103,Computer Organization,20,Nikhil Aryal (10),,Maxim Ryabinov (10),MW,12:30 PM - 01:45 PM,BSN 1201,"Rahman, Taseef  .",taseefr@usf.edu,Tampa,79,,173.0,0.0,0.0,08/25/2025,12/11/2025,,nikhilaryal@usf.edu
-202508.0,UG,1.0,91983.0,CDA,3103,Computer Organization,40,Kenneth Verzyl (10),,"Zahran Khan (10)
+202508,UG,2.0,97734.0,CDA,3201,Computer Logic & Design,,,,,TR,03:30 PM - 04:45 PM,SOC 152,"Rahman, Taseef  .",taseefr@usf.edu,Tampa,29,,120.0,0.0,0.0,08/25/2025,12/11/2025,,
+202508,UG,3.0,92910.0,CDA,3201L,Computer Logic Design Lab,5,Kenneth Verzyl (5),,,F,08:00 AM - 09:45 AM,ENB 214,"Rahman, Taseef  .",taseefr@usf.edu,Tampa,17,,,0.0,0.0,08/25/2025,12/11/2025,,kennethverzyl@usf.edu
+202508,UG,4.0,93280.0,CDA,3201L,Computer Logic Design Lab,10,Ethan Kocses (10),,,F,10:00 AM - 11:45 AM,ENB 214,"Rahman, Taseef  .",taseefr@usf.edu,Tampa,26,,31.0,0.0,0.0,08/25/2025,12/11/2025,,ekocses@usf.edu
+202508,UG,5.0,93281.0,CDA,3201L,Computer Logic Design Lab,5,Kenneth Verzyl (5),,,F,12:00 PM - 01:45 PM,ENB 214,"Rahman, Taseef  .",taseefr@usf.edu,Tampa,22,,23.0,0.0,0.0,08/25/2025,12/11/2025,,kennethverzyl@usf.edu
+202508,UG,1.0,92907.0,CDA,3201L,Computer Logic Design Lab,10,Neil Sambhu (10),,,R,04:00 PM - 05:45 PM,ENB 214,"Rahman, Taseef  .",taseefr@usf.edu,Tampa,38,,30.0,0.0,0.0,08/25/2025,12/11/2025,,nsambhu@usf.edu
+202508,UG,2.0,92908.0,CDA,3201L,Computer Logic Design Lab,10,Neil Sambhu (10),,,R,06:00 PM - 07:45 PM,ENB 214,"Rahman, Taseef  .",taseefr@usf.edu,Tampa,36,,37.0,0.0,0.0,08/25/2025,12/11/2025,,nsambhu@usf.edu
+202508,UG,2.0,91980.0,CDA,3103,Computer Organization,20,Nikhil Aryal (10),,Maxim Ryabinov (10),MW,12:30 PM - 01:45 PM,BSN 1201,"Rahman, Taseef  .",taseefr@usf.edu,Tampa,79,,173.0,0.0,0.0,08/25/2025,12/11/2025,,nikhilaryal@usf.edu
+202508,UG,1.0,91983.0,CDA,3103,Computer Organization,40,Kenneth Verzyl (10),,"Zahran Khan (10)
 Zhanna Sergeeva (10)
 Divyansh Maurya (10)",TR,12:30 PM - 01:45 PM,CMC 141,"Zhang, Yan",yzhang16@usf.edu,Tampa,162,"zahran@usf.edu
 zsergeeva@usf.edu
 dm17@usf.edu",85.0,0.0,0.0,08/25/2025,12/11/2025,,kennethverzyl@usf.edu
-202508.0,UG,1.0,95874.0,CAI,4841,Computer Vision,10,Zaima Zarnaz (10),,,MW,12:30 PM - 01:45 PM,CHE 102,"Pamplona Segundo, Mauricio",mauriciop@usf.edu,Tampa,50,,54.0,0.0,0.0,08/25/2025,12/11/2025,,zaimazarnaz@usf.edu
-202508.0,GR,700.0,97805.0,CAI,5845,Computer Vision,,Anis Elebiary,,,,,OFFT OFF,"Sarkar, Sudeep",sarkar@usf.edu,Off-campus - Tampa,11,,,0.0,0.0,08/25/2025,12/11/2025,,anis@usf.edu
-202508.0,GR,701.0,97806.0,CAI,5845,Computer Vision,,Anis Elebiary,,,,,OFFT OFF,"Sarkar, Sudeep",sarkar@usf.edu,Off-campus - Tampa,13,,,0.0,0.0,08/25/2025,12/11/2025,,anis@usf.edu
-202508.0,UG,2.0,97850.0,CAI,4841,Computer Vision,10,Mahit Venkat Gautam Kumpatla (10),,,MW,11:00 AM - 12:15 PM,BSN 1101,"Ojha, Utkarsh",uojha@usf.edu,Tampa,35,,,0.0,0.0,08/25/2025,12/11/2025,,mahitvenkatgautam@usf.edu
-202508.0,GR,700.0,91392.0,COP,5008,Computing Essentials,,Zachary Hinnen,,,,,OFFT OFF,"Anderson, James M.",jmanderson@usf.edu,Off-campus - Tampa,19,,24.0,0.0,0.0,08/25/2025,12/11/2025,,zhinnen@usf.edu
-202508.0,GR,701.0,97308.0,COP,5008,Computing Essentials,,Zachary Hinnen,,,,,,"Anderson, James M.",jmanderson@usf.edu,Off-campus - Tampa,0,,,0.0,0.0,08/25/2025,10/17/2025,,zhinnen@usf.edu
-202508.0,GR,702.0,97309.0,COP,5008,Computing Essentials,,Zachary Hinnen,,,,,,"Anderson, James M.",jmanderson@usf.edu,Off-campus - Tampa,7,,,0.0,0.0,08/25/2025,10/17/2025,,zhinnen@usf.edu
-202508.0,GR,900.0,97310.0,COP,5008,Computing Essentials,,Zachary Hinnen,,,T,06:30 PM - 08:05 PM,,"Anderson, James M.",jmanderson@usf.edu,Tampa,2,,,0.0,0.0,08/25/2025,10/17/2025,,zhinnen@usf.edu
-202508.0,GR,1.0,91844.0,COP,6527,Computing Massive Parallel Sys,Cross-listed,,,,MW,09:30 AM - 10:45 AM,BSN 1201,"Tu, Yicheng",tuy@usf.edu,Tampa,13,,12.0,0.0,99.0,08/25/2025,12/11/2025,,
-202508.0,UG,1.0,91962.0,COP,4520,Computing Massive Parallel Sys,10,Harshitha Marichetty Sudhakar (10),,,MW,09:30 AM - 10:45 AM,BSN 1201,"Tu, Yicheng",tuy@usf.edu,Tampa,40,,37.0,0.0,0.0,08/25/2025,12/11/2025,,hmarichettysudhakar@usf.edu
-202508.0,UG,1.0,91877.0,CDA,4621,Control of Mobile Robots,20,"Chance Hamilton (10)
+202508,UG,1.0,95874.0,CAI,4841,Computer Vision,10,Zaima Zarnaz (10),,,MW,12:30 PM - 01:45 PM,CHE 102,"Pamplona Segundo, Mauricio",mauriciop@usf.edu,Tampa,50,,54.0,0.0,0.0,08/25/2025,12/11/2025,,zaimazarnaz@usf.edu
+202508,GR,700.0,97805.0,CAI,5845,Computer Vision,,Anis Elebiary,,,,,OFFT OFF,"Sarkar, Sudeep",sarkar@usf.edu,Off-campus - Tampa,11,,,0.0,0.0,08/25/2025,12/11/2025,,anis@usf.edu
+202508,GR,701.0,97806.0,CAI,5845,Computer Vision,,Anis Elebiary,,,,,OFFT OFF,"Sarkar, Sudeep",sarkar@usf.edu,Off-campus - Tampa,13,,,0.0,0.0,08/25/2025,12/11/2025,,anis@usf.edu
+202508,UG,2.0,97850.0,CAI,4841,Computer Vision,10,Mahit Venkat Gautam Kumpatla (10),,,MW,11:00 AM - 12:15 PM,BSN 1101,"Ojha, Utkarsh",uojha@usf.edu,Tampa,35,,,0.0,0.0,08/25/2025,12/11/2025,,mahitvenkatgautam@usf.edu
+202508,GR,700.0,91392.0,COP,5008,Computing Essentials,,Zachary Hinnen,,,,,OFFT OFF,"Anderson, James M.",jmanderson@usf.edu,Off-campus - Tampa,19,,24.0,0.0,0.0,08/25/2025,12/11/2025,,zhinnen@usf.edu
+202508,GR,701.0,97308.0,COP,5008,Computing Essentials,,Zachary Hinnen,,,,,,"Anderson, James M.",jmanderson@usf.edu,Off-campus - Tampa,0,,,0.0,0.0,08/25/2025,10/17/2025,,zhinnen@usf.edu
+202508,GR,702.0,97309.0,COP,5008,Computing Essentials,,Zachary Hinnen,,,,,,"Anderson, James M.",jmanderson@usf.edu,Off-campus - Tampa,7,,,0.0,0.0,08/25/2025,10/17/2025,,zhinnen@usf.edu
+202508,GR,900.0,97310.0,COP,5008,Computing Essentials,,Zachary Hinnen,,,T,06:30 PM - 08:05 PM,,"Anderson, James M.",jmanderson@usf.edu,Tampa,2,,,0.0,0.0,08/25/2025,10/17/2025,,zhinnen@usf.edu
+202508,GR,1.0,91844.0,COP,6527,Computing Massive Parallel Sys,Cross-listed,,,,MW,09:30 AM - 10:45 AM,BSN 1201,"Tu, Yicheng",tuy@usf.edu,Tampa,13,,12.0,0.0,99.0,08/25/2025,12/11/2025,,
+202508,UG,1.0,91962.0,COP,4520,Computing Massive Parallel Sys,10,Harshitha Marichetty Sudhakar (10),,,MW,09:30 AM - 10:45 AM,BSN 1201,"Tu, Yicheng",tuy@usf.edu,Tampa,40,,37.0,0.0,0.0,08/25/2025,12/11/2025,,hmarichettysudhakar@usf.edu
+202508,UG,1.0,91877.0,CDA,4621,Control of Mobile Robots,20,"Chance Hamilton (10)
 Brendon Johnson (10)
 ",,,TR,03:30 PM - 04:45 PM,CPR 115,"Weitzenfeld, Alfredo",aweitzenfeld@usf.edu,Tampa,39,,44.0,0.0,0.0,08/25/2025,12/11/2025,,"chamilton4@usf.edu
 brendon45@usf.edu
 
 "
-202508.0,GR,1.0,91838.0,CDA,6328,Cryptographic Hardware,10,Saeed Aghapour (10),,,MW,11:00 AM - 12:15 PM,BSN 1201,"Mozaffari Kermani, Mehran",mehran2@usf.edu,Tampa,40,,18.0,35.0,99.0,08/25/2025,12/11/2025,,aghapour@usf.edu
-202508.0,UG,1.0,91988.0,CDA,4321,Cryptographic Hardware,10,Saeed Aghapour (10),,,MW,11:00 AM - 12:15 PM,BSN 1201,"Mozaffari Kermani, Mehran",mehran2@usf.edu,Tampa,45,,37.0,0.0,0.0,08/25/2025,12/11/2025,,aghapour@usf.edu
-202508.0,GR,10.0,97617.0,CIS,6930,Cryptography Theory & Practice,10,Reeshav Acharya (10),,,TR,02:00 PM - 03:15 PM,ENB 118,"Yavuz, Attila A.",attilaayavuz@usf.edu,Tampa,10,,,0.0,0.0,08/25/2025,12/11/2025,,reeshav@usf.edu
-202508.0,UG,6.0,97618.0,CIS,4930,Cryptography Theory & Practice,10,Reeshav Acharya (10),,,TR,02:00 PM - 03:15 PM,ENB 118,"Yavuz, Attila A.",attilaayavuz@usf.edu,Tampa,40,,34.0,0.0,0.0,08/25/2025,12/11/2025,,reeshav@usf.edu
-202508.0,UG,1.0,91990.0,CIS,4910,CSE Project,,,,,F,11:00 AM - 01:45 PM,ENG 4,"Hollingsworth, Scot A.",scoth@usf.edu,Tampa,32,,21.0,0.0,0.0,08/25/2025,12/11/2025,,
-202508.0,UG,1.0,91992.0,CIS,4345,Data Stg & Anlys with Hadoop,20,Parisa Momeni (10),,Jyothik Addala (10),MW,09:30 AM - 10:45 AM,SOC 152,"Zhang, Yan",yzhang16@usf.edu,Tampa,74,jaddala@usf.edu,84.0,0.0,0.0,08/25/2025,12/11/2025,,parisamomeni@usf.edu
-202508.0,UG,1.0,91994.0,COP,4530,Data Structures,40,"Abdullah as Sami (10)
+202508,GR,1.0,91838.0,CDA,6328,Cryptographic Hardware,10,Saeed Aghapour (10),,,MW,11:00 AM - 12:15 PM,BSN 1201,"Mozaffari Kermani, Mehran",mehran2@usf.edu,Tampa,40,,18.0,35.0,99.0,08/25/2025,12/11/2025,,aghapour@usf.edu
+202508,UG,1.0,91988.0,CDA,4321,Cryptographic Hardware,10,Saeed Aghapour (10),,,MW,11:00 AM - 12:15 PM,BSN 1201,"Mozaffari Kermani, Mehran",mehran2@usf.edu,Tampa,45,,37.0,0.0,0.0,08/25/2025,12/11/2025,,aghapour@usf.edu
+202508,GR,10.0,97617.0,CIS,6930,Cryptography Theory & Practice,10,Reeshav Acharya (10),,,TR,02:00 PM - 03:15 PM,ENB 118,"Yavuz, Attila A.",attilaayavuz@usf.edu,Tampa,10,,,0.0,0.0,08/25/2025,12/11/2025,,reeshav@usf.edu
+202508,UG,6.0,97618.0,CIS,4930,Cryptography Theory & Practice,10,Reeshav Acharya (10),,,TR,02:00 PM - 03:15 PM,ENB 118,"Yavuz, Attila A.",attilaayavuz@usf.edu,Tampa,40,,34.0,0.0,0.0,08/25/2025,12/11/2025,,reeshav@usf.edu
+202508,UG,1.0,91990.0,CIS,4910,CSE Project,,,,,F,11:00 AM - 01:45 PM,ENG 4,"Hollingsworth, Scot A.",scoth@usf.edu,Tampa,32,,21.0,0.0,0.0,08/25/2025,12/11/2025,,
+202508,UG,1.0,91992.0,CIS,4345,Data Stg & Anlys with Hadoop,20,Parisa Momeni (10),,Jyothik Addala (10),MW,09:30 AM - 10:45 AM,SOC 152,"Zhang, Yan",yzhang16@usf.edu,Tampa,74,jaddala@usf.edu,84.0,0.0,0.0,08/25/2025,12/11/2025,,parisamomeni@usf.edu
+202508,UG,1.0,91994.0,COP,4530,Data Structures,40,"Abdullah as Sami (10)
 Yufan Wang (20)
 Ridhima Phatak (10)",,,TR,02:00 PM - 03:15 PM,CPR 103,"Korzhova, Valentina N.",korzhova@usf.edu,Tampa,167,,93.0,0.0,0.0,08/25/2025,12/11/2025,,"sami20@usf.edu
 yufanw@usf.edu
 phatakr@usf.edu"
-202508.0,UG,1.0,91878.0,COP,4538,Data Structures & Algorithms,40,"
+202508,UG,1.0,91878.0,COP,4538,Data Structures & Algorithms,40,"
 Anil Mumbuc (10)
 Anika Anjum (20)",,Trung Lam (10),TR,02:00 PM - 03:15 PM,ULH 101,"Chakraburtty, Manisha  .",mchakraburtty@usf.edu,Tampa,145,ttlam14@usf.edu,123.0,0.0,0.0,08/25/2025,12/11/2025,,"anilmumbuc@usf.edu
 anikaanjum@usf.edu"
-202508.0,GR,700.0,91395.0,COP,5532,Data Structures Essentials,,Zachay Hinnen,,,,,OFFT OFF,"Hidalgo, Isabela C.",imoura@usf.edu,Off-campus - Tampa,16,,23.0,0.0,0.0,10/20/2025,12/11/2025,,zhinnen@usf.edu
-202508.0,GR,701.0,92072.0,COP,5532,Data Structures Essentials,,Zachay Hinnen,,,,,OFFT OFF,"Hidalgo, Isabela C.",imoura@usf.edu,Off-campus - Tampa,14,,33.0,0.0,0.0,10/20/2025,12/11/2025,,zhinnen@usf.edu
-202508.0,GR,702.0,97314.0,COP,5532,Data Structures Essentials,,Zachay Hinnen,,,,,OFFT OFF,"Hidalgo, Isabela C.",imoura@usf.edu,Off-campus - Tampa,6,,,0.0,0.0,10/20/2025,12/11/2025,,zhinnen@usf.edu
-202508.0,GR,900.0,97315.0,COP,5532,Data Structures Essentials,,Zachary Hinnen,,,R,06:30 PM - 08:05 PM,,"Hidalgo, Isabela C.",imoura@usf.edu,Tampa,3,,,0.0,0.0,10/20/2025,12/11/2025,,zhinnen@usf.edu
-202508.0,UG,1.0,91996.0,COP,4710,Database Design,10,Parisa Momeni (10),,,MW,05:00 PM - 06:15 PM,CHE 103,"Fang, Suey-Chyun",fang1@usf.edu,Tampa,43,,84.0,0.0,0.0,08/25/2025,12/11/2025,,parisamomeni@usf.edu
-202508.0,GR,1.0,97424.0,CAI,5846,Digital Image Processing,10,Abhiram Kandiyana (10),,,MW,03:30 PM - 04:45 PM,CHE 303,"Goldgof, Dmitry B.",goldgof@usf.edu,Tampa,27,,,0.0,0.0,08/25/2025,12/11/2025,,kandiyana@usf.edu
-202508.0,GR,700.0,91390.0,COT,5105,Discrete Structures Essentials,,Onur Bilgin,,,,,OFFT OFF,"Wang, Jing",jw@usf.edu,Off-campus - Tampa,17,,25.0,0.0,0.0,08/25/2025,12/11/2025,,onurbilgin@usf.edu
-202508.0,GR,702.0,97306.0,COT,5105,Discrete Structures Essentials,,Onur Bilgin,,,,,,"Wang, Jing",jw@usf.edu,Off-campus - Tampa,6,,,0.0,0.0,08/25/2025,10/17/2025,,onurbilgin@usf.edu
-202508.0,GR,900.0,97307.0,COT,5105,Discrete Structures Essentials,,Onur Bilgin,,,R,06:30 PM - 08:05 PM,,"Wang, Jing",jw@usf.edu,Tampa,3,,,0.0,0.0,08/25/2025,10/17/2025,,onurbilgin@usf.edu
-202508.0,UG,2.0,91998.0,CIS,4250,Ethical Issues/Profess Conduct,20,Chibuike Ezeokoli (20),,,MW,03:30 PM - 04:45 PM,CHE 101,"Murray-Bruce, Oluwaremilekun John",murraybruce@usf.edu,Tampa,63,,35.0,0.0,0.0,08/25/2025,12/11/2025,,cezeokoli@usf.edu
-202508.0,UG,1.0,91997.0,CIS,4250,Ethical Issues/Profess Conduct,10,"
+202508,GR,700.0,91395.0,COP,5532,Data Structures Essentials,,Zachay Hinnen,,,,,OFFT OFF,"Hidalgo, Isabela C.",imoura@usf.edu,Off-campus - Tampa,16,,23.0,0.0,0.0,10/20/2025,12/11/2025,,zhinnen@usf.edu
+202508,GR,701.0,92072.0,COP,5532,Data Structures Essentials,,Zachay Hinnen,,,,,OFFT OFF,"Hidalgo, Isabela C.",imoura@usf.edu,Off-campus - Tampa,14,,33.0,0.0,0.0,10/20/2025,12/11/2025,,zhinnen@usf.edu
+202508,GR,702.0,97314.0,COP,5532,Data Structures Essentials,,Zachay Hinnen,,,,,OFFT OFF,"Hidalgo, Isabela C.",imoura@usf.edu,Off-campus - Tampa,6,,,0.0,0.0,10/20/2025,12/11/2025,,zhinnen@usf.edu
+202508,GR,900.0,97315.0,COP,5532,Data Structures Essentials,,Zachary Hinnen,,,R,06:30 PM - 08:05 PM,,"Hidalgo, Isabela C.",imoura@usf.edu,Tampa,3,,,0.0,0.0,10/20/2025,12/11/2025,,zhinnen@usf.edu
+202508,UG,1.0,91996.0,COP,4710,Database Design,10,Parisa Momeni (10),,,MW,05:00 PM - 06:15 PM,CHE 103,"Fang, Suey-Chyun",fang1@usf.edu,Tampa,43,,84.0,0.0,0.0,08/25/2025,12/11/2025,,parisamomeni@usf.edu
+202508,GR,1.0,97424.0,CAI,5846,Digital Image Processing,10,Abhiram Kandiyana (10),,,MW,03:30 PM - 04:45 PM,CHE 303,"Goldgof, Dmitry B.",goldgof@usf.edu,Tampa,27,,,0.0,0.0,08/25/2025,12/11/2025,,kandiyana@usf.edu
+202508,GR,700.0,91390.0,COT,5105,Discrete Structures Essentials,,Onur Bilgin,,,,,OFFT OFF,"Wang, Jing",jw@usf.edu,Off-campus - Tampa,17,,25.0,0.0,0.0,08/25/2025,12/11/2025,,onurbilgin@usf.edu
+202508,GR,702.0,97306.0,COT,5105,Discrete Structures Essentials,,Onur Bilgin,,,,,,"Wang, Jing",jw@usf.edu,Off-campus - Tampa,6,,,0.0,0.0,08/25/2025,10/17/2025,,onurbilgin@usf.edu
+202508,GR,900.0,97307.0,COT,5105,Discrete Structures Essentials,,Onur Bilgin,,,R,06:30 PM - 08:05 PM,,"Wang, Jing",jw@usf.edu,Tampa,3,,,0.0,0.0,08/25/2025,10/17/2025,,onurbilgin@usf.edu
+202508,UG,2.0,91998.0,CIS,4250,Ethical Issues/Profess Conduct,20,Chibuike Ezeokoli (20),,,MW,03:30 PM - 04:45 PM,CHE 101,"Murray-Bruce, Oluwaremilekun John",murraybruce@usf.edu,Tampa,63,,35.0,0.0,0.0,08/25/2025,12/11/2025,,cezeokoli@usf.edu
+202508,UG,1.0,91997.0,CIS,4250,Ethical Issues/Profess Conduct,10,"
 Mohammad Ratul Mahjabin (10) ",,,TR,06:30 PM - 07:45 PM,CWY 107,"Baten, Raiyan Abdul  .",rbaten@usf.edu,Tampa,56,,56.0,0.0,0.0,08/25/2025,12/11/2025,,mohammadratul@usf.edu
-202508.0,UG,2.0,92002.0,CIS,3213,Foundations of Cybersecurity,20,"
+202508,UG,2.0,92002.0,CIS,3213,Foundations of Cybersecurity,20,"
 Md Zahidul Islam Sanjid (10)",,Jessica Pham (10),,,TBAT TBA,"Ren, Yili  .",yiliren@usf.edu,Tampa,62,jessicapham@usf.edu,,0.0,0.0,08/25/2025,12/11/2025,,sanjid@usf.edu
-202508.0,UG,1.0,91999.0,CIS,3213,Foundations of Cybersecurity,20,"Meghna Chaudhary (10)
+202508,UG,1.0,91999.0,CIS,3213,Foundations of Cybersecurity,20,"Meghna Chaudhary (10)
 Jiefeng Zhou (10)
 
 ",,,,,TBAT TBA,"Gauvin Jr, William J.",wgauvin@usf.edu,Tampa,91,,145.0,0.0,0.0,08/25/2025,12/11/2025,,"meghna1@usf.edu
 jiefeng@usf.edu
 "
-202508.0,UG,700.0,97494.0,CIS,1930,Freshman Seminar,10,,,Isfahan Juboraj (10),,,OFFT OFF,"Morgan, John P.",jpmorga2@usf.edu,Off-campus - Tampa,398,ijj@usf.edu,,0.0,0.0,08/25/2025,12/11/2025,,
-202508.0,GR,14.0,97964.0,CIS,6930,Generative AI,10,Nitesh Vamshi Bommisetty (10),,,TR,11:00 AM - 12:15 PM,CPR 120,"Karimian, Nima",nkarimian@usf.edu,Tampa,19,,,,,,,,bn319@usf.edu
-202508.0,UG,12.0,97965.0,CIS,4930,Generative AI,Cross-listed,,,,TR,11:00 AM - 12:15 PM,CPR 120,"Karimian, Nima",nkarimian@usf.edu,Tampa,28,,,,,,,,
-202508.0,UG,3.0,95286.0,CIS,4622,Hands-on Cybersecurity,20,"Maria Zapata (10)
+202508,UG,700.0,97494.0,CIS,1930,Freshman Seminar,10,,,Isfahan Juboraj (10),,,OFFT OFF,"Morgan, John P.",jpmorga2@usf.edu,Off-campus - Tampa,398,ijj@usf.edu,,0.0,0.0,08/25/2025,12/11/2025,,
+202508,GR,14.0,97964.0,CIS,6930,Generative AI,10,Nitesh Vamshi Bommisetty (10),,,TR,11:00 AM - 12:15 PM,CPR 120,"Karimian, Nima",nkarimian@usf.edu,Tampa,19,,,,,,,,bn319@usf.edu
+202508,UG,12.0,97965.0,CIS,4930,Generative AI,Cross-listed,,,,TR,11:00 AM - 12:15 PM,CPR 120,"Karimian, Nima",nkarimian@usf.edu,Tampa,28,,,,,,,,
+202508,UG,3.0,95286.0,CIS,4622,Hands-on Cybersecurity,20,"Maria Zapata (10)
 Zhengyuan Jiang (10)",,,TR,03:30 PM - 04:45 PM,ENB 216,"Alam, Md Rabbi",mdrabbi@usf.edu,Tampa,49,,,,,,,,"mazapatamontano@usf.edu
 jz1@usf.edu"
-202508.0,UG,1.0,92004.0,CIS,4622,Hands-on Cybersecurity,20,"Al Faisal Faayed (10)
+202508,UG,1.0,92004.0,CIS,4622,Hands-on Cybersecurity,20,"Al Faisal Faayed (10)
 Kritan Banstola (10)
 ",,,TR,12:30 PM - 01:45 PM,ENB 216,"Ou, Xinming",xou@usf.edu,Tampa,54,,54.0,0.0,0.0,08/25/2025,12/11/2025,,"faayedal@usf.edu
 kbanstola@usf.edu
 "
-202508.0,UG,2.0,92005.0,CIS,4622,Hands-on Cybersecurity,20,David Salgado Cortes (10),,Brianna Deaubler (10),MW,11:00 AM - 12:15 PM,ENB 216,"Fang, Suey-Chyun",fang1@usf.edu,Tampa,42,bdeaubler@usf.edu,40.0,0.0,0.0,08/25/2025,12/11/2025,,davids26@usf.edu
-202508.0,GR,1.0,91843.0,CIS,6218,Human Aspects of Cybersecurity,Cross-listed,,,,MW,03:30 PM - 04:45 PM,TBAT TBA,"Caulkins, Bruce D.",caulkins@usf.edu,Tampa,0,,2.0,0.0,0.0,08/25/2025,12/11/2025,,
-202508.0,UG,1.0,92006.0,CIS,4219,Human Aspects of Cybersecurity,20,Aastha Sharma (20),,,MW,03:30 PM - 04:45 PM,TBAT TBA,"Caulkins, Bruce D.",caulkins@usf.edu,Tampa,93,,85.0,0.0,0.0,08/25/2025,12/11/2025,,aasthasharma@usf.edu
-202508.0,UG,4.0,92007.0,CIS,4930,Human-Computer Interaction,10,Sree Rushitha Santhoshi Mamidala (10),,,TR,09:30 AM - 10:45 AM,CHE 103,"Woodward, Julia E.",juliaevewoodward@usf.edu,Tampa,18,,17.0,0.0,0.0,08/25/2025,12/11/2025,,sreerushitha@usf.edu
-202508.0,GR,2.0,98156.0,CAP,5178,Human-Computer Interaction,10,Sree Rushitha Santhoshi Mamidala (10),,,TR,09:30 AM - 10:45 AM,CHE 103,"Woodward, Julia E.",juliaevewoodward@usf.edu,Tampa,50,,50.0,44.0,99.0,08/25/2025,12/11/2025,,sreerushitha@usf.edu
-202508.0,UG,3.0,97631.0,COP,4931,Incident Response Methods,20,"Chi Zhang (10)
+202508,UG,2.0,92005.0,CIS,4622,Hands-on Cybersecurity,20,David Salgado Cortes (10),,Brianna Deaubler (10),MW,11:00 AM - 12:15 PM,ENB 216,"Fang, Suey-Chyun",fang1@usf.edu,Tampa,42,bdeaubler@usf.edu,40.0,0.0,0.0,08/25/2025,12/11/2025,,davids26@usf.edu
+202508,GR,1.0,91843.0,CIS,6218,Human Aspects of Cybersecurity,Cross-listed,,,,MW,03:30 PM - 04:45 PM,TBAT TBA,"Caulkins, Bruce D.",caulkins@usf.edu,Tampa,0,,2.0,0.0,0.0,08/25/2025,12/11/2025,,
+202508,UG,1.0,92006.0,CIS,4219,Human Aspects of Cybersecurity,20,Aastha Sharma (20),,,MW,03:30 PM - 04:45 PM,TBAT TBA,"Caulkins, Bruce D.",caulkins@usf.edu,Tampa,93,,85.0,0.0,0.0,08/25/2025,12/11/2025,,aasthasharma@usf.edu
+202508,UG,4.0,92007.0,CIS,4930,Human-Computer Interaction,10,Sree Rushitha Santhoshi Mamidala (10),,,TR,09:30 AM - 10:45 AM,CHE 103,"Woodward, Julia E.",juliaevewoodward@usf.edu,Tampa,18,,17.0,0.0,0.0,08/25/2025,12/11/2025,,sreerushitha@usf.edu
+202508,GR,2.0,98156.0,CAP,5178,Human-Computer Interaction,10,Sree Rushitha Santhoshi Mamidala (10),,,TR,09:30 AM - 10:45 AM,CHE 103,"Woodward, Julia E.",juliaevewoodward@usf.edu,Tampa,50,,50.0,44.0,99.0,08/25/2025,12/11/2025,,sreerushitha@usf.edu
+202508,UG,3.0,97631.0,COP,4931,Incident Response Methods,20,"Chi Zhang (10)
 Phaneshwar Dundigalla (10)
 ",,,,,TBAT TBA,"Irving, Ryan  .",irvingr@usf.edu,Tampa,77,,,0.0,0.0,08/25/2025,12/11/2025,,"chiz@usf.edu
 phaneshwar@usf.edu"
-202508.0,UG,1.0,91915.0,CGS,2060,Intro to Computer Programming,20,,,"Suyog Bam (10)
+202508,UG,1.0,91915.0,CGS,2060,Intro to Computer Programming,20,,,"Suyog Bam (10)
 Kamilla Gurbanzade (10)",MW,05:00 PM - 06:15 PM,BEH 103,"Holloman, Amanda K.",akholloman@usf.edu,Tampa,70,"bams@usf.edu
 kgurbanzade@usf.edu",93.0,0.0,0.0,08/25/2025,12/11/2025,,
-202508.0,GR,1.0,91840.0,COT,6405,Intro to Theory of Algorithms,20,Tara Nourivandi (20),,,TR,05:00 PM - 06:15 PM,PCD 1147,"Canavan, Shaun",scanavan@usf.edu,Tampa,85,,127.0,0.0,0.0,08/25/2025,12/11/2025,,taranourivandi@usf.edu
-202508.0,GR,1.0,95471.0,CAI,5005,Introduction to AI,20,"Nitesh Vamshi Bommisetty (10)
+202508,GR,1.0,91840.0,COT,6405,Intro to Theory of Algorithms,20,Tara Nourivandi (20),,,TR,05:00 PM - 06:15 PM,PCD 1147,"Canavan, Shaun",scanavan@usf.edu,Tampa,85,,127.0,0.0,0.0,08/25/2025,12/11/2025,,taranourivandi@usf.edu
+202508,GR,1.0,95471.0,CAI,5005,Introduction to AI,20,"Nitesh Vamshi Bommisetty (10)
 Theophilus Amaefuna (10)",,,TR,05:00 PM - 06:15 PM,CHE 101,"Sun, Yu",yusun@usf.edu,Tampa,30,,95.0,2.0,99.0,08/25/2025,12/11/2025,,"bn319@usf.edu
 ikennaamaefuna@usf.edu"
-202508.0,GR,2.0,97552.0,CAI,5005,Introduction to AI,Cross-listed,,,,TR,05:00 PM - 06:15 PM,CHE 101,"Sun, Yu",yusun@usf.edu,Tampa,15,,,0.0,0.0,08/25/2025,12/11/2025,,
-202508.0,UG,1.0,95467.0,CAI,4002,Introduction to AI,20,"Jeremy Rutter (20)
+202508,GR,2.0,97552.0,CAI,5005,Introduction to AI,Cross-listed,,,,TR,05:00 PM - 06:15 PM,CHE 101,"Sun, Yu",yusun@usf.edu,Tampa,15,,,0.0,0.0,08/25/2025,12/11/2025,,
+202508,UG,1.0,95467.0,CAI,4002,Introduction to AI,20,"Jeremy Rutter (20)
 ",,,TR,06:30 PM - 07:45 PM,BEH 103,"Kim, Gene L.",genekim@usf.edu,Tampa,82,,45.0,0.0,0.0,08/25/2025,12/11/2025,,jeremyrutter@usf.edu
-202508.0,GR,700.0,95962.0,CAI,5005,Introduction to AI,,Anis Elebiary,,,,,OFFT OFF,"Pamplona Segundo, Mauricio",mauriciop@usf.edu,Off-campus - Tampa,16,,5.0,0.0,0.0,08/25/2025,12/11/2025,,anis@usf.edu
-202508.0,GR,701.0,95963.0,CAI,5005,Introduction to AI,,Anis Elebiary,,,,,OFFT OFF,"Pamplona Segundo, Mauricio",mauriciop@usf.edu,Off-campus - Tampa,3,,1.0,0.0,0.0,08/25/2025,12/11/2025,,anis@usf.edu
-202508.0,UG,2.0,97678.0,CAI,4002,Introduction to AI,10,,,Fnu Ayush (10),F,08:00 AM - 10:45 AM,CHE 100,"Pamplona Segundo, Mauricio",mauriciop@usf.edu,Tampa,42,ayush280@usf.edu,,0.0,0.0,08/25/2025,12/11/2025,,
-202508.0,GR,702.0,97919.0,CAI,5005,Introduction to AI,,Anis Elebiary,,,,,OFFT OFF,"Pamplona Segundo, Mauricio",mauriciop@usf.edu,Tampa,15,,,,,,,,anis@usf.edu
-202508.0,UG,1.0,91939.0,CGS,1540,Introduction to Databases,30,Mobasshira Akter Urmi (20),,Mariam Mahmud (10),MW,09:30 AM - 10:45 AM,BEH 104,"Hidalgo, Isabela C.",imoura@usf.edu,Tampa,121,mariam313@usf.edu,188.0,0.0,0.0,08/25/2025,12/11/2025,,mobasshiraakter@usf.edu
-202508.0,UG,2.0,97821.0,CGS,1540,Introduction to Databases,10,Jingjing LI (10),,,MW,11:00 AM - 12:15 PM,SOC 145,"Ventura, Philip R.",pventura@usf.edu,Tampa,43,,21.0,0.0,0.0,08/25/2025,12/11/2025,,jingjingli@usf.edu
-202508.0,UG,3.0,97822.0,CGS,1540,Introduction to Databases,10,,,Dat Tran (10),MW,12:30 PM - 01:45 PM,SOC 132,"Ventura, Philip R.",pventura@usf.edu,Tampa,43,dattran@usf.edu,,0.0,0.0,08/25/2025,12/11/2025,,
-202508.0,UG,1.0,91942.0,CAP,4662,Introduction to Robotics,10,Ricardo Diogiovanni (10),,,TR,03:30 PM - 04:45 PM,CHE 103,"Sun, Yu",yusun@usf.edu,Tampa,41,,45.0,0.0,0.0,08/25/2025,12/11/2025,,ricardod@usf.edu
-202508.0,GR,13.0,97904.0,CIS,6930,Introduction to Robotics,Cross-listed,,,,TR,03:30 PM - 04:45 PM,CHE 103,"Sun, Yu",yusun@usf.edu,Tampa,2,,,,,,,,
-202508.0,GR,1.0,97755.0,CAI,5107,Machine Learning,10,Ahmed Shahabaz (10),,,TR,03:30 PM - 04:45 PM,CHE 101,"Kabir, Anowarul",akabir@usf.edu,Tampa,47,,,0.0,0.0,08/25/2025,12/11/2025,,shahabaz@usf.edu
-202508.0,GR,900.0,97858.0,CAI,5035,Math for AI,,,,,,,,"Pamplona Segundo, Mauricio",mauriciop@usf.edu,Tampa,4,,,,,,,,
-202508.0,GR,702.0,97859.0,CAI,5035,Math for AI,,,,,,,OFFT OFF,"Pamplona Segundo, Mauricio",mauriciop@usf.edu,Tampa,4,,,,,,,,
-202508.0,UG,1.0,94947.0,CAP,4103,Mobile Biometrics,10,Meghna Chaudhary (10),,,TR,08:00 AM - 09:15 AM,EDU 347,"Neal, Tempestt J.",tjneal@usf.edu,Tampa,39,,40.0,0.0,0.0,08/25/2025,12/11/2025,,meghna1@usf.edu
-202508.0,GR,1.0,94948.0,CAP,6101,Mobile Biometrics,10,Parush Gera (10),,,TR,08:00 AM - 09:15 AM,EDU 347,"Neal, Tempestt J.",tjneal@usf.edu,Tampa,31,,29.0,18.0,99.0,08/25/2025,12/11/2025,,parush@usf.edu
-202508.0,GR,7.0,98258.0,CAI,5155,Net Analysis & ML with Graphs,10,Alec Braynen (10),,,F,11:00 AM - 01:45 PM,CHE 101,"Kim, Seungbae  .",seungbae@usf.edu,Tampa,26,,18.0,16.0,99.0,08/25/2025,12/11/2025,,alecbraynen@usf.edu
-202508.0,UG,7.0,95474.0,CIS,4930,Network Analysis & ML,10,Alec Braynen (10),,,F,11:00 AM - 01:45 PM,CHE 101,"Kim, Seungbae  .",seungbae@usf.edu,Tampa,30,,26.0,0.0,0.0,08/25/2025,12/11/2025,,alecbraynen@usf.edu
-202508.0,UG,1.0,91953.0,CNT,4403,Network Security & Firewalls,30,"Xiantao Zhao (20)
+202508,GR,700.0,95962.0,CAI,5005,Introduction to AI,,Anis Elebiary,,,,,OFFT OFF,"Pamplona Segundo, Mauricio",mauriciop@usf.edu,Off-campus - Tampa,16,,5.0,0.0,0.0,08/25/2025,12/11/2025,,anis@usf.edu
+202508,GR,701.0,95963.0,CAI,5005,Introduction to AI,,Anis Elebiary,,,,,OFFT OFF,"Pamplona Segundo, Mauricio",mauriciop@usf.edu,Off-campus - Tampa,3,,1.0,0.0,0.0,08/25/2025,12/11/2025,,anis@usf.edu
+202508,UG,2.0,97678.0,CAI,4002,Introduction to AI,10,,,Fnu Ayush (10),F,08:00 AM - 10:45 AM,CHE 100,"Pamplona Segundo, Mauricio",mauriciop@usf.edu,Tampa,42,ayush280@usf.edu,,0.0,0.0,08/25/2025,12/11/2025,,
+202508,GR,702.0,97919.0,CAI,5005,Introduction to AI,,Anis Elebiary,,,,,OFFT OFF,"Pamplona Segundo, Mauricio",mauriciop@usf.edu,Tampa,15,,,,,,,,anis@usf.edu
+202508,UG,1.0,91939.0,CGS,1540,Introduction to Databases,30,Mobasshira Akter Urmi (20),,Mariam Mahmud (10),MW,09:30 AM - 10:45 AM,BEH 104,"Hidalgo, Isabela C.",imoura@usf.edu,Tampa,121,mariam313@usf.edu,188.0,0.0,0.0,08/25/2025,12/11/2025,,mobasshiraakter@usf.edu
+202508,UG,2.0,97821.0,CGS,1540,Introduction to Databases,10,Jingjing LI (10),,,MW,11:00 AM - 12:15 PM,SOC 145,"Ventura, Philip R.",pventura@usf.edu,Tampa,43,,21.0,0.0,0.0,08/25/2025,12/11/2025,,jingjingli@usf.edu
+202508,UG,3.0,97822.0,CGS,1540,Introduction to Databases,10,,,Dat Tran (10),MW,12:30 PM - 01:45 PM,SOC 132,"Ventura, Philip R.",pventura@usf.edu,Tampa,43,dattran@usf.edu,,0.0,0.0,08/25/2025,12/11/2025,,
+202508,UG,1.0,91942.0,CAP,4662,Introduction to Robotics,10,Ricardo Diogiovanni (10),,,TR,03:30 PM - 04:45 PM,CHE 103,"Sun, Yu",yusun@usf.edu,Tampa,41,,45.0,0.0,0.0,08/25/2025,12/11/2025,,ricardod@usf.edu
+202508,GR,13.0,97904.0,CIS,6930,Introduction to Robotics,Cross-listed,,,,TR,03:30 PM - 04:45 PM,CHE 103,"Sun, Yu",yusun@usf.edu,Tampa,2,,,,,,,,
+202508,GR,1.0,97755.0,CAI,5107,Machine Learning,10,Ahmed Shahabaz (10),,,TR,03:30 PM - 04:45 PM,CHE 101,"Kabir, Anowarul",akabir@usf.edu,Tampa,47,,,0.0,0.0,08/25/2025,12/11/2025,,shahabaz@usf.edu
+202508,GR,900.0,97858.0,CAI,5035,Math for AI,,,,,,,,"Pamplona Segundo, Mauricio",mauriciop@usf.edu,Tampa,4,,,,,,,,
+202508,GR,702.0,97859.0,CAI,5035,Math for AI,,,,,,,OFFT OFF,"Pamplona Segundo, Mauricio",mauriciop@usf.edu,Tampa,4,,,,,,,,
+202508,UG,1.0,94947.0,CAP,4103,Mobile Biometrics,10,Meghna Chaudhary (10),,,TR,08:00 AM - 09:15 AM,EDU 347,"Neal, Tempestt J.",tjneal@usf.edu,Tampa,39,,40.0,0.0,0.0,08/25/2025,12/11/2025,,meghna1@usf.edu
+202508,GR,1.0,94948.0,CAP,6101,Mobile Biometrics,10,Parush Gera (10),,,TR,08:00 AM - 09:15 AM,EDU 347,"Neal, Tempestt J.",tjneal@usf.edu,Tampa,31,,29.0,18.0,99.0,08/25/2025,12/11/2025,,parush@usf.edu
+202508,GR,7.0,98258.0,CAI,5155,Net Analysis & ML with Graphs,10,Alec Braynen (10),,,F,11:00 AM - 01:45 PM,CHE 101,"Kim, Seungbae  .",seungbae@usf.edu,Tampa,26,,18.0,16.0,99.0,08/25/2025,12/11/2025,,alecbraynen@usf.edu
+202508,UG,7.0,95474.0,CIS,4930,Network Analysis & ML,10,Alec Braynen (10),,,F,11:00 AM - 01:45 PM,CHE 101,"Kim, Seungbae  .",seungbae@usf.edu,Tampa,30,,26.0,0.0,0.0,08/25/2025,12/11/2025,,alecbraynen@usf.edu
+202508,UG,1.0,91953.0,CNT,4403,Network Security & Firewalls,30,"Xiantao Zhao (20)
 Md Zahidul Islam Sanjid (10)",,,,,TBAT TBA,"Gauvin Jr, William J.",wgauvin@usf.edu,Tampa,126,,94.0,0.0,0.0,08/25/2025,12/11/2025,,"zhaox@usf.edu
 sanjid@usf.edu
 "
-202508.0,UG,1.0,91882.0,COP,2513,Object Oriented Programming,50,Tasnim Tabassum (10),,"Mackenzie Freel (10)
+202508,UG,1.0,91882.0,COP,2513,Object Oriented Programming,50,Tasnim Tabassum (10),,"Mackenzie Freel (10)
 Sophia Fasano (10)
 Alexander Eley (10)
 Neeraj Pillai (10)",TR,09:30 AM - 10:45 AM,CHE 100,"Hidalgo, Isabela C.",imoura@usf.edu,Tampa,188,"mfreel@usf.edu
 fasanos@usf.edu
 aeley@usf.edu
 neerajpillai@usf.edu",197.0,0.0,0.0,08/25/2025,12/11/2025,,tasnimtabassum@usf.edu
-202508.0,GR,2.0,97820.0,COP,6611,Operating Systems,10,Theophilus Amaefuna (10),,,TR,12:30 PM - 01:45 PM,CIS 1047,"Ahmed, Shareef",shareefahmed@usf.edu,Tampa,27,,90.0,0.0,0.0,08/25/2025,12/11/2025,,ikennaamaefuna@usf.edu
-202508.0,UG,1.0,91954.0,COP,4600,Operating Systems,20,"Yixi Chen (10)
+202508,GR,2.0,97820.0,COP,6611,Operating Systems,10,Theophilus Amaefuna (10),,,TR,12:30 PM - 01:45 PM,CIS 1047,"Ahmed, Shareef",shareefahmed@usf.edu,Tampa,27,,90.0,0.0,0.0,08/25/2025,12/11/2025,,ikennaamaefuna@usf.edu
+202508,UG,1.0,91954.0,COP,4600,Operating Systems,20,"Yixi Chen (10)
 Somak Saha (10)",,,MW,02:00 PM - 03:15 PM,CPR 115,"Yi, Hye S.",hsyi@usf.edu,Tampa,95,,95.0,0.0,0.0,08/25/2025,12/11/2025,,"yixi@usf.edu
 somaksaha@usf.edu
 "
-202508.0,GR,1.0,91831.0,COP,6611,Operating Systems,20,Venkata Rahul Cherukuri (20),,,MW,05:00 PM - 06:15 PM,CIS 1048,"Templeton, John  .",jtemplet@usf.edu,Tampa,83,,13.0,14.0,99.0,08/25/2025,12/11/2025,,venkatarahulc@usf.edu
-202508.0,UG,2.0,91957.0,COP,4600,Operating Systems,30,"Nafis Azad (20)
+202508,GR,1.0,91831.0,COP,6611,Operating Systems,20,Venkata Rahul Cherukuri (20),,,MW,05:00 PM - 06:15 PM,CIS 1048,"Templeton, John  .",jtemplet@usf.edu,Tampa,83,,13.0,14.0,99.0,08/25/2025,12/11/2025,,venkatarahulc@usf.edu
+202508,UG,2.0,91957.0,COP,4600,Operating Systems,30,"Nafis Azad (20)
 Amanuel Ergogo (10)",,,MW,11:00 AM - 12:15 PM,CPR 115,"Yi, Hye S.",hsyi@usf.edu,Tampa,89,,91.0,0.0,0.0,08/25/2025,12/11/2025,,"nafisazad@usf.edu
 aergogo@usf.edu"
-202508.0,UG,3.0,97605.0,COP,4600,Operating Systems,20,"Kayla Homatas (10)
+202508,UG,3.0,97605.0,COP,4600,Operating Systems,20,"Kayla Homatas (10)
 ",,Ishaq Sharfuddin Sadiq Ali (10),MW,02:00 PM - 03:15 PM,SOC 152,"Zhang, Yan",yzhang16@usf.edu,Tampa,82,ishaq17@usf.edu,,0.0,0.0,08/25/2025,12/11/2025,,homatask@usf.edu
-202508.0,UG,1.0,91958.0,CIS,4200,Penetration Testing,30,Madhav Aryal (20),,Gunes Arici (10),MW,02:00 PM - 03:15 PM,FAH 101,"Kafle, Kaushal  .",kafle@usf.edu,Tampa,106,arici@usf.edu,154.0,0.0,0.0,08/25/2025,12/11/2025,,madhavaryal@usf.edu
-202508.0,GR,1.0,95473.0,CIS,6220,Penetration Testing for IT,Cross-listed,,,,MW,02:00 PM - 03:15 PM,FAH 101,"Kafle, Kaushal  .",kafle@usf.edu,Tampa,1,,23.0,0.0,0.0,08/25/2025,12/11/2025,,
-202508.0,GR,901.0,91832.0,EEL,6764,Princ of Computer Architecture,10,Zaima Zarnaz (10),,,TR,06:30 PM - 07:45 PM,CPR 103,"Zheng, Hao",haozheng@usf.edu,Tampa,48,,78.0,0.0,0.0,08/25/2025,12/11/2025,,zaimazarnaz@usf.edu
-202508.0,UG,1.0,91961.0,COP,3514,Program Design,50,"Somak Saha (10)
+202508,UG,1.0,91958.0,CIS,4200,Penetration Testing,30,Madhav Aryal (20),,Gunes Arici (10),MW,02:00 PM - 03:15 PM,FAH 101,"Kafle, Kaushal  .",kafle@usf.edu,Tampa,106,arici@usf.edu,154.0,0.0,0.0,08/25/2025,12/11/2025,,madhavaryal@usf.edu
+202508,GR,1.0,95473.0,CIS,6220,Penetration Testing for IT,Cross-listed,,,,MW,02:00 PM - 03:15 PM,FAH 101,"Kafle, Kaushal  .",kafle@usf.edu,Tampa,1,,23.0,0.0,0.0,08/25/2025,12/11/2025,,
+202508,GR,901.0,91832.0,EEL,6764,Princ of Computer Architecture,10,Zaima Zarnaz (10),,,TR,06:30 PM - 07:45 PM,CPR 103,"Zheng, Hao",haozheng@usf.edu,Tampa,48,,78.0,0.0,0.0,08/25/2025,12/11/2025,,zaimazarnaz@usf.edu
+202508,UG,1.0,91961.0,COP,3514,Program Design,50,"Somak Saha (10)
 ",,"Patrick Aabram (10)
 Jovani Wahba (10)
 Stuti Goyal (10)
@@ -416,242 +416,242 @@ Jvalaj Pandey (10)
 jovaniwahba@usf.edu
 goyal13@usf.edu
 jvalaj@usf.edu",90.0,0.0,0.0,08/25/2025,12/11/2025,,somaksaha@usf.edu
-202508.0,UG,2.0,91960.0,COP,3514,Program Design,20,,,"Aastha Jakasania (10)
+202508,UG,2.0,91960.0,COP,3514,Program Design,20,,,"Aastha Jakasania (10)
 Felix Mendez (10)
 ",MW,03:30 PM - 04:45 PM,EDU 347,"Wang, Jing",jw@usf.edu,Tampa,71,"aasthaj@usf.edu
 felixmendez@usf.edu",195.0,0.0,0.0,08/25/2025,12/11/2025,,
-202508.0,UG,1.0,92947.0,COP,2510,Programming Concepts,10,Anthony McCofie (10),,,TR,05:00 PM - 06:15 PM,CPR 103,"Kaleemunnisa, Fnu",kaleemunnisa@usf.edu,Tampa,40,,28.0,0.0,0.0,08/25/2025,12/11/2025,*,anthonymccofie@usf.edu
-202508.0,UG,2.0,92948.0,COP,2510,Programming Concepts,10,,,Vivekanandhan Kathirvel (10),TR,05:00 PM - 06:15 PM,CPR 103,"Kaleemunnisa, Fnu",kaleemunnisa@usf.edu,Tampa,40,vivekanandhan@usf.edu,12.0,0.0,0.0,08/25/2025,12/11/2025,*,
-202508.0,UG,3.0,92949.0,COP,2510,Programming Concepts,10,,,Madison Reslink (10),TR,05:00 PM - 06:15 PM,CPR 103,"Kaleemunnisa, Fnu",kaleemunnisa@usf.edu,Tampa,40,mreslink@usf.edu,19.0,0.0,0.0,08/25/2025,12/11/2025,*,
-202508.0,UG,5.0,92951.0,COP,2510,Programming Concepts,10,,,Tri Pham (10),TR,05:00 PM - 06:15 PM,CIS 1048,"Small, Schinnel K.",sksmall@usf.edu,Tampa,40,ductripham@usf.edu,,0.0,0.0,08/25/2025,12/11/2025,*,
-202508.0,UG,4.0,92952.0,COP,2510,Programming Concepts,10,Jason Rudinsky (10),,,TR,05:00 PM - 06:15 PM,CPR 103,"Kaleemunnisa, Fnu",kaleemunnisa@usf.edu,Tampa,40,,,0.0,0.0,08/25/2025,12/11/2025,*,jsr22@usf.edu
-202508.0,UG,6.0,92954.0,COP,2510,Programming Concepts,10,,,Dat Truong (10),TR,05:00 PM - 06:15 PM,CIS 1048,"Small, Schinnel K.",sksmall@usf.edu,Tampa,40,dattruong@usf.edu,20.0,0.0,0.0,08/25/2025,12/11/2025,*,
-202508.0,UG,7.0,97750.0,COP,2510,Programming Concepts,10,,,Quinn Berichon (10),TR,05:00 PM - 06:15 PM,CIS 1048,"Small, Schinnel K.",sksmall@usf.edu,Tampa,40,qberichon@usf.edu,11.0,0.0,0.0,08/25/2025,12/11/2025,*,
-202508.0,UG,8.0,97751.0,COP,2510,Programming Concepts,10,Anthony McCofie (10),,,TR,08:00 AM - 09:15 AM,CHE 111,"Yi, Hye S.",hsyi@usf.edu,Tampa,40,,14.0,0.0,0.0,08/25/2025,12/11/2025,*,anthonymccofie@usf.edu
-202508.0,UG,9.0,97752.0,COP,2510,Programming Concepts,10,,,Tam Do (10),TR,08:00 AM - 09:15 AM,CHE 111,"Yi, Hye S.",hsyi@usf.edu,Tampa,40,tamdo@usf.edu,,0.0,0.0,08/25/2025,12/11/2025,*,
-202508.0,UG,10.0,97753.0,COP,2510,Programming Concepts,10,,,Arjan Subedi (10),TR,08:00 AM - 09:15 AM,CHE 111,"Yi, Hye S.",hsyi@usf.edu,Tampa,40,arjansubedi@usf.edu,,0.0,0.0,08/25/2025,12/11/2025,*,
-202508.0,UG,11.0,97960.0,COP,2510,Programming Concepts,10,Jason Rudinsky (10),,,TR,05:00 PM - 06:15 PM,CIS 1048,"Small, Schinnel K.",sksmall@usf.edu,Tampa,32,,,,,,,,jsr22@usf.edu
-202508.0,UG,12.0,97979.0,COP,2510,Programming Concepts,10,,,Ashley Narvaez (10),TR,08:00 AM - 09:15 AM,CHE 111,"Yi, Hye S.",hsyi@usf.edu,Tampa,40,acnarvaez@usf.edu,,,,,,,
-202508.0,UG,13.0,98248.0,COP,2510,Programming Concepts,8,,,Maksud Akramov (8),TR,05:00 PM - 06:15 PM,,"Kaleemunnisa, Fnu",kaleemunnisa@usf.edu,Tampa,25,makramov@usf.edu,,,,,,,
-202508.0,UG,14.0,98249.0,COP,2510,Programming Concepts,10,,,Sebastien Ghent (10),TR,05:00 PM - 06:15 PM,,"Kaleemunnisa, Fnu",kaleemunnisa@usf.edu,Tampa,40,ghs1@usf.edu,,,,,,,
-202508.0,UG,1.0,91964.0,CNT,4419,Secure Coding,30,"Changjia Zhu (20)
+202508,UG,1.0,92947.0,COP,2510,Programming Concepts,10,Anthony McCofie (10),,,TR,05:00 PM - 06:15 PM,CPR 103,"Kaleemunnisa, Fnu",kaleemunnisa@usf.edu,Tampa,40,,28.0,0.0,0.0,08/25/2025,12/11/2025,*,anthonymccofie@usf.edu
+202508,UG,2.0,92948.0,COP,2510,Programming Concepts,10,,,Vivekanandhan Kathirvel (10),TR,05:00 PM - 06:15 PM,CPR 103,"Kaleemunnisa, Fnu",kaleemunnisa@usf.edu,Tampa,40,vivekanandhan@usf.edu,12.0,0.0,0.0,08/25/2025,12/11/2025,*,
+202508,UG,3.0,92949.0,COP,2510,Programming Concepts,10,,,Madison Reslink (10),TR,05:00 PM - 06:15 PM,CPR 103,"Kaleemunnisa, Fnu",kaleemunnisa@usf.edu,Tampa,40,mreslink@usf.edu,19.0,0.0,0.0,08/25/2025,12/11/2025,*,
+202508,UG,5.0,92951.0,COP,2510,Programming Concepts,10,,,Tri Pham (10),TR,05:00 PM - 06:15 PM,CIS 1048,"Small, Schinnel K.",sksmall@usf.edu,Tampa,40,ductripham@usf.edu,,0.0,0.0,08/25/2025,12/11/2025,*,
+202508,UG,4.0,92952.0,COP,2510,Programming Concepts,10,Jason Rudinsky (10),,,TR,05:00 PM - 06:15 PM,CPR 103,"Kaleemunnisa, Fnu",kaleemunnisa@usf.edu,Tampa,40,,,0.0,0.0,08/25/2025,12/11/2025,*,jsr22@usf.edu
+202508,UG,6.0,92954.0,COP,2510,Programming Concepts,10,,,Dat Truong (10),TR,05:00 PM - 06:15 PM,CIS 1048,"Small, Schinnel K.",sksmall@usf.edu,Tampa,40,dattruong@usf.edu,20.0,0.0,0.0,08/25/2025,12/11/2025,*,
+202508,UG,7.0,97750.0,COP,2510,Programming Concepts,10,,,Quinn Berichon (10),TR,05:00 PM - 06:15 PM,CIS 1048,"Small, Schinnel K.",sksmall@usf.edu,Tampa,40,qberichon@usf.edu,11.0,0.0,0.0,08/25/2025,12/11/2025,*,
+202508,UG,8.0,97751.0,COP,2510,Programming Concepts,10,Anthony McCofie (10),,,TR,08:00 AM - 09:15 AM,CHE 111,"Yi, Hye S.",hsyi@usf.edu,Tampa,40,,14.0,0.0,0.0,08/25/2025,12/11/2025,*,anthonymccofie@usf.edu
+202508,UG,9.0,97752.0,COP,2510,Programming Concepts,10,,,Tam Do (10),TR,08:00 AM - 09:15 AM,CHE 111,"Yi, Hye S.",hsyi@usf.edu,Tampa,40,tamdo@usf.edu,,0.0,0.0,08/25/2025,12/11/2025,*,
+202508,UG,10.0,97753.0,COP,2510,Programming Concepts,10,,,Arjan Subedi (10),TR,08:00 AM - 09:15 AM,CHE 111,"Yi, Hye S.",hsyi@usf.edu,Tampa,40,arjansubedi@usf.edu,,0.0,0.0,08/25/2025,12/11/2025,*,
+202508,UG,11.0,97960.0,COP,2510,Programming Concepts,10,Jason Rudinsky (10),,,TR,05:00 PM - 06:15 PM,CIS 1048,"Small, Schinnel K.",sksmall@usf.edu,Tampa,32,,,,,,,,jsr22@usf.edu
+202508,UG,12.0,97979.0,COP,2510,Programming Concepts,10,,,Ashley Narvaez (10),TR,08:00 AM - 09:15 AM,CHE 111,"Yi, Hye S.",hsyi@usf.edu,Tampa,40,acnarvaez@usf.edu,,,,,,,
+202508,UG,13.0,98248.0,COP,2510,Programming Concepts,8,,,Maksud Akramov (8),TR,05:00 PM - 06:15 PM,,"Kaleemunnisa, Fnu",kaleemunnisa@usf.edu,Tampa,25,makramov@usf.edu,,,,,,,
+202508,UG,14.0,98249.0,COP,2510,Programming Concepts,10,,,Sebastien Ghent (10),TR,05:00 PM - 06:15 PM,,"Kaleemunnisa, Fnu",kaleemunnisa@usf.edu,Tampa,40,ghs1@usf.edu,,,,,,,
+202508,UG,1.0,91964.0,CNT,4419,Secure Coding,30,"Changjia Zhu (20)
 Yuwen Cui (10)",,,MW,03:30 PM - 04:45 PM,CWY 107,"Liu, Yao",yliu21@usf.edu,Tampa,110,,111.0,0.0,0.0,08/25/2025,12/11/2025,,"changjiaz@usf.edu
 ycui@usf.edu"
-202508.0,UG,2.0,97674.0,CNT,4419,Secure Coding,10,Jiefeng Zhou (10),,,TR,09:30 AM - 10:45 AM,CPR 127,"Ami, Amit Seal",amitsealami@usf.edu,Tampa,41,,,0.0,0.0,08/25/2025,12/11/2025,,jiefeng@usf.edu
-202508.0,GR,1.0,91835.0,CIS,6930,Seminar in AI,,,,,F,01:00 PM - 01:50 PM,ENB 118,"Hall, Lawrence O.",lohall@usf.edu,Tampa,10,,8.0,0.0,99.0,08/25/2025,12/11/2025,,
-202508.0,UG,1.0,91968.0,CEN,4020,Software Engineering,50,"Shahriar Kabir Nahin (20)
+202508,UG,2.0,97674.0,CNT,4419,Secure Coding,10,Jiefeng Zhou (10),,,TR,09:30 AM - 10:45 AM,CPR 127,"Ami, Amit Seal",amitsealami@usf.edu,Tampa,41,,,0.0,0.0,08/25/2025,12/11/2025,,jiefeng@usf.edu
+202508,GR,1.0,91835.0,CIS,6930,Seminar in AI,,,,,F,01:00 PM - 01:50 PM,ENB 118,"Hall, Lawrence O.",lohall@usf.edu,Tampa,10,,8.0,0.0,99.0,08/25/2025,12/11/2025,,
+202508,UG,1.0,91968.0,CEN,4020,Software Engineering,50,"Shahriar Kabir Nahin (20)
 Yixi Chen (10)
 ",,"Phong Tran (10)
 Mohamed Elwaei (10)",MW,05:00 PM - 06:15 PM,CWY 107,"Anderson, James M.",jmanderson@usf.edu,Tampa,185,"phonghaitran@usf.edu
 maelwaei@usf.edu
 ",136.0,0.0,0.0,08/25/2025,12/11/2025,,"shahriarkabir@usf.edu
 yixi@usf.edu"
-202508.0,UG,2.0,92857.0,COP,4931,Software Sys Dev for CYS,10,,,Mihir Karnani (10),MW,12:30 PM - 01:45 PM,ENB 118,"Jeanty, Henry H.",hjeanty@usf.edu,Tampa,22,mkarnani@usf.edu,41.0,0.0,0.0,08/25/2025,12/11/2025,,
-202508.0,UG,1.0,92861.0,COP,4365,Software System Development,20,,,"Thao Nguyen (10)
+202508,UG,2.0,92857.0,COP,4931,Software Sys Dev for CYS,10,,,Mihir Karnani (10),MW,12:30 PM - 01:45 PM,ENB 118,"Jeanty, Henry H.",hjeanty@usf.edu,Tampa,22,mkarnani@usf.edu,41.0,0.0,0.0,08/25/2025,12/11/2025,,
+202508,UG,1.0,92861.0,COP,4365,Software System Development,20,,,"Thao Nguyen (10)
 Khanh Duong (10)",TR,12:30 PM - 01:45 PM,ENB 118,"Jeanty, Henry H.",hjeanty@usf.edu,Tampa,73,"hoangmai@usf.edu
 duong3@usf.edu
 ",78.0,0.0,0.0,08/25/2025,12/11/2025,,
-202508.0,UG,2.0,94945.0,COP,4365,Software System Development,10,,,Kalyan Castro De Oliveira (10),MW,09:30 AM - 10:45 AM,ENB 118,"Jeanty, Henry H.",hjeanty@usf.edu,Tampa,36,"kalyan34@usf.edu
+202508,UG,2.0,94945.0,COP,4365,Software System Development,10,,,Kalyan Castro De Oliveira (10),MW,09:30 AM - 10:45 AM,ENB 118,"Jeanty, Henry H.",hjeanty@usf.edu,Tampa,36,"kalyan34@usf.edu
 ",75.0,0.0,0.0,08/25/2025,12/11/2025,,
-202508.0,UG,1.0,91970.0,CNT,4603,System Admin & Maintenance,20,"Junchen Liu (10)
+202508,UG,1.0,91970.0,CNT,4603,System Admin & Maintenance,20,"Junchen Liu (10)
 Nikhil Aryal (10)",,,,,TBAT TBA,"Hoeke, Marilynn Carol",hoeke@usf.edu,Tampa,68,,70.0,0.0,0.0,08/25/2025,12/11/2025,,"junchen@usf.edu
 nikhilaryal@usf.edu"
-202508.0,GR,6.0,93038.0,CIS,6930,Topics in NLP,10,Dmytro Vitel (10),,,TR,08:00 AM - 09:15 AM,BSN 1201,"Chhabra, Anshuman  .",anshumanc@usf.edu,Tampa,40,,34.0,0.0,0.0,08/25/2025,12/11/2025,,dvitel@usf.edu
-202508.0,GR,4.0,98257.0,CAI,6605,Trustworthy AI Systems,10,"Mahit Venkat Gautam Kumpatla (10)
+202508,GR,6.0,93038.0,CIS,6930,Topics in NLP,10,Dmytro Vitel (10),,,TR,08:00 AM - 09:15 AM,BSN 1201,"Chhabra, Anshuman  .",anshumanc@usf.edu,Tampa,40,,34.0,0.0,0.0,08/25/2025,12/11/2025,,dvitel@usf.edu
+202508,GR,4.0,98257.0,CAI,6605,Trustworthy AI Systems,10,"Mahit Venkat Gautam Kumpatla (10)
 ",,,MW,06:30 PM - 07:45 PM,CHE 103,"Wang, Guangjing  .",guangjingwang@usf.edu,Tampa,45,,65.0,2.0,99.0,08/25/2025,12/11/2025,,mahitvenkatgautam@usf.edu
-202508.0,UG,8.0,95920.0,CIS,4930,User Experience Design,20,,,"Jawaad Ramcharitar (10)
+202508,UG,8.0,95920.0,CIS,4930,User Experience Design,20,,,"Jawaad Ramcharitar (10)
 Nusraat Kabir (10)
 ",MW,12:30 PM - 01:45 PM,CHE 303,"Holloman, Amanda K.",akholloman@usf.edu,Tampa,60,"jawaadramcharitar@usf.edu
 nkabir@usf.edu",46.0,0.0,0.0,08/25/2025,12/11/2025,,
-202508.0,GR,3.0,97445.0,CIS,6930,VLSI Testing,Cross-listed,,,,MW,11:00 AM - 12:15 PM,SOC 149,"Zheng, Hao",haozheng@usf.edu,Tampa,7,,,0.0,0.0,08/25/2025,12/11/2025,,
-202508.0,UG,9.0,97619.0,CIS,4930,VLSI Testing,10,Kavya Kalyanam (10),,,MW,11:00 AM - 12:15 PM,SOC 149,"Zheng, Hao",haozheng@usf.edu,Tampa,28,,,0.0,0.0,08/25/2025,12/11/2025,,lakshmikavya@usf.edu
-202508.0,UG,1.0,91971.0,CGS,3853,Web Systems for IT,20,Kok Cheng Tan (20),,,MW,09:30 AM - 10:45 AM,CHE 103,"Gaspar, Alessio",alessio@usf.edu,Tampa,78,,89.0,0.0,0.0,08/25/2025,12/11/2025,,kokcheng@usf.edu
-202601.0,UG,8.0,20447.0,CIS,4930,3D Computer Vision,,Anthony Mccofie (10),,,MW,06:30 PM - 07:45 PM,CPR 115,"Kambhamettu, Chandrasekhar",ckambhamettu@usf.edu,Tampa,20,,,,,,,,anthonymccofie@usf.edu
-202601.0,GR,3.0,20448.0,CIS,6930,3D Computer Vision,,,,,MW,06:30 PM - 07:45 PM,CPR 115,"Kambhamettu, Chandrasekhar",ckambhamettu@usf.edu,Tampa,3,,,,,,,,
-202601.0,UG,1.0,14915.0,COP,4703,Advanced Database Systems,,"Yuhao Guo (20)
+202508,GR,3.0,97445.0,CIS,6930,VLSI Testing,Cross-listed,,,,MW,11:00 AM - 12:15 PM,SOC 149,"Zheng, Hao",haozheng@usf.edu,Tampa,7,,,0.0,0.0,08/25/2025,12/11/2025,,
+202508,UG,9.0,97619.0,CIS,4930,VLSI Testing,10,Kavya Kalyanam (10),,,MW,11:00 AM - 12:15 PM,SOC 149,"Zheng, Hao",haozheng@usf.edu,Tampa,28,,,0.0,0.0,08/25/2025,12/11/2025,,lakshmikavya@usf.edu
+202508,UG,1.0,91971.0,CGS,3853,Web Systems for IT,20,Kok Cheng Tan (20),,,MW,09:30 AM - 10:45 AM,CHE 103,"Gaspar, Alessio",alessio@usf.edu,Tampa,78,,89.0,0.0,0.0,08/25/2025,12/11/2025,,kokcheng@usf.edu
+202601,UG,8.0,20447.0,CIS,4930,3D Computer Vision,,Anthony Mccofie (10),,,MW,06:30 PM - 07:45 PM,CPR 115,"Kambhamettu, Chandrasekhar",ckambhamettu@usf.edu,Tampa,20,,,,,,,,anthonymccofie@usf.edu
+202601,GR,3.0,20448.0,CIS,6930,3D Computer Vision,,,,,MW,06:30 PM - 07:45 PM,CPR 115,"Kambhamettu, Chandrasekhar",ckambhamettu@usf.edu,Tampa,3,,,,,,,,
+202601,UG,1.0,14915.0,COP,4703,Advanced Database Systems,,"Yuhao Guo (20)
 Ankrit Gupta (20)",,,F,11:00 AM - 01:45 PM,CWY 107,"Fang, Suey-Chyun",fang1@usf.edu,Tampa,142,,,,,,,,"yuhaog@usf.edu
 ankritgupta@usf.edu
 "
-202601.0,UG,1.0,14922.0,CIS,4930,Advanced OOP in C++,,,,,TR,12:30 PM - 01:45 PM,CHE 103,"Jeanty, Henry H.",hjeanty@usf.edu,Tampa,18,,,,,,,,
-202601.0,UG,1.0,14891.0,COP,3515,Advanced Program Design,,Ocean Monjur (20),,"Jawaad Ramcharitar (10)
+202601,UG,1.0,14922.0,CIS,4930,Advanced OOP in C++,,,,,TR,12:30 PM - 01:45 PM,CHE 103,"Jeanty, Henry H.",hjeanty@usf.edu,Tampa,18,,,,,,,,
+202601,UG,1.0,14891.0,COP,3515,Advanced Program Design,,Ocean Monjur (20),,"Jawaad Ramcharitar (10)
 Isfahan Juboraj (10)",MW,12:30 PM - 01:45 PM,CMC 141,"Yi, Hye S.",hsyi@usf.edu,Tampa,147,"jawaadramcharitar@usf.edu
 ijj@usf.edu
 ",,,,,,,omonjur@usf.edu
-202601.0,GR,1.0,17922.0,COP,6536,Advances in Data Structures,,,,,MW,05:00 PM - 06:15 PM,SOC 150,"Anderson, James M.",jmanderson@usf.edu,Tampa,5,,,,,,,,
-202601.0,UG,1.0,15287.0,CAP,4628,Affective Computing,,Tara Nourivandi (10),,,MW,05:00 PM - 06:15 PM,CPR 103,"Canavan, Shaun",scanavan@usf.edu,Tampa,30,,,,,,,,taranourivandi@usf.edu
-202601.0,GR,1.0,17877.0,CAI,5615,Affective Computing,,Tara Nourivandi (10),,,MW,05:00 PM - 06:15 PM,CPR 103,"Canavan, Shaun",scanavan@usf.edu,Tampa,40,,,,,,,,taranourivandi@usf.edu
-202601.0,GR,13.0,20715.0,CIS,6930,Agentic AI,,Kai Wei (10),,,MW,06:30 PM - 07:45 PM,CMC 141,"Wang, Guangjing  .",guangjingwang@usf.edu,Tampa,,,,,,,,,kwei@usf.edu
-202601.0,UG,16.0,20716.0,CIS,4930,Agentic AI,,Kai Wei (10),,,MW,06:30 PM - 07:45 PM,CMC 141,"Wang, Guangjing  .",guangjingwang@usf.edu,Tampa,40,,,,,,,,kwei@usf.edu
-202601.0,GR,701.0,14207.0,COT,5407,Algorithms Essentials,,Onur Bilgin ,,,,,OFFT OFF,"Topsakal, Oguzhan  .",topsakal@usf.edu,Off-campus - Tampa,,,,,,,,,onurbilgin@usf.edu
-202601.0,GR,700.0,14331.0,COT,5407,Algorithms Essentials,,Onur Bilgin ,,,,,OFFT OFF,"Topsakal, Oguzhan  .",topsakal@usf.edu,Off-campus - Tampa,9,,,,,,,,onurbilgin@usf.edu
-202601.0,GR,900.0,20948.0,COT,5407,Algorithms Essentials,,Onur Bilgin ,,,R,06:30 PM - 09:30 PM,NES 103,"Topsakal, Oguzhan  .",topsakal@usf.edu,Tampa,1,,,,,,,,onurbilgin@usf.edu
-202601.0,GR,702.0,20993.0,COT,5407,Algorithms Essentials,,Onur Bilgin ,,,,,OFFT OFF,"Topsakal, Oguzhan  .",topsakal@usf.edu,Off-campus - Tampa,4,,,,,,,,onurbilgin@usf.edu
-202601.0,UG,1.0,14892.0,COT,4400,Analysis Of Algorithms,,Jiefeng Zhou (10),,,F,08:00 AM - 10:45 AM,CIS 1048,"Korzhova, Valentina N.",korzhova@usf.edu,Tampa,59,,,,,,,,jiefeng@usf.edu
-202601.0,UG,2.0,14893.0,COT,4400,Analysis Of Algorithms,,,,"Aanthoni Nevan Dsouza (10)
+202601,GR,1.0,17922.0,COP,6536,Advances in Data Structures,,,,,MW,05:00 PM - 06:15 PM,SOC 150,"Anderson, James M.",jmanderson@usf.edu,Tampa,5,,,,,,,,
+202601,UG,1.0,15287.0,CAP,4628,Affective Computing,,Tara Nourivandi (10),,,MW,05:00 PM - 06:15 PM,CPR 103,"Canavan, Shaun",scanavan@usf.edu,Tampa,30,,,,,,,,taranourivandi@usf.edu
+202601,GR,1.0,17877.0,CAI,5615,Affective Computing,,Tara Nourivandi (10),,,MW,05:00 PM - 06:15 PM,CPR 103,"Canavan, Shaun",scanavan@usf.edu,Tampa,40,,,,,,,,taranourivandi@usf.edu
+202601,GR,13.0,20715.0,CIS,6930,Agentic AI,,Kai Wei (10),,,MW,06:30 PM - 07:45 PM,CMC 141,"Wang, Guangjing  .",guangjingwang@usf.edu,Tampa,,,,,,,,,kwei@usf.edu
+202601,UG,16.0,20716.0,CIS,4930,Agentic AI,,Kai Wei (10),,,MW,06:30 PM - 07:45 PM,CMC 141,"Wang, Guangjing  .",guangjingwang@usf.edu,Tampa,40,,,,,,,,kwei@usf.edu
+202601,GR,701.0,14207.0,COT,5407,Algorithms Essentials,,Onur Bilgin ,,,,,OFFT OFF,"Topsakal, Oguzhan  .",topsakal@usf.edu,Off-campus - Tampa,,,,,,,,,onurbilgin@usf.edu
+202601,GR,700.0,14331.0,COT,5407,Algorithms Essentials,,Onur Bilgin ,,,,,OFFT OFF,"Topsakal, Oguzhan  .",topsakal@usf.edu,Off-campus - Tampa,9,,,,,,,,onurbilgin@usf.edu
+202601,GR,900.0,20948.0,COT,5407,Algorithms Essentials,,Onur Bilgin ,,,R,06:30 PM - 09:30 PM,NES 103,"Topsakal, Oguzhan  .",topsakal@usf.edu,Tampa,1,,,,,,,,onurbilgin@usf.edu
+202601,GR,702.0,20993.0,COT,5407,Algorithms Essentials,,Onur Bilgin ,,,,,OFFT OFF,"Topsakal, Oguzhan  .",topsakal@usf.edu,Off-campus - Tampa,4,,,,,,,,onurbilgin@usf.edu
+202601,UG,1.0,14892.0,COT,4400,Analysis Of Algorithms,,Jiefeng Zhou (10),,,F,08:00 AM - 10:45 AM,CIS 1048,"Korzhova, Valentina N.",korzhova@usf.edu,Tampa,59,,,,,,,,jiefeng@usf.edu
+202601,UG,2.0,14893.0,COT,4400,Analysis Of Algorithms,,,,"Aanthoni Nevan Dsouza (10)
 Fnu Ayush (10)",MW,11:00 AM - 12:15 PM,CHE 111,"Korzhova, Valentina N.",korzhova@usf.edu,Tampa,70,"adsouza34@usf.edu
 ayush280@usf.edu",,,,,,,
-202601.0,UG,1.0,14888.0,COT,4210,Automata Thry/Formal Languages,,"Nazeefa Muzammil (20)
+202601,UG,1.0,14888.0,COT,4210,Automata Thry/Formal Languages,,"Nazeefa Muzammil (20)
 Md Zahidul Islam Sanjid (20)",,,F,11:00 AM - 01:45 PM,CHE 100,"Chellappan, Sriram",sriramc@usf.edu,Tampa,145,,,,,,,,"nazeefamuzammil@usf.edu
 sanjid@usf.edu"
-202601.0,GR,8.0,17435.0,CIS,6930,Bellini College TA Training,,,,,,,TBAT TBA,"Small, Schinnel K.",sksmall@usf.edu,Tampa,13,,,,,,,,
-202601.0,GR,700.0,14074.0,COP,5227,C Programming Essentials,,Xianqi Cao,,,,,OFFT OFF,"Gaspar, Alessio",alessio@usf.edu,Off-campus - Tampa,13,,,,,,,,cao110@usf.edu
-202601.0,UG,7.0,17879.0,CIS,4930,Capture the Flag,,Maria Zapata (10),,,MW,11:00 AM - 12:15 PM,PCD 1147,"Pazos Revilla, Marbin",marbin@usf.edu,Tampa,35,,,,,,,,mazapatamontano@usf.edu
-202601.0,UG,5.0,17880.0,COP,4931,Capture the Flag,,David Salgado Cortes (10),,,MW,11:00 AM - 12:15 PM,PCD 1147,"Pazos Revilla, Marbin",marbin@usf.edu,Tampa,35,,,,,,,,davids26@usf.edu
-202601.0,UG,1.0,14882.0,CDA,4205,Computer Architecture,,"Md Hasin Khan (10)
+202601,GR,8.0,17435.0,CIS,6930,Bellini College TA Training,,,,,,,TBAT TBA,"Small, Schinnel K.",sksmall@usf.edu,Tampa,13,,,,,,,,
+202601,GR,700.0,14074.0,COP,5227,C Programming Essentials,,Xianqi Cao,,,,,OFFT OFF,"Gaspar, Alessio",alessio@usf.edu,Off-campus - Tampa,13,,,,,,,,cao110@usf.edu
+202601,UG,7.0,17879.0,CIS,4930,Capture the Flag,,Maria Zapata (10),,,MW,11:00 AM - 12:15 PM,PCD 1147,"Pazos Revilla, Marbin",marbin@usf.edu,Tampa,35,,,,,,,,mazapatamontano@usf.edu
+202601,UG,5.0,17880.0,COP,4931,Capture the Flag,,David Salgado Cortes (10),,,MW,11:00 AM - 12:15 PM,PCD 1147,"Pazos Revilla, Marbin",marbin@usf.edu,Tampa,35,,,,,,,,davids26@usf.edu
+202601,UG,1.0,14882.0,CDA,4205,Computer Architecture,,"Md Hasin Khan (10)
 ",,"Suyong Bam (10)
 Dat Troung (10)",MW,09:30 AM - 10:45 AM,CPR 115,"Zheng, Hao",haozheng@usf.edu,Tampa,115,"bams@usf.edu
 dattruong@usf.edu",,,,,,,mdhasink@usf.edu
-202601.0,UG,1.0,16004.0,CDA,4205L,Computer Architecture Lab,,Youjian Tang (10),,,F,10:00 AM - 11:45 AM,ENB 214,"Zheng, Hao",haozheng@usf.edu,Tampa,16,,,,,,,,tang24@usf.edu
-202601.0,UG,2.0,16005.0,CDA,4205L,Computer Architecture Lab,,Nicholas Kovacs (10),,,F,12:00 PM - 01:45 PM,ENB 214,"Zheng, Hao",haozheng@usf.edu,Tampa,24,,,,,,,,imre@usf.edu
-202601.0,UG,3.0,16009.0,CDA,4205L,Computer Architecture Lab,,Ridhima Phatak (10),,,W,11:30 AM - 01:15 PM,ENB 214,"Zheng, Hao",haozheng@usf.edu,Tampa,35,,,,,,,,phatakr@usf.edu
-202601.0,UG,4.0,16010.0,CDA,4205L,Computer Architecture Lab,,Ridhima Phatak (10),,,W,01:30 PM - 03:15 PM,ENB 214,"Zheng, Hao",haozheng@usf.edu,Tampa,33,,,,,,,,phatakr@usf.edu
-202601.0,UG,1.0,15939.0,CNT,4104,Computer Information Networks,,"Ahmed Ahmed (10)
+202601,UG,1.0,16004.0,CDA,4205L,Computer Architecture Lab,,Youjian Tang (10),,,F,10:00 AM - 11:45 AM,ENB 214,"Zheng, Hao",haozheng@usf.edu,Tampa,16,,,,,,,,tang24@usf.edu
+202601,UG,2.0,16005.0,CDA,4205L,Computer Architecture Lab,,Nicholas Kovacs (10),,,F,12:00 PM - 01:45 PM,ENB 214,"Zheng, Hao",haozheng@usf.edu,Tampa,24,,,,,,,,imre@usf.edu
+202601,UG,3.0,16009.0,CDA,4205L,Computer Architecture Lab,,Ridhima Phatak (10),,,W,11:30 AM - 01:15 PM,ENB 214,"Zheng, Hao",haozheng@usf.edu,Tampa,35,,,,,,,,phatakr@usf.edu
+202601,UG,4.0,16010.0,CDA,4205L,Computer Architecture Lab,,Ridhima Phatak (10),,,W,01:30 PM - 03:15 PM,ENB 214,"Zheng, Hao",haozheng@usf.edu,Tampa,33,,,,,,,,phatakr@usf.edu
+202601,UG,1.0,15939.0,CNT,4104,Computer Information Networks,,"Ahmed Ahmed (10)
 Sri Satya Indukuri (20)",,"Dang Nguyen (10)
 Gabriel Tormin (10)",TR,05:00 PM - 06:15 PM,PCD 1147,"Rauscher, Richard L.",rrauscher@usf.edu,Tampa,161,dang262@usf.edu,,,,,,,"ahmed749@usf.edu
 indukuri3@usf.edu
 
 "
-202601.0,UG,2.0,14895.0,CDA,3201,Computer Logic & Design,,,,"Mirzo Ulugbek Rustamov (10)
+202601,UG,2.0,14895.0,CDA,3201,Computer Logic & Design,,,,"Mirzo Ulugbek Rustamov (10)
 Anubhav Gupta (10)",TR,05:00 AM - 06:15 AM,CMC 141,"Karimian, Nima",nkarimian@usf.edu,Tampa,83,"mrustamov@usf.edu
 anubhavgupta@usf.edu",,,,,,,
-202601.0,UG,5.0,16014.0,CDA,3201L,Computer Logic Design Lab,,Neilesh Sambhu (10),,,W,08:00 AM - 09:45 AM,ENB 214,"Karimian, Nima",nkarimian@usf.edu,Tampa,28,,,,,,,,nsambhu@usf.edu
-202601.0,UG,6.0,16015.0,CDA,3201L,Computer Logic Design Lab,,,,,R,05:00 PM - 06:45 PM,ENB 214,"Karimian, Nima",nkarimian@usf.edu,Tampa,2,,,,,,,,
-202601.0,UG,1.0,14880.0,CDA,3103,Computer Organization,,Kenneth Verzyl (10),,"Tri Pham (10)
+202601,UG,5.0,16014.0,CDA,3201L,Computer Logic Design Lab,,Neilesh Sambhu (10),,,W,08:00 AM - 09:45 AM,ENB 214,"Karimian, Nima",nkarimian@usf.edu,Tampa,28,,,,,,,,nsambhu@usf.edu
+202601,UG,6.0,16015.0,CDA,3201L,Computer Logic Design Lab,,,,,R,05:00 PM - 06:45 PM,ENB 214,"Karimian, Nima",nkarimian@usf.edu,Tampa,2,,,,,,,,
+202601,UG,1.0,14880.0,CDA,3103,Computer Organization,,Kenneth Verzyl (10),,"Tri Pham (10)
 Divyansh Maurya (10)",MW,02:00 PM - 03:15 PM,PCD 1147,"Zhang, Yan",yzhang16@usf.edu,Tampa,100,"ductripham@usf.edu
 dm17@usf.edu",,,,,,,kennethverzyl@usf.edu
-202601.0,UG,2.0,14897.0,CDA,3103,Computer Organization,,,,Phong Tran (10),TR,08:00 AM - 09:15 AM,CWY 109,"Yi, Hye S.",hsyi@usf.edu,Tampa,30,phonghaitran@usf.edu,,,,,,,
-202601.0,UG,1.0,15851.0,CDA,4203,Computer System Design,,Saeed Aghapour (20),,,MW,03:30 PM - 04:45 PM,CHE 101,"Mozaffari Kermani, Mehran",mehran2@usf.edu,Tampa,69,,,,,,,,aghapour@usf.edu
-202601.0,UG,1.0,16021.0,CDA,4203L,Computer System Design Lab,,"Sabrina Moon (10)
+202601,UG,2.0,14897.0,CDA,3103,Computer Organization,,,,Phong Tran (10),TR,08:00 AM - 09:15 AM,CWY 109,"Yi, Hye S.",hsyi@usf.edu,Tampa,30,phonghaitran@usf.edu,,,,,,,
+202601,UG,1.0,15851.0,CDA,4203,Computer System Design,,Saeed Aghapour (20),,,MW,03:30 PM - 04:45 PM,CHE 101,"Mozaffari Kermani, Mehran",mehran2@usf.edu,Tampa,69,,,,,,,,aghapour@usf.edu
+202601,UG,1.0,16021.0,CDA,4203L,Computer System Design Lab,,"Sabrina Moon (10)
 ",,,T,01:30 PM - 03:15 PM,ENB 214,"Mozaffari Kermani, Mehran",mehran2@usf.edu,Tampa,35,,,,,,,,ms38@usf.edu
-202601.0,UG,2.0,16022.0,CDA,4203L,Computer System Design Lab,,Kasra Ahmadi (10),,,T,03:30 PM - 05:15 PM,ENB 214,"Mozaffari Kermani, Mehran",mehran2@usf.edu,Tampa,34,,,,,,,,ahmadi1@usf.edu
-202601.0,GR,700.0,14330.0,COP,5612,Computer Systems Essentials,,Zachay Hinnen,,,,,OFFT OFF,"Zhang, Yan",yzhang16@usf.edu,Off-campus - Tampa,8,,,,,,,,zhinnen@usf.edu
-202601.0,GR,700.0,14073.0,COP,5008,Computing Essentials,,Zachay Hinnen,,,,,OFFT OFF,"Anderson, James M.",jmanderson@usf.edu,Off-campus - Tampa,10,,,,,,,,zhinnen@usf.edu
-202601.0,GR,900.0,20944.0,COP,5008,Computing Essentials,,Abel Le ,,,T,06:30 PM - 09:30 PM,CHE 302,"Anderson, James M.",jmanderson@usf.edu,Tampa,4,,,,,,,,anquyle@usf.edu
-202601.0,GR,702.0,20966.0,COP,5008,Computing Essentials,,Zachay Hinnen,,,,,OFFT OFF,"Anderson, James M.",jmanderson@usf.edu,Off-campus - Tampa,5,,,,,,,,zhinnen@usf.edu
-202601.0,UG,11.0,20441.0,CIS,4930,Computing Tools for Workforce,,"Maria Zapata (20)
+202601,UG,2.0,16022.0,CDA,4203L,Computer System Design Lab,,Kasra Ahmadi (10),,,T,03:30 PM - 05:15 PM,ENB 214,"Mozaffari Kermani, Mehran",mehran2@usf.edu,Tampa,34,,,,,,,,ahmadi1@usf.edu
+202601,GR,700.0,14330.0,COP,5612,Computer Systems Essentials,,Zachay Hinnen,,,,,OFFT OFF,"Zhang, Yan",yzhang16@usf.edu,Off-campus - Tampa,8,,,,,,,,zhinnen@usf.edu
+202601,GR,700.0,14073.0,COP,5008,Computing Essentials,,Zachay Hinnen,,,,,OFFT OFF,"Anderson, James M.",jmanderson@usf.edu,Off-campus - Tampa,10,,,,,,,,zhinnen@usf.edu
+202601,GR,900.0,20944.0,COP,5008,Computing Essentials,,Abel Le ,,,T,06:30 PM - 09:30 PM,CHE 302,"Anderson, James M.",jmanderson@usf.edu,Tampa,4,,,,,,,,anquyle@usf.edu
+202601,GR,702.0,20966.0,COP,5008,Computing Essentials,,Zachay Hinnen,,,,,OFFT OFF,"Anderson, James M.",jmanderson@usf.edu,Off-campus - Tampa,5,,,,,,,,zhinnen@usf.edu
+202601,UG,11.0,20441.0,CIS,4930,Computing Tools for Workforce,,"Maria Zapata (20)
 Sudipa Saha (10)",,,TR,11:00 AM - 12:15 PM,BSN 1201,"Friday, Kurt U.",kurtfriday@usf.edu,Tampa,70,,,,,,,,"mazapatamontano@usf.edu
 saha134@usf.edu
 "
-202601.0,GR,2.0,20701.0,CIS,6930,Concepts of Computer Security,,Chi Zhang (10),,,F,08:00 AM - 10:45 AM,SOC 150,"Ami, Amit Seal",amitsealami@usf.edu,Tampa,13,,,,,,,,chiz@usf.edu
-202601.0,UG,3.0,20702.0,CIS,4930,Concepts of Computer Security,,,,,F,08:00 AM - 10:45 AM,SOC 150,"Ami, Amit Seal",amitsealami@usf.edu,Tampa,12,,,,,,,,
-202601.0,UG,1.0,15928.0,CIS,4910,CSE Project,,,,,F,11:00 AM - 01:45 PM,ENC 1002,"Christensen, Kenneth J.",kchriste@usf.edu,Tampa,52,,,,,,,,
-202601.0,UG,3.0,20442.0,COP,4931,Cybersec Tools for Workforce,,"Zaima Zarnaz (20)
+202601,GR,2.0,20701.0,CIS,6930,Concepts of Computer Security,,Chi Zhang (10),,,F,08:00 AM - 10:45 AM,SOC 150,"Ami, Amit Seal",amitsealami@usf.edu,Tampa,13,,,,,,,,chiz@usf.edu
+202601,UG,3.0,20702.0,CIS,4930,Concepts of Computer Security,,,,,F,08:00 AM - 10:45 AM,SOC 150,"Ami, Amit Seal",amitsealami@usf.edu,Tampa,12,,,,,,,,
+202601,UG,1.0,15928.0,CIS,4910,CSE Project,,,,,F,11:00 AM - 01:45 PM,ENC 1002,"Christensen, Kenneth J.",kchriste@usf.edu,Tampa,52,,,,,,,,
+202601,UG,3.0,20442.0,COP,4931,Cybersec Tools for Workforce,,"Zaima Zarnaz (20)
 Aastha Sharma (20)",,,TR,08:00 AM - 09:15 AM,CMC 141,"Friday, Kurt U.",kurtfriday@usf.edu,Tampa,140,,,,,,,,"zaimazarnaz@usf.edu
 aasthasharma@usf.edu
 "
-202601.0,GR,1.0,21275.0,CAI,5135,Data Mining,,Anis Elebiary,,,S,09:00 AM - 11:45 AM,ENC 1002,"Semenov, Alexander",asemenov@usf.edu,Tampa,6,,,,,,,,anis@usf.edu
-202601.0,GR,701.0,21276.0,CAI,5135,Data Mining,,Anis Elebiary,,,S,09:00 AM - 11:45 AM,TBAT TBA,"Semenov, Alexander",asemenov@usf.edu,Off-campus - Tampa,9,,,,,,,,anis@usf.edu
-202601.0,GR,700.0,21320.0,CAI,5135,Data Mining,,Anis Elebiary,,,,,OFFT OFF,"Semenov, Alexander",asemenov@usf.edu,Off-campus - Tampa,11,,,,,,,,anis@usf.edu
-202601.0,UG,1.0,14898.0,COP,4530,Data Structures,,Anthony Mccofie (10),,"Nusraat Kabir (10)
+202601,GR,1.0,21275.0,CAI,5135,Data Mining,,Anis Elebiary,,,S,09:00 AM - 11:45 AM,ENC 1002,"Semenov, Alexander",asemenov@usf.edu,Tampa,6,,,,,,,,anis@usf.edu
+202601,GR,701.0,21276.0,CAI,5135,Data Mining,,Anis Elebiary,,,S,09:00 AM - 11:45 AM,TBAT TBA,"Semenov, Alexander",asemenov@usf.edu,Off-campus - Tampa,9,,,,,,,,anis@usf.edu
+202601,GR,700.0,21320.0,CAI,5135,Data Mining,,Anis Elebiary,,,,,OFFT OFF,"Semenov, Alexander",asemenov@usf.edu,Off-campus - Tampa,11,,,,,,,,anis@usf.edu
+202601,UG,1.0,14898.0,COP,4530,Data Structures,,Anthony Mccofie (10),,"Nusraat Kabir (10)
 Zahran Khan (10)",TR,02:00 PM - 03:15 PM,FAH 101,"Tahmoush, David",dtahmoush@usf.edu,Tampa,86,"zahran@usf.edu
 nkabir@usf.edu",,,,,,,anthonymccofie@usf.edu
-202601.0,UG,2.0,14899.0,COP,4530,Data Structures,,Jeremy Rutter (20),,,MW,02:00 PM - 03:15 PM,SOC 152,"Kaleemunnisa, Fnu",kaleemunnisa@usf.edu,Tampa,87,,,,,,,,jeremyrutter@usf.edu
-202601.0,UG,1.0,14905.0,COP,4538,Data Structures & Algorithms,,Keval Kataria (10),,,MW,05:00 PM - 06:15 PM,SOC 150,"Anderson, James M.",jmanderson@usf.edu,Tampa,28,,,,,,,,keval4@usf.edu
-202601.0,UG,2.0,14906.0,COP,4538,Data Structures & Algorithms,,Anil Mumbuc (10),,"Quinn Berichon (10)
+202601,UG,2.0,14899.0,COP,4530,Data Structures,,Jeremy Rutter (20),,,MW,02:00 PM - 03:15 PM,SOC 152,"Kaleemunnisa, Fnu",kaleemunnisa@usf.edu,Tampa,87,,,,,,,,jeremyrutter@usf.edu
+202601,UG,1.0,14905.0,COP,4538,Data Structures & Algorithms,,Keval Kataria (10),,,MW,05:00 PM - 06:15 PM,SOC 150,"Anderson, James M.",jmanderson@usf.edu,Tampa,28,,,,,,,,keval4@usf.edu
+202601,UG,2.0,14906.0,COP,4538,Data Structures & Algorithms,,Anil Mumbuc (10),,"Quinn Berichon (10)
 Trung Lam (10)
 ",TR,03:30 PM - 04:45 PM,CWY 107,"Chakraburtty, Manisha  .",mchakraburtty@usf.edu,Tampa,111,"qberichon@usf.edu
 ttlam14@usf.edu",,,,,,,anilmumbuc@usf.edu
-202601.0,GR,700.0,14075.0,COP,5532,Data Structures Essentials,,Zachay Hinnen,,,,,OFFT OFF,"Hidalgo, Isabela C.",imoura@usf.edu,Off-campus - Tampa,13,,,,,,,,zhinnen@usf.edu
-202601.0,GR,701.0,14209.0,COP,5532,Data Structures Essentials,,Akash Yallamati ,,,,,OFFT OFF,"Hidalgo, Isabela C.",imoura@usf.edu,Off-campus - Tampa,15,,,,,,,,akash34@usf.edu
-202601.0,GR,900.0,20947.0,COP,5532,Data Structures Essentials,,Abel Le ,,,T,06:30 PM - 09:30 PM,CHE 302,"Hidalgo, Isabela C.",imoura@usf.edu,Tampa,0,,,,,,,,anquyle@usf.edu
-202601.0,GR,702.0,20968.0,COP,5532,Data Structures Essentials,,Zachay Hinnen,,,,,OFFT OFF,"Hidalgo, Isabela C.",imoura@usf.edu,Off-campus - Tampa,5,,,,,,,,zhinnen@usf.edu
-202601.0,UG,1.0,14916.0,COP,4710,Database Design,,"Nithish Reddy Gade (20)
+202601,GR,700.0,14075.0,COP,5532,Data Structures Essentials,,Zachay Hinnen,,,,,OFFT OFF,"Hidalgo, Isabela C.",imoura@usf.edu,Off-campus - Tampa,13,,,,,,,,zhinnen@usf.edu
+202601,GR,701.0,14209.0,COP,5532,Data Structures Essentials,,Akash Yallamati ,,,,,OFFT OFF,"Hidalgo, Isabela C.",imoura@usf.edu,Off-campus - Tampa,15,,,,,,,,akash34@usf.edu
+202601,GR,900.0,20947.0,COP,5532,Data Structures Essentials,,Abel Le ,,,T,06:30 PM - 09:30 PM,CHE 302,"Hidalgo, Isabela C.",imoura@usf.edu,Tampa,0,,,,,,,,anquyle@usf.edu
+202601,GR,702.0,20968.0,COP,5532,Data Structures Essentials,,Zachay Hinnen,,,,,OFFT OFF,"Hidalgo, Isabela C.",imoura@usf.edu,Off-campus - Tampa,5,,,,,,,,zhinnen@usf.edu
+202601,UG,1.0,14916.0,COP,4710,Database Design,,"Nithish Reddy Gade (20)
 ",,,MW,02:00 PM - 03:15 PM,CHE 111,"Tu, Yicheng",tuy@usf.edu,Tampa,70,,,,,,,,nithishreddygade@usf.edu
-202601.0,GR,1.0,17910.0,CAI,5205,Deep Learning,,Abhiram Kandiyana (10),,,TR,05:00 PM - 06:15 PM,CHE 101,"Sun, Yu",yusun@usf.edu,Tampa,29,,,,,,,,kandiyana@usf.edu
-202601.0,GR,701.0,21028.0,CAI,5205,Deep Learning,,Anis Elebiary,,,,,OFFT OFF,"Sun, Yu",yusun@usf.edu,Tampa,10,,,,,,,,anis@usf.edu
-202601.0,GR,700.0,21029.0,CAI,5205,Deep Learning,,Anis Elebiary,,,,,OFFT OFF,"Sun, Yu",yusun@usf.edu,Off-campus - Tampa,11,,,,,,,,anis@usf.edu
-202601.0,GR,11.0,20709.0,CIS,6930,Deep Learning for Comp Vision,,Kasra Ahmadi (10),,,F,08:00 AM - 10:45 AM,SOC 151,"Ojha, Utkarsh",uojha@usf.edu,Tampa,15,,,,,,,,ahmadi1@usf.edu
-202601.0,UG,14.0,20710.0,CIS,4930,Deep Learning for Comp Vision,,,,,F,08:00 AM - 10:45 AM,SOC 151,"Ojha, Utkarsh",uojha@usf.edu,Tampa,11,,,,,,,,
-202601.0,GR,12.0,20712.0,CIS,6930,Deep Reinforcement Learning,,Chibuike Ezeokoli (10),,,F,11:00 AM - 01:45 PM,SOC 150,"Qiao, Fengchun",fengchun@usf.edu,Tampa,14,,,,,,,,cezeokoli@usf.edu
-202601.0,UG,15.0,20713.0,CIS,4930,Deep Reinforcement Learning,,,,,F,11:00 AM - 01:45 PM,SOC 150,"Qiao, Fengchun",fengchun@usf.edu,Tampa,18,,,,,,,,
-202601.0,GR,700.0,14072.0,COT,5105,Discrete Structures Essentials,,Xianqi Cao,,,,,OFFT OFF,"Wang, Jing",jw@usf.edu,Off-campus - Tampa,11,,,,,,,,cao110@usf.edu
-202601.0,GR,900.0,20946.0,COT,5105,Discrete Structures Essentials,,Akash Yallamati ,,,R,06:30 PM - 09:30 PM,CHE 302,"Wang, Jing",jw@usf.edu,Tampa,3,,,,,,,,akash34@usf.edu
-202601.0,GR,702.0,20965.0,COT,5105,Discrete Structures Essentials,,Xianqi Cao,,,,,OFFT OFF,"Wang, Jing",jw@usf.edu,Off-campus - Tampa,4,,,,,,,,cao110@usf.edu
-202601.0,GR,1.0,15938.0,CNT,6410,Emrg Topics Network Security,,Changjia Zhu (20),,,MW,03:30 PM - 04:45 PM,SOC 152,"Liu, Yao",yliu21@usf.edu,Tampa,70,,,,,,,,changjiaz@usf.edu
-202601.0,GR,1.0,20789.0,CAI,5026,Ethical Issues in AI,,,,,MW,05:00 PM - 06:15 PM,CWY 107,"Feferkorn, Karni A.",karnif@usf.edu,Tampa,1,,,,,,,,
-202601.0,GR,700.0,20790.0,CAI,5026,Ethical Issues in AI,,Onur Bilgin ,,,MW,05:00 PM - 06:15 PM,OFFT OFF,"Feferkorn, Karni A.",karnif@usf.edu,Off-campus - Tampa,4,,,,,,,,onurbilgin@usf.edu
-202601.0,UG,1.0,15918.0,CIS,4250,Ethical Issues/Profess Conduct,,"Somak Saha (20)
+202601,GR,1.0,17910.0,CAI,5205,Deep Learning,,Abhiram Kandiyana (10),,,TR,05:00 PM - 06:15 PM,CHE 101,"Sun, Yu",yusun@usf.edu,Tampa,29,,,,,,,,kandiyana@usf.edu
+202601,GR,701.0,21028.0,CAI,5205,Deep Learning,,Anis Elebiary,,,,,OFFT OFF,"Sun, Yu",yusun@usf.edu,Tampa,10,,,,,,,,anis@usf.edu
+202601,GR,700.0,21029.0,CAI,5205,Deep Learning,,Anis Elebiary,,,,,OFFT OFF,"Sun, Yu",yusun@usf.edu,Off-campus - Tampa,11,,,,,,,,anis@usf.edu
+202601,GR,11.0,20709.0,CIS,6930,Deep Learning for Comp Vision,,Kasra Ahmadi (10),,,F,08:00 AM - 10:45 AM,SOC 151,"Ojha, Utkarsh",uojha@usf.edu,Tampa,15,,,,,,,,ahmadi1@usf.edu
+202601,UG,14.0,20710.0,CIS,4930,Deep Learning for Comp Vision,,,,,F,08:00 AM - 10:45 AM,SOC 151,"Ojha, Utkarsh",uojha@usf.edu,Tampa,11,,,,,,,,
+202601,GR,12.0,20712.0,CIS,6930,Deep Reinforcement Learning,,Chibuike Ezeokoli (10),,,F,11:00 AM - 01:45 PM,SOC 150,"Qiao, Fengchun",fengchun@usf.edu,Tampa,14,,,,,,,,cezeokoli@usf.edu
+202601,UG,15.0,20713.0,CIS,4930,Deep Reinforcement Learning,,,,,F,11:00 AM - 01:45 PM,SOC 150,"Qiao, Fengchun",fengchun@usf.edu,Tampa,18,,,,,,,,
+202601,GR,700.0,14072.0,COT,5105,Discrete Structures Essentials,,Xianqi Cao,,,,,OFFT OFF,"Wang, Jing",jw@usf.edu,Off-campus - Tampa,11,,,,,,,,cao110@usf.edu
+202601,GR,900.0,20946.0,COT,5105,Discrete Structures Essentials,,Akash Yallamati ,,,R,06:30 PM - 09:30 PM,CHE 302,"Wang, Jing",jw@usf.edu,Tampa,3,,,,,,,,akash34@usf.edu
+202601,GR,702.0,20965.0,COT,5105,Discrete Structures Essentials,,Xianqi Cao,,,,,OFFT OFF,"Wang, Jing",jw@usf.edu,Off-campus - Tampa,4,,,,,,,,cao110@usf.edu
+202601,GR,1.0,15938.0,CNT,6410,Emrg Topics Network Security,,Changjia Zhu (20),,,MW,03:30 PM - 04:45 PM,SOC 152,"Liu, Yao",yliu21@usf.edu,Tampa,70,,,,,,,,changjiaz@usf.edu
+202601,GR,1.0,20789.0,CAI,5026,Ethical Issues in AI,,,,,MW,05:00 PM - 06:15 PM,CWY 107,"Feferkorn, Karni A.",karnif@usf.edu,Tampa,1,,,,,,,,
+202601,GR,700.0,20790.0,CAI,5026,Ethical Issues in AI,,Onur Bilgin ,,,MW,05:00 PM - 06:15 PM,OFFT OFF,"Feferkorn, Karni A.",karnif@usf.edu,Off-campus - Tampa,4,,,,,,,,onurbilgin@usf.edu
+202601,UG,1.0,15918.0,CIS,4250,Ethical Issues/Profess Conduct,,"Somak Saha (20)
 ",,,TR,03:30 PM - 04:45 PM,EDU 115,"Feferkorn, Karni A.",karnif@usf.edu,Tampa,70,,,,,,,,somaksaha@usf.edu
-202601.0,UG,2.0,15919.0,CIS,4250,Ethical Issues/Profess Conduct,,Andrew Musa (20),,,MW,05:00 PM - 06:15 PM,CWY 107,"Feferkorn, Karni A.",karnif@usf.edu,Tampa,60,,,,,,,,andrewmusa@usf.edu
-202601.0,UG,3.0,18747.0,CIS,4250,Ethical Issues/Profess Conduct,,"Amanuel Ergogo (20)
+202601,UG,2.0,15919.0,CIS,4250,Ethical Issues/Profess Conduct,,Andrew Musa (20),,,MW,05:00 PM - 06:15 PM,CWY 107,"Feferkorn, Karni A.",karnif@usf.edu,Tampa,60,,,,,,,,andrewmusa@usf.edu
+202601,UG,3.0,18747.0,CIS,4250,Ethical Issues/Profess Conduct,,"Amanuel Ergogo (20)
 ",,,MW,12:30 PM - 01:45 PM,BSN 1301,"Holloman, Amanda K.",akholloman@usf.edu,Tampa,70,,,,,,,,aergogo@usf.edu
-202601.0,UG,4.0,21159.0,CIS,4250,Ethical Issues/Profess Conduct,,Dylan Girrens (20),,,TR,05:00 PM - 06:15 PM,EDU 115,"Kabir, Anowarul",akabir@usf.edu,Tampa,70,,,,,,,,dylangirrens@usf.edu
-202601.0,UG,1.0,15935.0,CIS,3213,Foundations of Cybersecurity,,"Parisa Momeni (20)
+202601,UG,4.0,21159.0,CIS,4250,Ethical Issues/Profess Conduct,,Dylan Girrens (20),,,TR,05:00 PM - 06:15 PM,EDU 115,"Kabir, Anowarul",akabir@usf.edu,Tampa,70,,,,,,,,dylangirrens@usf.edu
+202601,UG,1.0,15935.0,CIS,3213,Foundations of Cybersecurity,,"Parisa Momeni (20)
 Hieu Nguyen (20)",,,MW,03:30 PM - 04:45 PM,ULH 101,"Alam, Md Rabbi",mdrabbi@usf.edu,Tampa,157,,,,,,,,"parisamomeni@usf.edu
 hieuminhnguyen@usf.edu
 "
-202601.0,UG,700.0,20734.0,CIS,1930,Freshman Seminar,,,,,,,OFFT OFF,"Morgan, John P.",jpmorga2@usf.edu,Off-campus - Tampa,71,,,,,,,,
-202601.0,UG,1.0,15932.0,CIS,4622,Hands-on Cybersecurity,,"Kenneth Verzyl (10)
+202601,UG,700.0,20734.0,CIS,1930,Freshman Seminar,,,,,,,OFFT OFF,"Morgan, John P.",jpmorga2@usf.edu,Off-campus - Tampa,71,,,,,,,,
+202601,UG,1.0,15932.0,CIS,4622,Hands-on Cybersecurity,,"Kenneth Verzyl (10)
 Lazar Lazarevic (10)
 ",,,TR,12:30 PM - 01:45 PM,ENB 216,"Alam, Md Rabbi",mdrabbi@usf.edu,Tampa,58,,,,,,,,"kennethverzyl@usf.edu
 lazarlazarevic@usf.edu"
-202601.0,UG,2.0,15937.0,CIS,4622,Hands-on Cybersecurity,,Zhengyuan Jiang (20),,,TR,09:30 AM - 10:45 AM,ENB 216,"Alam, Md Rabbi",mdrabbi@usf.edu,Tampa,57,,,,,,,,jz1@usf.edu
-202601.0,UG,3.0,17912.0,CIS,4622,Hands-on Cybersecurity,,,,,MW,11:00 AM - 12:15 PM,ENB 216,,,Tampa,0,,,,,,,,
-202601.0,UG,1.0,15080.0,CDA,4621,Control of Mobile Robots,,"Chance Hamilton (10)
+202601,UG,2.0,15937.0,CIS,4622,Hands-on Cybersecurity,,Zhengyuan Jiang (20),,,TR,09:30 AM - 10:45 AM,ENB 216,"Alam, Md Rabbi",mdrabbi@usf.edu,Tampa,57,,,,,,,,jz1@usf.edu
+202601,UG,3.0,17912.0,CIS,4622,Hands-on Cybersecurity,,,,,MW,11:00 AM - 12:15 PM,ENB 216,,,Tampa,0,,,,,,,,
+202601,UG,1.0,15080.0,CDA,4621,Control of Mobile Robots,,"Chance Hamilton (10)
 Brendon Johnson (10)",,,MW,03:30 PM - 04:45 PM,CHE 103,"Weitzenfeld, Alfredo",aweitzenfeld@usf.edu,Tampa,40,,,,,,,,"chamilton4@usf.edu
 brendon45@usf.edu"
-202601.0,UG,2.0,15074.0,CIS,4930,Hardware for Machine Learning,,,,,TR,03:30 PM - 04:45 PM,BEH 103,"Alfenas Reis, Dayane  .",dayane3@usf.edu,Tampa,48,,,,,,,,
-202601.0,GR,1.0,20668.0,CAI,6106,Hardware for Machine Learning,,Parsa Khorrami (10),,,TR,03:30 PM - 04:45 PM,BEH 103,"Alfenas Reis, Dayane  .",dayane3@usf.edu,Tampa,13,,,,,,,,parsak@usf.edu
-202601.0,GR,4.0,20449.0,CIS,6930,High Performance Computing,,Chibuike Ezeokoli (10),,,MW,03:30 PM - 04:45 PM,SOC 151,"Huang, Jiajun",jiajunhuang@usf.edu,Tampa,25,,,,,,,,cezeokoli@usf.edu
-202601.0,UG,10.0,20450.0,CIS,4930,High Performance Computing,,,,,MW,03:30 PM - 04:45 PM,SOC 151,"Huang, Jiajun",jiajunhuang@usf.edu,Tampa,19,,,,,,,,
-202601.0,UG,1.0,14901.0,CIS,4219,Human Aspects of Cybersecurity,,"Sudipa Saha (10)
+202601,UG,2.0,15074.0,CIS,4930,Hardware for Machine Learning,,,,,TR,03:30 PM - 04:45 PM,BEH 103,"Alfenas Reis, Dayane  .",dayane3@usf.edu,Tampa,48,,,,,,,,
+202601,GR,1.0,20668.0,CAI,6106,Hardware for Machine Learning,,Parsa Khorrami (10),,,TR,03:30 PM - 04:45 PM,BEH 103,"Alfenas Reis, Dayane  .",dayane3@usf.edu,Tampa,13,,,,,,,,parsak@usf.edu
+202601,GR,4.0,20449.0,CIS,6930,High Performance Computing,,Chibuike Ezeokoli (10),,,MW,03:30 PM - 04:45 PM,SOC 151,"Huang, Jiajun",jiajunhuang@usf.edu,Tampa,25,,,,,,,,cezeokoli@usf.edu
+202601,UG,10.0,20450.0,CIS,4930,High Performance Computing,,,,,MW,03:30 PM - 04:45 PM,SOC 151,"Huang, Jiajun",jiajunhuang@usf.edu,Tampa,19,,,,,,,,
+202601,UG,1.0,14901.0,CIS,4219,Human Aspects of Cybersecurity,,"Sudipa Saha (10)
 Satvik Praveen (10)",,,MW,06:30 PM - 07:45 PM,CHE 111,"Zhang, Shichen",szhang1@usf.edu,Tampa,80,,,,,,,,"saha134@usf.edu
 satvikpraveen@usf.edu
 "
-202601.0,GR,1.0,17915.0,CIS,6218,Human Aspects of Cybersecurity,,,,,MW,03:30 PM - 04:45 PM,PCD 1147,"Neal, Tempestt J.",tjneal@usf.edu,Tampa,5,,,,,,,,
-202601.0,UG,2.0,17916.0,CIS,4219,Human Aspects of Cybersecurity,,"Hoorad Abootalebi (10)
+202601,GR,1.0,17915.0,CIS,6218,Human Aspects of Cybersecurity,,,,,MW,03:30 PM - 04:45 PM,PCD 1147,"Neal, Tempestt J.",tjneal@usf.edu,Tampa,5,,,,,,,,
+202601,UG,2.0,17916.0,CIS,4219,Human Aspects of Cybersecurity,,"Hoorad Abootalebi (10)
 Meghna Chaudhary (10)",,,MW,03:30 PM - 04:45 PM,PCD 1147,"Neal, Tempestt J.",tjneal@usf.edu,Tampa,70,,,,,,,,"abootalebi@usf.edu
 meghna1@usf.edu"
-202601.0,UG,1.0,17920.0,CAI,4842,Image Processing Fundamentals,,Abhiram Kandiyana (10),,,MW,12:30 PM - 01:45 PM,CPR 122,"Goldgof, Dmitry B.",goldgof@usf.edu,Tampa,48,,,,,,,,kandiyana@usf.edu
-202601.0,UG,701.0,20674.0,COP,4931,Incident Response Methods,,Mobasshira Urmi (10),,,,,TBAT TBA,"Irving, Ryan  .",irvingr@usf.edu,Off-campus - Tampa,50,,,,,,,,mobasshiraakter@usf.edu
-202601.0,UG,1.0,14902.0,CGS,2060,Intro to Computer Programming,,Mohammad Ratul (10),,,MW,05:00 PM - 06:15 PM,BEH 104,"Holloman, Amanda K.",akholloman@usf.edu,Tampa,29,,,,,,,,mohammadratul@usf.edu
-202601.0,GR,1.0,20792.0,CAI,5335,Intro to LLMs,,Dmytro Vitel (20),,,TR,08:00 AM - 09:15 AM,SOC 150,"Chhabra, Anshuman  .",anshumanc@usf.edu,Tampa,31,,,,,,,,dvitel@usf.edu
-202601.0,UG,13.0,20706.0,CIS,4930,Intro to LLM's,,,,,TR,08:00 AM - 09:15 AM,SOC 150,"Chhabra, Anshuman  .",anshumanc@usf.edu,Tampa,37,,,,,,,,
-202601.0,UG,1.0,20717.0,CAI,4105,Intro to Machine Learning,,,,,TR,12:30 PM - 01:45 PM,CPR 126,"Kaleemunnisa, Fnu",kaleemunnisa@usf.edu,Tampa,0,,,,,,,,
-202601.0,GR,1.0,14904.0,COT,6405,Intro to Theory of Algorithms,,Yiyi Wang (10),,,MW,11:00 AM - 12:15 PM,CHE 103,"Kim, Seungbae  .",seungbae@usf.edu,Tampa,36,,,,,,,,yw22@usf.edu
-202601.0,GR,700.0,18606.0,CAI,5005,Introduction to AI,,Anis Elebiary,,,,,OFFT OFF,"Pamplona Segundo, Mauricio",mauriciop@usf.edu,Off-campus - Tampa,5,,,,,,,,anis@usf.edu
-202601.0,GR,701.0,18608.0,CAI,5005,Introduction to AI,,Anis Elebiary,,,,,OFFT OFF,"Pamplona Segundo, Mauricio",mauriciop@usf.edu,Off-campus - Tampa,7,,,,,,,,anis@usf.edu
-202601.0,GR,1.0,20446.0,CAI,5005,Introduction to AI,,Stephen Steinle (10),,,TR,02:00 PM - 03:15 PM,CWY 109,"Hall, Lawrence O.",lohall@usf.edu,Tampa,26,,,,,,,,ssteinle@usf.edu
-202601.0,GR,702.0,21012.0,CAI,5005,Introduction to AI,,Anis Elebiary,,,,,OFFT OFF,"Pamplona Segundo, Mauricio",mauriciop@usf.edu,Off-campus - Tampa,4,,,,,,,,anis@usf.edu
-202601.0,GR,900.0,21013.0,CAI,5005,Introduction to AI,,,,,TR,02:00 PM - 03:15 PM,CWY 109,"Hall, Lawrence O.",lohall@usf.edu,Tampa,2,,,,,,,,
-202601.0,GR,901.0,21062.0,CAI,5005,Introduction to AI,,,,,TR,02:00 PM - 03:15 PM,CWY 109,,,Tampa,0,,,,,,,,
-202601.0,UG,1.0,14903.0,CGS,1540,Introduction to Databases,,,,"Mariam Mahmud (10)
+202601,UG,1.0,17920.0,CAI,4842,Image Processing Fundamentals,,Abhiram Kandiyana (10),,,MW,12:30 PM - 01:45 PM,CPR 122,"Goldgof, Dmitry B.",goldgof@usf.edu,Tampa,48,,,,,,,,kandiyana@usf.edu
+202601,UG,701.0,20674.0,COP,4931,Incident Response Methods,,Mobasshira Urmi (10),,,,,TBAT TBA,"Irving, Ryan  .",irvingr@usf.edu,Off-campus - Tampa,50,,,,,,,,mobasshiraakter@usf.edu
+202601,UG,1.0,14902.0,CGS,2060,Intro to Computer Programming,,Mohammad Ratul (10),,,MW,05:00 PM - 06:15 PM,BEH 104,"Holloman, Amanda K.",akholloman@usf.edu,Tampa,29,,,,,,,,mohammadratul@usf.edu
+202601,GR,1.0,20792.0,CAI,5335,Intro to LLMs,,Dmytro Vitel (20),,,TR,08:00 AM - 09:15 AM,SOC 150,"Chhabra, Anshuman  .",anshumanc@usf.edu,Tampa,31,,,,,,,,dvitel@usf.edu
+202601,UG,13.0,20706.0,CIS,4930,Intro to LLM's,,,,,TR,08:00 AM - 09:15 AM,SOC 150,"Chhabra, Anshuman  .",anshumanc@usf.edu,Tampa,37,,,,,,,,
+202601,UG,1.0,20717.0,CAI,4105,Intro to Machine Learning,,,,,TR,12:30 PM - 01:45 PM,CPR 126,"Kaleemunnisa, Fnu",kaleemunnisa@usf.edu,Tampa,0,,,,,,,,
+202601,GR,1.0,14904.0,COT,6405,Intro to Theory of Algorithms,,Yiyi Wang (10),,,MW,11:00 AM - 12:15 PM,CHE 103,"Kim, Seungbae  .",seungbae@usf.edu,Tampa,36,,,,,,,,yw22@usf.edu
+202601,GR,700.0,18606.0,CAI,5005,Introduction to AI,,Anis Elebiary,,,,,OFFT OFF,"Pamplona Segundo, Mauricio",mauriciop@usf.edu,Off-campus - Tampa,5,,,,,,,,anis@usf.edu
+202601,GR,701.0,18608.0,CAI,5005,Introduction to AI,,Anis Elebiary,,,,,OFFT OFF,"Pamplona Segundo, Mauricio",mauriciop@usf.edu,Off-campus - Tampa,7,,,,,,,,anis@usf.edu
+202601,GR,1.0,20446.0,CAI,5005,Introduction to AI,,Stephen Steinle (10),,,TR,02:00 PM - 03:15 PM,CWY 109,"Hall, Lawrence O.",lohall@usf.edu,Tampa,26,,,,,,,,ssteinle@usf.edu
+202601,GR,702.0,21012.0,CAI,5005,Introduction to AI,,Anis Elebiary,,,,,OFFT OFF,"Pamplona Segundo, Mauricio",mauriciop@usf.edu,Off-campus - Tampa,4,,,,,,,,anis@usf.edu
+202601,GR,900.0,21013.0,CAI,5005,Introduction to AI,,,,,TR,02:00 PM - 03:15 PM,CWY 109,"Hall, Lawrence O.",lohall@usf.edu,Tampa,2,,,,,,,,
+202601,GR,901.0,21062.0,CAI,5005,Introduction to AI,,,,,TR,02:00 PM - 03:15 PM,CWY 109,,,Tampa,0,,,,,,,,
+202601,UG,1.0,14903.0,CGS,1540,Introduction to Databases,,,,"Mariam Mahmud (10)
 Sophia Fasano (10)",MW,12:30 PM - 01:45 PM,BEH 104,"Hidalgo, Isabela C.",imoura@usf.edu,Tampa,89,"mariam313@usf.edu
 fasanos@usf.edu",,,,,,,
-202601.0,GR,1.0,20664.0,CAI,5107,Machine Learning,,,,,W,06:30 PM - 09:15 PM,SOC 150,"Sheng, Yi",sheng1@usf.edu,Tampa,14,,,,,,,,
-202601.0,UG,700.0,21069.0,CAP,4136,Malware Analysis & Rvrs Eng,,Reeshav Acharya (20),,,,,TBAT TBA,"Gauvin Jr, William J.",wgauvin@usf.edu,Tampa,70,,,,,,,,reeshav@usf.edu
-202601.0,GR,1.0,20666.0,CAI,5035,Math for AI,,,,,F,11:00 AM - 01:45 PM,CIS 1023,"Pamplona Segundo, Mauricio",mauriciop@usf.edu,Tampa,6,,,,,,,,
-202601.0,UG,901.0,15077.0,CAP,4641,Natural Language Processing,,Theophilus Amaefuna (10),,,TR,06:30 PM - 07:45 PM,CHE 101,"Mali, Ankur A.",ankurarjunmali@usf.edu,Tampa,48,,,,,,,,ikennaamaefuna@usf.edu
-202601.0,GR,901.0,17923.0,CAI,5307,Natural Language Processing,,Theophilus Amaefuna (10),,,TR,06:30 PM - 07:45 PM,CHE 101,"Mali, Ankur A.",ankurarjunmali@usf.edu,Tampa,18,,,,,,,,ikennaamaefuna@usf.edu
-202601.0,UG,700.0,15936.0,CNT,4403,Network Security & Firewalls,,"Phaneswar Dundigalla (20)
+202601,GR,1.0,20664.0,CAI,5107,Machine Learning,,,,,W,06:30 PM - 09:15 PM,SOC 150,"Sheng, Yi",sheng1@usf.edu,Tampa,14,,,,,,,,
+202601,UG,700.0,21069.0,CAP,4136,Malware Analysis & Rvrs Eng,,Reeshav Acharya (20),,,,,TBAT TBA,"Gauvin Jr, William J.",wgauvin@usf.edu,Tampa,70,,,,,,,,reeshav@usf.edu
+202601,GR,1.0,20666.0,CAI,5035,Math for AI,,,,,F,11:00 AM - 01:45 PM,CIS 1023,"Pamplona Segundo, Mauricio",mauriciop@usf.edu,Tampa,6,,,,,,,,
+202601,UG,901.0,15077.0,CAP,4641,Natural Language Processing,,Theophilus Amaefuna (10),,,TR,06:30 PM - 07:45 PM,CHE 101,"Mali, Ankur A.",ankurarjunmali@usf.edu,Tampa,48,,,,,,,,ikennaamaefuna@usf.edu
+202601,GR,901.0,17923.0,CAI,5307,Natural Language Processing,,Theophilus Amaefuna (10),,,TR,06:30 PM - 07:45 PM,CHE 101,"Mali, Ankur A.",ankurarjunmali@usf.edu,Tampa,18,,,,,,,,ikennaamaefuna@usf.edu
+202601,UG,700.0,15936.0,CNT,4403,Network Security & Firewalls,,"Phaneswar Dundigalla (20)
 Hoorad Abootalebi (10)",,,,,OFFT OFF,"Gauvin Jr, William J.",wgauvin@usf.edu,Off-campus - Tampa,125,,,,,,,,"phaneshwar@usf.edu
 abootalebi@usf.edu"
-202601.0,GR,700.0,14332.0,CNT,5008,Networks Essentials,,Zachay Hinnen,,,,,OFFT OFF,"Christensen, Kenneth J.",kchriste@usf.edu,Off-campus - Tampa,10,,,,,,,,zhinnen@usf.edu
-202601.0,UG,1.0,14883.0,COP,2513,Object Oriented Programming,,Tasnim Tabassum (20),,"Khanh Duong (10)
+202601,GR,700.0,14332.0,CNT,5008,Networks Essentials,,Zachay Hinnen,,,,,OFFT OFF,"Christensen, Kenneth J.",kchriste@usf.edu,Off-campus - Tampa,10,,,,,,,,zhinnen@usf.edu
+202601,UG,1.0,14883.0,COP,2513,Object Oriented Programming,,Tasnim Tabassum (20),,"Khanh Duong (10)
 Mackenzie Freel (10)
 Alexander Eley (10)",MW,02:00 PM - 03:15 PM,CWY 107,"Hidalgo, Isabela C.",imoura@usf.edu,Tampa,153,"duong3@usf.edu
 mfreel@usf.edu
 aeley@usf.edu",,,,,,,tasnimtabassum@usf.edu
-202601.0,GR,701.0,14210.0,COP,5230,Object-Oriented Prog Essentls,,Onur Bilgin ,,,,,OFFT OFF,"Pazos Revilla, Marbin",marbin@usf.edu,Off-campus - Tampa,6,,,,,,,,onurbilgin@usf.edu
-202601.0,GR,700.0,14329.0,COP,5230,Object-Oriented Prog Essentls,,Onur Bilgin ,,,,,OFFT OFF,"Pazos Revilla, Marbin",marbin@usf.edu,Off-campus - Tampa,10,,,,,,,,onurbilgin@usf.edu
-202601.0,GR,900.0,20945.0,COP,5230,Object-Oriented Prog Essentls,,Onur Bilgin ,,,R,06:30 PM - 09:30 PM,NES 103,"Pazos Revilla, Marbin",marbin@usf.edu,Tampa,1,,,,,,,,onurbilgin@usf.edu
-202601.0,GR,702.0,20992.0,COP,5230,Object-Oriented Prog Essentls,,Onur Bilgin ,,,,,OFFT OFF,"Pazos Revilla, Marbin",marbin@usf.edu,Off-campus - Tampa,4,,,,,,,,onurbilgin@usf.edu
-202601.0,GR,1.0,14889.0,COP,6611,Operating Systems,,Abdullah As Sami (10),,,TR,05:00 PM - 06:15 PM,CPR 115,"Kim, Gene L.",genekim@usf.edu,Tampa,41,,,,,,,,sami20@usf.edu
-202601.0,UG,1.0,14908.0,COP,4600,Operating Systems,,"Alec Braynen (20)
+202601,GR,701.0,14210.0,COP,5230,Object-Oriented Prog Essentls,,Onur Bilgin ,,,,,OFFT OFF,"Pazos Revilla, Marbin",marbin@usf.edu,Off-campus - Tampa,6,,,,,,,,onurbilgin@usf.edu
+202601,GR,700.0,14329.0,COP,5230,Object-Oriented Prog Essentls,,Onur Bilgin ,,,,,OFFT OFF,"Pazos Revilla, Marbin",marbin@usf.edu,Off-campus - Tampa,10,,,,,,,,onurbilgin@usf.edu
+202601,GR,900.0,20945.0,COP,5230,Object-Oriented Prog Essentls,,Onur Bilgin ,,,R,06:30 PM - 09:30 PM,NES 103,"Pazos Revilla, Marbin",marbin@usf.edu,Tampa,1,,,,,,,,onurbilgin@usf.edu
+202601,GR,702.0,20992.0,COP,5230,Object-Oriented Prog Essentls,,Onur Bilgin ,,,,,OFFT OFF,"Pazos Revilla, Marbin",marbin@usf.edu,Off-campus - Tampa,4,,,,,,,,onurbilgin@usf.edu
+202601,GR,1.0,14889.0,COP,6611,Operating Systems,,Abdullah As Sami (10),,,TR,05:00 PM - 06:15 PM,CPR 115,"Kim, Gene L.",genekim@usf.edu,Tampa,41,,,,,,,,sami20@usf.edu
+202601,UG,1.0,14908.0,COP,4600,Operating Systems,,"Alec Braynen (20)
 Anika Anjum (20)",,,MW,08:00 AM - 09:15 AM,CIS 1048,"Pamplona Segundo, Mauricio",mauriciop@usf.edu,Tampa,129,,,,,,,,"alecbraynen@usf.edu
 anikaanjum@usf.edu
 "
-202601.0,UG,2.0,14909.0,COP,4600,Operating Systems,,Kayla Homatas (10),,Patrick Tanoeyjaya (10),TR,09:30 AM - 10:45 AM,BSN 1301,"Tricker, Andrew",atricker@usf.edu,Tampa,70,kevner@usf.edu,,,,,,,homatask@usf.edu
-202601.0,UG,1.0,15280.0,CIS,4200,Penetration Testing,,"Srinija Pagidyala (10)
+202601,UG,2.0,14909.0,COP,4600,Operating Systems,,Kayla Homatas (10),,Patrick Tanoeyjaya (10),TR,09:30 AM - 10:45 AM,BSN 1301,"Tricker, Andrew",atricker@usf.edu,Tampa,70,kevner@usf.edu,,,,,,,homatask@usf.edu
+202601,UG,1.0,15280.0,CIS,4200,Penetration Testing,,"Srinija Pagidyala (10)
 Nikhil Aryal (10)
 Sudharshan Balaji (10)",,,MW,05:00 PM - 06:15 PM,ISA 1061,"WANG, NING",ningw@usf.edu,Tampa,99,,,,,,,,"srinijapagidyala@usf.edu
 nikhilaryal@usf.edu
 sudharshanbalaji@usf.edu
 
 "
-202601.0,GR,1.0,15281.0,CIS,6220,Penetration Testing for IT,,,,,MW,05:00 PM - 06:15 PM,ISA 1061,"WANG, NING",ningw@usf.edu,Tampa,6,,,,,,,,
-202601.0,GR,1.0,14890.0,EEL,6764,Princ of Computer Architecture,,Krishbin Paudel (20),,,MW,05:00 PM - 06:15 PM,CWY 109,"Pandey, Santosh",spandey1@usf.edu,Tampa,70,,,,,,,,krishbinpaudel@usf.edu
-202601.0,UG,1.0,14879.0,COP,3514,Program Design,,,,"Patrick Aabram (10)
+202601,GR,1.0,15281.0,CIS,6220,Penetration Testing for IT,,,,,MW,05:00 PM - 06:15 PM,ISA 1061,"WANG, NING",ningw@usf.edu,Tampa,6,,,,,,,,
+202601,GR,1.0,14890.0,EEL,6764,Princ of Computer Architecture,,Krishbin Paudel (20),,,MW,05:00 PM - 06:15 PM,CWY 109,"Pandey, Santosh",spandey1@usf.edu,Tampa,70,,,,,,,,krishbinpaudel@usf.edu
+202601,UG,1.0,14879.0,COP,3514,Program Design,,,,"Patrick Aabram (10)
 Jvalaj Pandey (10)
 Dat Tran (10)
 Ethan Thompson (10)",MW,11:00 AM - 12:15 PM,CWY 109,"Wang, Jing",jw@usf.edu,Tampa,140,"paabram@usf.edu
@@ -659,42 +659,42 @@ jvalaj@usf.edu
 dattran@usf.edu
 ethanthompson@usf.edu
 ",,,,,,,
-202601.0,UG,2.0,17931.0,COP,3514,Program Design,,Kok Cheng Tan (20),,"Thao Nguyen (10)
+202601,UG,2.0,17931.0,COP,3514,Program Design,,Kok Cheng Tan (20),,"Thao Nguyen (10)
 Jovani Wahba (10)
 ",MW,06:30 PM - 07:45 PM,CHE 100,"Gaspar, Alessio",alessio@usf.edu,Tampa,119,"hoangmai@usf.edu
 jovaniwahba@usf.edu",,,,,,,kokcheng@usf.edu
-202601.0,UG,1.0,15120.0,COP,2510,Programming Concepts,,,,Vedanshi Verma (10),TR,03:30 PM - 04:45 PM,BSN 1100,"Small, Schinnel K.",sksmall@usf.edu,Tampa,40,vverma@usf.edu,,,,,,,
-202601.0,UG,3.0,15121.0,COP,2510,Programming Concepts,,,,Kamilla Gurbanzade (10),TR,03:30 PM - 04:45 PM,BSN 1100,"Small, Schinnel K.",sksmall@usf.edu,Tampa,40,kgurbanzade@usf.edu,,,,,,,
-202601.0,UG,2.0,15122.0,COP,2510,Programming Concepts,,,,Tuan Minh Dao (10),TR,03:30 PM - 04:45 PM,BSN 1100,"Small, Schinnel K.",sksmall@usf.edu,Tampa,40,tuanminhdao@usf.edu,,,,,,,
-202601.0,UG,4.0,15123.0,COP,2510,Programming Concepts,,,,Lavanya Pande (10),TR,03:30 PM - 04:45 PM,BSN 1100,"Small, Schinnel K.",sksmall@usf.edu,Tampa,40,lavanyapande@usf.edu,,,,,,,
-202601.0,GR,1.0,20703.0,CIS,6930,Real-Time Systems,,Andrew Musa (20),,,MW,03:30 PM - 04:45 PM,SOC 150,"Ahmed, Shareef",shareefahmed@usf.edu,Tampa,14,,,,,,,,
-202601.0,UG,12.0,20704.0,CIS,4930,Real-Time Systems,,Ahmed Shahabaz (10),,,MW,03:30 PM - 04:45 PM,SOC 150,"Ahmed, Shareef",shareefahmed@usf.edu,Tampa,23,,,,,,,,shahabaz@usf.edu
-202601.0,UG,1.0,14910.0,CNT,4419,Secure Coding,,"Gabriel Laverghetta (20)
+202601,UG,1.0,15120.0,COP,2510,Programming Concepts,,,,Vedanshi Verma (10),TR,03:30 PM - 04:45 PM,BSN 1100,"Small, Schinnel K.",sksmall@usf.edu,Tampa,40,vverma@usf.edu,,,,,,,
+202601,UG,3.0,15121.0,COP,2510,Programming Concepts,,,,Kamilla Gurbanzade (10),TR,03:30 PM - 04:45 PM,BSN 1100,"Small, Schinnel K.",sksmall@usf.edu,Tampa,40,kgurbanzade@usf.edu,,,,,,,
+202601,UG,2.0,15122.0,COP,2510,Programming Concepts,,,,Tuan Minh Dao (10),TR,03:30 PM - 04:45 PM,BSN 1100,"Small, Schinnel K.",sksmall@usf.edu,Tampa,40,tuanminhdao@usf.edu,,,,,,,
+202601,UG,4.0,15123.0,COP,2510,Programming Concepts,,,,Lavanya Pande (10),TR,03:30 PM - 04:45 PM,BSN 1100,"Small, Schinnel K.",sksmall@usf.edu,Tampa,40,lavanyapande@usf.edu,,,,,,,
+202601,GR,1.0,20703.0,CIS,6930,Real-Time Systems,,Andrew Musa (20),,,MW,03:30 PM - 04:45 PM,SOC 150,"Ahmed, Shareef",shareefahmed@usf.edu,Tampa,14,,,,,,,,
+202601,UG,12.0,20704.0,CIS,4930,Real-Time Systems,,Ahmed Shahabaz (10),,,MW,03:30 PM - 04:45 PM,SOC 150,"Ahmed, Shareef",shareefahmed@usf.edu,Tampa,23,,,,,,,,shahabaz@usf.edu
+202601,UG,1.0,14910.0,CNT,4419,Secure Coding,,"Gabriel Laverghetta (20)
 Yuwen Cui (10)",,,MW,03:30 PM - 04:45 PM,CWY 107,"Ligatti, Jarred",ligatti@usf.edu,Tampa,131,,,,,,,,"glaverghetta@usf.edu
 ycui@usf.edu
 "
-202601.0,UG,2.0,14911.0,CNT,4419,Secure Coding,,"Faayed Al Faisal (10)
+202601,UG,2.0,14911.0,CNT,4419,Secure Coding,,"Faayed Al Faisal (10)
 Kritan Banstola (10)",,,MW,03:30 PM - 04:45 PM,CWY 107,"Ou, Xinming",xou@usf.edu,Tampa,70,,,,,,,,"faayedal@usf.edu
 kbanstola@usf.edu
 "
-202601.0,GR,6.0,15929.0,CIS,6930,Seminar in AI,,,,,F,01:00 PM - 01:50 PM,ENB 118,"Canavan, Shaun",scanavan@usf.edu,Tampa,15,,,,,,,,
-202601.0,UG,4.0,15278.0,CIS,4930,Smart & Connected Health,,Venkata Cherukuri (10),,,TR,11:00 AM - 12:15 PM,SOC 152,"Templeton, John  .",jtemplet@usf.edu,Tampa,26,,,,,,,,venkatarahulc@usf.edu
-202601.0,GR,1.0,20443.0,CAP,6505,Smart and Connected Health,,Venkata Cherukuri (10),,,TR,11:00 AM - 12:15 PM,SOC 152,"Templeton, John  .",jtemplet@usf.edu,Tampa,39,,,,,,,,venkatarahulc@usf.edu
-202601.0,UG,1.0,15284.0,CAP,4773,Social Media Mining,,Mohammad Ratul (10),,,TR,03:30 PM - 04:45 PM,CIS 1048,"Baten, Raiyan Abdul  .",rbaten@usf.edu,Tampa,30,,,,,,,,mohammadratul@usf.edu
-202601.0,GR,1.0,17925.0,CAI,5133,Social Media Mining,,Nafis Azad (10),,,TR,03:30 PM - 04:45 PM,CIS 1048,"Baten, Raiyan Abdul  .",rbaten@usf.edu,Tampa,40,,,,,,,,nafisazad@usf.edu
-202601.0,UG,1.0,14913.0,CEN,4020,Software Engineering,,David Salgado Cortes (10),,Tam Do (10),MW,03:30 PM - 04:45 PM,CHE 111,"Fang, Suey-Chyun",fang1@usf.edu,Tampa,66,tamdo@usf.edu,,,,,,,davids26@usf.edu
-202601.0,UG,2.0,14914.0,CEN,4020,Software Engineering,,Mahit Kumpatla (20),,,TR,12:30 PM - 06:15 PM,BSN 1301,"Anderson, James M.",jmanderson@usf.edu,Tampa,70,,,,,,,,mahitvenkatgautam@usf.edu
-202601.0,UG,1.0,14924.0,COP,4365,Software System Development,,,,Kalyan Castro de Oliveira (10),TR,09:30 AM - 10:45 AM,ENB 118,"Jeanty, Henry H.",hjeanty@usf.edu,Tampa,29,"kalyan34@usf.edu
+202601,GR,6.0,15929.0,CIS,6930,Seminar in AI,,,,,F,01:00 PM - 01:50 PM,ENB 118,"Canavan, Shaun",scanavan@usf.edu,Tampa,15,,,,,,,,
+202601,UG,4.0,15278.0,CIS,4930,Smart & Connected Health,,Venkata Cherukuri (10),,,TR,11:00 AM - 12:15 PM,SOC 152,"Templeton, John  .",jtemplet@usf.edu,Tampa,26,,,,,,,,venkatarahulc@usf.edu
+202601,GR,1.0,20443.0,CAP,6505,Smart and Connected Health,,Venkata Cherukuri (10),,,TR,11:00 AM - 12:15 PM,SOC 152,"Templeton, John  .",jtemplet@usf.edu,Tampa,39,,,,,,,,venkatarahulc@usf.edu
+202601,UG,1.0,15284.0,CAP,4773,Social Media Mining,,Mohammad Ratul (10),,,TR,03:30 PM - 04:45 PM,CIS 1048,"Baten, Raiyan Abdul  .",rbaten@usf.edu,Tampa,30,,,,,,,,mohammadratul@usf.edu
+202601,GR,1.0,17925.0,CAI,5133,Social Media Mining,,Nafis Azad (10),,,TR,03:30 PM - 04:45 PM,CIS 1048,"Baten, Raiyan Abdul  .",rbaten@usf.edu,Tampa,40,,,,,,,,nafisazad@usf.edu
+202601,UG,1.0,14913.0,CEN,4020,Software Engineering,,David Salgado Cortes (10),,Tam Do (10),MW,03:30 PM - 04:45 PM,CHE 111,"Fang, Suey-Chyun",fang1@usf.edu,Tampa,66,tamdo@usf.edu,,,,,,,davids26@usf.edu
+202601,UG,2.0,14914.0,CEN,4020,Software Engineering,,Mahit Kumpatla (20),,,TR,12:30 PM - 06:15 PM,BSN 1301,"Anderson, James M.",jmanderson@usf.edu,Tampa,70,,,,,,,,mahitvenkatgautam@usf.edu
+202601,UG,1.0,14924.0,COP,4365,Software System Development,,,,Kalyan Castro de Oliveira (10),TR,09:30 AM - 10:45 AM,ENB 118,"Jeanty, Henry H.",hjeanty@usf.edu,Tampa,29,"kalyan34@usf.edu
 ",,,,,,,
-202601.0,UG,2.0,14925.0,COP,4365,Software System Development,,,,Jessica Pham (10),MW,09:30 AM - 10:45 AM,ENB 118,"Jeanty, Henry H.",hjeanty@usf.edu,Tampa,39,jessicapham@usf.edu,,,,,,,
-202601.0,GR,1.0,15081.0,CIS,6214,Trustworthy Infrastructures,,Saif Nouma (10),,,MW,02:00 PM - 03:15 PM,CWY 109,"Yavuz, Attila A.",attilaayavuz@usf.edu,Tampa,20,,,,,,,,saifeddinenouma@usf.edu
-202601.0,UG,1.0,15082.0,CIS,4212,Trustworthy Infrastructures,,Saif Nouma (10),,,MW,02:00 PM - 03:15 PM,CWY 109,"Yavuz, Attila A.",attilaayavuz@usf.edu,Tampa,55,,,,,,,,saifeddinenouma@usf.edu
-202601.0,UG,9.0,18838.0,CIS,4930,User Experience Design,,"Yixi Chen (20)
+202601,UG,2.0,14925.0,COP,4365,Software System Development,,,,Jessica Pham (10),MW,09:30 AM - 10:45 AM,ENB 118,"Jeanty, Henry H.",hjeanty@usf.edu,Tampa,39,jessicapham@usf.edu,,,,,,,
+202601,GR,1.0,15081.0,CIS,6214,Trustworthy Infrastructures,,Saif Nouma (10),,,MW,02:00 PM - 03:15 PM,CWY 109,"Yavuz, Attila A.",attilaayavuz@usf.edu,Tampa,20,,,,,,,,saifeddinenouma@usf.edu
+202601,UG,1.0,15082.0,CIS,4212,Trustworthy Infrastructures,,Saif Nouma (10),,,MW,02:00 PM - 03:15 PM,CWY 109,"Yavuz, Attila A.",attilaayavuz@usf.edu,Tampa,55,,,,,,,,saifeddinenouma@usf.edu
+202601,UG,9.0,18838.0,CIS,4930,User Experience Design,,"Yixi Chen (20)
 ",,,TR,03:30 PM - 04:45 PM,CHE 103,"Holloman, Amanda K.",akholloman@usf.edu,Tampa,70,,,,,,,,"yixi@usf.edu
 
 "
-202601.0,GR,5.0,15288.0,CIS,6930,Wireless and Mobile Computing,,Yitong Shen (10),,,MW,12:30 PM - 01:45 PM,CHE 217,"Ren, Yili  .",yiliren@usf.edu,Tampa,40,,,,,,,,shen202@usf.edu
-202601.0,UG,5.0,15289.0,CIS,4930,Wireless and Mobile Computing,,Yitong Shen (10),,,MW,12:30 PM - 01:45 PM,CHE 217,"Ren, Yili  .",yiliren@usf.edu,Tampa,18,,,,,,,,shen202@usf.edu
+202601,GR,5.0,15288.0,CIS,6930,Wireless and Mobile Computing,,Yitong Shen (10),,,MW,12:30 PM - 01:45 PM,CHE 217,"Ren, Yili  .",yiliren@usf.edu,Tampa,40,,,,,,,,shen202@usf.edu
+202601,UG,5.0,15289.0,CIS,4930,Wireless and Mobile Computing,,Yitong Shen (10),,,MW,12:30 PM - 01:45 PM,CHE 217,"Ren, Yili  .",yiliren@usf.edu,Tampa,18,,,,,,,,shen202@usf.edu
 ,,,,,,,,,,,,,,,,, ,,,,,,,,
-202601.0,,1.0,999999.0,COP,9999,Manual Reupload Reflection Test,,,,,M,10:00 AM - 11:15 AM,ROOM_A_UI_TEST,UI Test Instructor,,,,,,,,,,,
+202601,,1.0,999999.0,COP,9999,Manual Reupload Reflection Test,,,,,M,10:00 AM - 11:15 AM,ROOM_A_UI_TEST,UI Test Instructor,,,,,,,,,,,
 202601,,1.0,999999.0,COP,9999,Manual Reupload Reflection Test,,,,,M,10:00 AM - 11:15 AM,ROOM_B_UI_TEST,UI Test Instructor,,,,,,,,,,,

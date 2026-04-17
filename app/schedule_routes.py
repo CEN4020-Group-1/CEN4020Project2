@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request, redirect, url_for, jsonify
+from flask import Blueprint, render_template, request, redirect, url_for, jsonify, flash
 from .data_service import (
     get_semesters, get_rooms, get_instructors,
     get_classes_by_room, get_classes_by_instructor,
@@ -8,6 +8,7 @@ from .data_service import (
     compare_schedules, get_comparison_details,
     load_schedule, parse_meeting_days, parse_meeting_time, _time_sort_key,
     generate_audit_report, get_class_by_crn,
+    add_class, update_class, delete_class,
 )
 
 schedule_routes = Blueprint("schedule", __name__, url_prefix="/schedule")
@@ -452,3 +453,86 @@ def class_detail(crn):
         semester=semester,
         semester_label=semester_label,
     )
+
+
+# ============================================================
+# MANDATORY STORY 1: Add / Edit / Delete Classes
+# ============================================================
+
+CLASS_FORM_FIELDS = [
+    "TERM", "CRN", "SUBJ", "CRSE_NUMB", "CRSE_TITLE", "CRSE_SECTION",
+    "CRSE_LEVL", "INSTRUCTOR", "INSTRUCTOR_EMAIL", "MEETING_DAYS",
+    "MEETING_TIMES", "MEETING_ROOM", "CAMPUS", "ENROLLMENT",
+    "GRAD_TAS", "GRAD_TA_HOURS", "UGTAS", "UGTA_HOURS",
+]
+
+
+def _collect_form_data():
+    """Pull class fields from the submitted form."""
+    data = {}
+    for field in CLASS_FORM_FIELDS:
+        if field == "MEETING_DAYS":
+            days = request.form.getlist("day_checks")
+            data[field] = "".join(days)
+        elif field == "MEETING_TIMES":
+            start = request.form.get("time_start", "").strip()
+            end = request.form.get("time_end", "").strip()
+            data[field] = f"{start} - {end}" if start and end else ""
+        else:
+            data[field] = request.form.get(field, "").strip()
+    return data
+
+
+@schedule_routes.route("/class/add", methods=["GET", "POST"])
+def class_add():
+    semesters = get_semesters()
+    if request.method == "POST":
+        data = _collect_form_data()
+        row, err = add_class(data)
+        if err:
+            return render_template("class_form.html", mode="add", semesters=semesters,
+                                   day_order=DAY_ORDER, day_names=DAY_CODES,
+                                   form_data=data, error=err)
+        crn = str(row.get("CRN", "")).replace(".0", "")
+        term = str(row.get("TERM", "")).replace(".0", "")
+        return redirect(url_for("schedule.class_detail", crn=crn, semester=term))
+
+    return render_template("class_form.html", mode="add", semesters=semesters,
+                           day_order=DAY_ORDER, day_names=DAY_CODES,
+                           form_data={}, error=None)
+
+
+@schedule_routes.route("/class/<crn>/edit", methods=["GET", "POST"])
+def class_edit(crn):
+    semester = request.args.get("semester", "").strip()
+    semesters = get_semesters()
+
+    if request.method == "POST":
+        semester = request.form.get("semester_hidden", semester)
+        data = _collect_form_data()
+        _, err = update_class(crn, semester, data)
+        if err:
+            return render_template("class_form.html", mode="edit", semesters=semesters,
+                                   day_order=DAY_ORDER, day_names=DAY_CODES,
+                                   form_data=data, error=err, crn=crn, semester=semester)
+        return redirect(url_for("schedule.class_detail", crn=crn, semester=semester))
+
+    class_data, _ = get_class_by_crn(crn, semester or None)
+    if class_data is None:
+        return redirect(url_for("schedule.class_add"))
+
+    form_data = {}
+    for field in CLASS_FORM_FIELDS:
+        val = class_data.get(field)
+        form_data[field] = str(val) if val is not None else ""
+
+    return render_template("class_form.html", mode="edit", semesters=semesters,
+                           day_order=DAY_ORDER, day_names=DAY_CODES,
+                           form_data=form_data, error=None, crn=crn, semester=semester)
+
+
+@schedule_routes.route("/class/<crn>/delete", methods=["POST"])
+def class_delete(crn):
+    semester = request.form.get("semester", "").strip()
+    success, err = delete_class(crn, semester)
+    return redirect(url_for("schedule.search_classes_route"))
